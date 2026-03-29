@@ -1,55 +1,68 @@
-# Vortrag zum Agentic Coding
+# Aufgabenkontext
+
+Folgendes Schrifftstück dient als Prompt um 3 Dinge zu erreichen. (1. als wichtigstes Kriterium)
+
+1. Wissenserweiterung des Vortragendes zum Thema Agentic Coding
+2. Erstellung von Tooling, Skills und Plugins um die im folgenden dargestellte Arbeitsweise zu Vereinheitlichen und Reproduzierbar zu gestalten.
+3. Erstellung eines Vortrages zum Thema Agentic Coding für meine Arbeitskollegen
 
 # Kontext Vibecoding und Agentic Coding
 
-Ich möchte einen Vortrag halten über die Nutzung von Codidng Agenten wie Claude Code oder Github Copilot als Softwaredienstleister. Es soll vor allem darum genau wie man es zielgenau schafft genauf die Anforderungen des Kunden des Kunden punktgenau umzusetzen und nicht nur einfach irgendwie per Vibe Coding. Im Vortrag soll dargestellt werden welche Unterschiede es zu Vibecoding bei den Ansatz gibt. Gibt es hierfür einen Begriff in der Community?. Welche Methoden gehören dazu zu diesen Ansatz. Ich denke es sind folgende. Aber wenn du andere bessere Hinweise findest, dann lass uns darüber Brainstorem.
+Ich möchte einen Vortrag halten über die Nutzung von Codidng Agenten wie Claude Code oder Github Copilot als Softwaredienstleister. Es soll vor allem darum genau wie man es zielgenau schafft die Anforderungen des Kunden umzusetzen und nicht nur einfach irgendwie per Vibe Coding. Im Vortrag soll dargestellt werden welche Unterschiede es zwischen Vibecoding und Agentic Coding gibt. TBD: gibt es für Agentic Coding einen Begriff in der Community?. TBD: Welche Methoden gehören zu diesem Ansatz. Weiter unten benenne ich meinen Ansätze. Ich möchte gerne, dass du im Web Recherchierst ob diese auf Konsenz in der Community treffen. Lass uns auch darüber Brainstorem.
 
 # Motivation
 
 - was bringt der Umgang mit Agenten
-  ** Einhalten von Konventionen im Projekt auch über Teamphasen hinaus
+  ** Einhalten von Konventionen im Projekt auch über den Softwarelebenszyklus hinaus
   ** Plannung First
-  ** Konzeption und Architektur beginnt wieder an relevanz
+  ** Konzeption und Architektur gewinnen wieder an relevanz
   ** Mehr Zeit um in die richtige Richtung zu denken.
-  ** Umsetzungszeit wird kleiner als die Anforderungsbestimmung
-  ** Was macht das mit Entwicklungsprojekten.
-  \*\* Was macht das mit der Kommunikationsstruktur
+  \*\* Umsetzungszeit wird kleiner als Zeit der Anforderungsaufnahme.
 
-Die Agenten sind ein Werkzeug und wir müssen noch bestimmen wie wir diesen nutzen.
+## Spannende Fragen
+
+** Was macht das mit Entwicklungsprojekten.
+** Was macht das mit der Kommunikationsstruktur
+\*\* Ändern sich Entwicklungsvorgehensweisen
+
+## Grundlegend gilt
+
+- Die Agenten sind ein Werkzeug und wir müssen noch herausfinden wie wir dieses nutzen.
 
 # Aufbau
 
-- der Vortrag soll zunächst die großen allgemeine Fragen zur Änderung der Vorgehensweise klären
-- Danach geht der Vortrag in die konkreten Details wie das erfolgen kann.
+- Der Vortrag soll zunächst die großen allgemeine Fragen zur Änderung der Vorgehensweise für Entwickler klären
+- Danach geht der Vortrag in die konkreten Details ein wie das erfolgen kann.
 
 # Zielstellung des Vortrag
 
 1. Ziel des Vortrags muss es sein, dass die Entwickler befähigt werden, der Boss des Coding Agenten zu sein. In unserer Arbeit kann es nicht darum gehen, dass der Agent viele Freiheiten hat, der Entwickler soll insbesondere beim geschrieben Code und Tests die Kontrolle behalten.
 
-2. Es muss eine Arbeitsweise verankert werden, das der Agent jede Arbeitsschritt (nicht nur einzelne Codingänderung) zusammen mit den Entwickler angeht und diskutiert.
+2. Es muss eine Arbeitsweise verankert werden, die Vorsieht, dass der Agent jeden Arbeitsschritt (nicht nur einzelne Codingänderung) zusammen mit den Entwickler angeht und diskutiert.
    Gut wäre es wenn der Agent bei jeden Entwicklungsschritt die Möglichen Umsetzungvarianten darstellt und der Entwickler diese auswählen oder erweitern kann.
 
-3. Bei der Erstellung des Vortrags sollen konkrete Best Practices entstehen
+3. Bei der Erstellung des Vortrags sollen konkrete Best Practices entstehen, dafür sollst du Skils für Webrecherche und Brainstorming verwenden.
 
 # Besonderheiten des Teilnehemerkreises
 
-In unserem Projekt ist die Besonderheit dass wir mit einer Python basierten Plattform Lösung arbeiten, welche die LLMs nicht kennen. Wir müssen also den Agenten erklären wie Plattform funktioniert, damit die richtige Lösungen entstehen.
+In unserem Projekt ist die Besonderheit dass wir mit einer Python basierten Plattform arbeiten, dessen Besonderheiten LLMs nicht kennen. Wir müssen also den Agenten erklären wie die Plattform funktioniert, damit die richtige Lösungen entstehen.
 
 # Änderung der Arbeitsweiseänderung für Entwickler
 
 Bitte gebe auch Hinweise darauf wie sich die Arbeitsweise für Entwickler ändert. Worauf ist der Fokus zu setzen. Wo befinden sich die zukünftigen Freuden.
 Inwieweit sollte man seine Arbeitsweise ändern, zu zweit einen Agenten steuern zumindest im Planning Modus um die Lösung ideal zu diskutieren.
 
-Welche mögliche Anpassungen kann es geben um in Zukunft die Aufgaben zu erledigen.
+Brainstorming und Webrecherche
+Welche mögliche Anpassungen kann es geben um in Zukunft die Aufgaben zu erledigen?
 
 ## Vibecoding
 
-Anforderungen werden in Form eines Lastenheftest oder kurzen Wortphrasen aus fachlicher Perspektive übergen
+Anforderungen werden in Form eines Lastenheftest oder kurzen Wortphrasen aus fachlicher Perspektive übergeben
 
 Vorteil. Sehr schnell.
-Nahteil Unkenntnis über Desigentscheidungen
+Nahteil Unkenntnis über Desigentscheidungen. Es entsteht verhalten in der Anwendung die man sich nicht erklären kann.
 
-Wie weit können Modelle ihre Qualität steigern, dass
+Wie weit können Modelle ihre Qualität steigern, dass dies noch besser
 
 Rolle: Fachanwender
 
@@ -57,70 +70,82 @@ Tools: Agenten, Agentenschwärme
 
 ## Spec Drive
 
-Anforderungen werden in Form eines Pflichtenheftes übergeben.
+Anforderungen werden in Form eines Pflichtenheftes übergeben. Usecases.
 
-Näher daran wo man sein möchte. Architektur
+Näher daran wo man sein möchte.
 
-Nachteil. Unkenntnis über Systemarchitektur, Grenzen der Verä
+Nachteil. Unkenntnis über Systemarchitektur, Grenzen der Veränderbarkeit
 
 Rolle: IT Consultant
 
 Tools: Brainstorming, Agentenschwärme
 
-## Tech Spec Driven Hypothese
+## Tech Spec Driven
 
-Glaube daran, dass man eine technische Spezifikation vorgibt, (UML, USE CASE, Package Diagramme, Workflows, etc.) und das System den benötigten Stack dann selbständig ausfüllt. Hat aber bestimmt grenzen in der Integration von Umsysteme.
+Es wird eine technische Spezifikation vorgegeben, (UML, USE CASE, Package Diagramme, ERM, Architektur, Workflows, etc.) und die Agenten anhand des benötigten Stack dann selbständig die Entwicklung übernimmt.
 
 Vorteil Systeme können schnell neu gebaut werden
+Nachteil: Hat aber bestimmt grenzen in der Integration von Umsysteme.
 
 Rolle: Architekt
-Tools: Brainstorming, Planning, Agentenschwärme
+Tools: Brainstorming, Planning Skills, Agentenschwärme
 
-## Ai Driven Softwaredevelopment
+## Agentic Coding Softwaredevelopment
 
 Meine Vision für die Arbeitsweise von Entwickler ist folgender
 Es gibt eine Umsetzungsaufgabe mit klaren Anforderungen, der Coding Agent unterstützt den Entwickler von der Planung bis zur kompletten Umsetzung. Bei allen relevanten Entscheidungen stoppt der Agent und geht in die Diskussion mit Entwickler.
 
 Ich nehme an die Entwickler haben so die Möglichkeit mehr Fokus auf die technische Qualität zu legen. Mehr Zeit zum lernen der Fachlichkeit und Konzeptionsfähigkeit.
-Schnitt von Modulen. Wiederverwendbarkeit
+Vortiele Schnitt von Modulen. Wiederverwendbarkeit
 
 Der Vortrag soll hauptsächlich diesen Ansatz pflegen.
-Ziel bei der Erstellung des Vortrages muss es sein, ein Repo zu haben, wo all die genanten Dinge bereitgestellt werden. Es wäre gut wenn auch differenziert wird, zwischen wirklich schwierigen großen Aufgaben und kleinen Änderungen. Sicherlich kann man bei kleinen Änderungen, wie Anpassungen in der UI auch.
+Ziel bei der Erstellung des Vortrages muss es sein, ein Repo zu haben, wo all die genannten Dinge bereitgestellt werden. Es wäre gut wenn auch differenziert wird, zwischen wirklich schwierigen großen Aufgaben und kleinen Änderungen. Sicherlich kann man bei kleinen Änderungen, wie Anpassungen in der UI auch eine reduzierte Methodik fahren.
 
 Rolle: Architekt/Entwickler
-Tools: Brainstorming, Planning, Agenten
+Tools: Brainstorming, Planning Skills, Execution Skill, Agenten
 
-## AI analzying
+## AI analyzing
 
-Kriege eine Vibecoding Codebasis wieder unter
+Kriege eine Vibecoding Codebasis wieder unter Kontrolle.
+Nicht Fokus den Votrags, sollte aber auch in den Skillset von Entwicklern gehören
+
+Brainstorming, gibt es noch weitere Differenzierungsmöglichkeiten?
+
+### Aufgabe Agent: Verifizieren und Ausarbeiten der oben genannten Ansätze
 
 # Team und Anpassung der Vorgehensmodelle
 
-Ziel der Plan muss am Ende 100% zu verstanden werde. Die Designentscheidungen des Entwicklers müssen eingeflossen und dokumentiert sein
+Zielstellung: Der Entwicklungsplan muss am Ende 100% zu verstanden werden. Die Designentscheidungen des Entwicklers müssen einfließen und dokumentiert sein.
 
-Was heißt das für die Teamarbeit. Hypothese - Teams werden deutlich kleiner. Noch noch so viel wie der Project Owner direkt versorgen. Max 3 Personen.
+Was heißt das für die Teamarbeit. Hypothese - Teams werden deutlich kleiner. Noch so viele wie der Project Owner direkt versorgen kann. Anforderungsaufnahme wird länger sein als die Entwicklung. Max 2 Entwickler pro ProduktOwner.
+
+### Aufgabe Agent: Webrecherche oder Brainstorming
 
 Oder gibt es hier schon andere Vorgehensmodelle.
 
-# Bestandteile für Coding Agenten
+# Praktische Anwendbarkeit
 
-strukturiert. Was ist der Unterschied zwischen Skills, Plugins, ToolsMCP Server, CLI, Agenten, Subagenten. Tools. Hooks
-Wie funktioniert eigentlich ein Agent Grundlegend? Wie ist das Zusammenspiel zwischen Tool und LLM
+## Funktionsweise und Bestandteile von Coding Agenten
 
-## Beudeutung und Funktionsweis von Agents.md
+Was ist der Unterschied zwischen Skills, Plugins, ToolsMCP Server, CLI, Agenten, Subagenten. Tools. Hooks
+Wie funktioniert eigentlich ein Agent Grundlegend? Wie ist das Zusammenspiel zwischen Tools und LLM
 
-Es soll darum gehen wie man die Agents.md
-Wie werden diese verarbeitet
+## Bedeutung und Funktionsweis von Agents.md
 
-Bestandteile von guten Agents.md Files
+Es soll darum gehen wie man die Agents.md nutzt.
+Wie werden diese vom Agenten verarbeitet.
 
-Wie kann man diese während der Bearbeitung von Aufgaben erweitern. Welche Plugins/Skills gibt es
+Bestandteile von guten Agents.md Files.
+
+### Aufgabe Agent: Brainstorming Webrecherche
+
+Wie sollte man diese während der Entwicklung erweitern? Welche Plugins/Skills gibt es hierfür?
 
 ## Skills/Plugins als zentrales Arbeitsmittel
 
 Besonders der Umgang mit Skills ist mir wichtig Es soll darum gehen welche planning Skills man benutzt und wie man diese in der execution nutzen kann.
 
-Ich finde die Skills von
+Ich finde die Skills von nützlich
 
 - Opra Brainstorming/writing-plans/execute-plans
 - Context7 um die aktuellste Doku zu bekommen
@@ -129,15 +154,24 @@ Ich finde die Skills von
 In der Plugin Liste sehe ich noch weitere Plugins die interessant sein können
 
 - techwolf ai - first principiles
--
+
+### Aufgabe Agent: Brainstorming und Webrecherche
+
+Welche Skills passen zum Agentic Coding ansatz noch
+
+### Aufgabe Agent: zu empfehlende Plugins für die Arbeit
+
+Es wäre schön für diese Ansatz eine Liste von zu empfehlenden Pluings und Skills zu erhalten.
 
 ## Einbinden von externen Systemen
+
+Eklären warum es wichtig wird Umsysteme einzubinden? Erweiterung des Kontextes
 
 - Wie kann man Jira anbinden
 - wie kann man die Datenbank anbinden
 - Wie kann man gitlab, github anbinden für Reviews, PUll Requests
 
-## zu empfehlende Plugins für die Arbeit
+### Aufgabe Agent: zu empfehlende Plugins für die Arbeit ermitteln
 
 Es wäre schön für diese Ansatz eine Liste von zu empfehlenden Pluings und Skills zu erhalten.
 
@@ -145,33 +179,45 @@ Es wäre schön für diese Ansatz eine Liste von zu empfehlenden Pluings und Ski
 
 Es soll eine Übersicht an Modellen geben, die sich für die Planung und Entwicklung eigenen. Bspw. Opus, Sonnet Codex (gibt es noch was) sind die stärken und schwächen.
 
+Bitte erstelle eine tabelarische Übersicht zur Bewertung
+
 ## Umgang mit den Kontext
 
-Es soll dargestellt werden wie man mit dem Kontext umgeht. Welche Informationen gehören rein und wie bekommt die Informationen am einfachsten in den Context In dem Zusammenhang soll die Bedeutung von Dokumentation dargestellt werden. Welche Methoden eigenen sich besonders. UML Diagramme Ablaufdiagramme etc. Konventionen, Codebeispiele, Coding Guidelines. Architecture Decision Records. Wo sollte die Doku liegen im Code oder in einem separaten Repo. Was heißt es für einen Agenten zu dokumentieren.
+Es soll dargestellt werden wie man mit dem Kontext umgeht. Welche Informationen gehören rein und wie bekommt die Informationen am einfachsten in den Context In dem Zusammenhang soll die Bedeutung von Dokumentation dargestellt werden. Welche Methoden eigenen sich besonders. UML Diagramme Ablaufdiagramme etc. Konventionen, Codebeispiele, Coding Guidelines, Agents.md. Architecture Decision Records.
 
-Welcher Context sollte verpflichtend für jede Anfrage sein, welchen Context möchte ich beliebig je nach Aufgabe Wahlweise hinzuschalten können. Wie kann man das machn
+Nutzung von Workspaces in VS Code, binden von mehreren Repos, die der Agent dann nutzen kann.
 
-Kann man aus den Context auch wieder Dinge entfernen.
-Wie können Subagents helfen, den Context sauber zu halten, Rewind Funktionen, falls die Suche von files nicht ideal verlaufen.
+### Aufgabe Agent: Brainstorming/Webrechechre
 
-Nutzung von Workspaces in VS Code
+1. Wo sollte die Doku liegen im Code oder in einem separaten Repo. Was heißt es für einen Agenten zu dokumentieren.
 
-Auf was ist hierbei noch zu achte? Bitte stelle mir hierzu fragen?
+2. Welcher Context sollte verpflichtend für jede Anfrage sein, welchen Context möchte ich beliebig je nach Aufgabe Wahlweise hinzuschalten können. Wie kann man das machn
+
+3. Kann man aus den Context auch wieder Dinge entfernen.
+   Wie können Subagents helfen, den Context sauber zu halten, Rewind Funktionen, falls die Suche von files nicht ideal verlaufen.
+
+Auf was ist hierbei noch zu achten? Bitte stelle mir hierzu fragen?
+
+### Aufgabe Agent: zu erarbeitendes Tooling
 
 Es wäre gut ein Skill zu haben, der hilft ein ideales agents.md herzustellen.
 nur ein /init Befehl finde ich nicht hilfreich, es sollte eher darum gehen die Vision von oben darzustellen und bereits zentrale Unternehmensvorgaben einzuhalten
 
 # Umgang mit Testfälle
 
-\*\* wie behält man die Kontrolle über TEst. Wie kann ich verhindern, dass das LLM den Testanpasst und nicht den Codefix. Am Besten geht der Agent von fehlgeschlagen Test zu fehlgeschlagenen Test durch und diskutiert mit den Entwickler ob der Test fehlschlägt wegen Codeänderungen oder ob tatsächlich eine Regression stattfand.
+wie behält man die Kontrolle über TEst. Wie kann ich verhindern, dass das LLM den Testanpasst und nicht den Codefix. Am Besten geht der Agent von fehlgeschlagen Test zu fehlgeschlagenen Test durch und diskutiert mit den Entwickler ob der Test fehlschlägt wegen Codeänderungen oder ob tatsächlich eine Regression stattfand.
+
+### Aufgabe Agent: Recherche zum Thema
 
 # Umgang mit dem Frontent
 
-** Wie kann man passgenau dem LLM beschreiben wie das Frontend aussehen soll
-** Nutzung von Figma,
-\*\* kriegt man es auch einfacher mit Screenshots und Paint hin. Hierzu soll es auch aussagen zu geben.
+- Wie kann man passgenau dem LLM beschreiben wie das Frontend aussehen soll
+- Nutzung von Figma,
+  \*\* kriegt man es auch einfacher mit Screenshots und Paint hin. Hierzu soll es auch aussagen zu geben.
 
-## Feedbackschleifen
+### Aufgabe Agent:Recherche zum Thema
+
+## Feedbackschleifen einbauen. Selbstkorrektur des Agenten
 
 - Welche Arten von Feedbackschleifen gibt es,
   ** Code Review Schleifen
@@ -181,9 +227,13 @@ nur ein /init Befehl finde ich nicht hilfreich, es sollte eher darum gehen die V
   ** Entwickler in der Loop. Bereits im Execution Plan bestimmen wo der Entwickler helfen so und wie
   ** Playwright zur Nutzung zur Überprüfung der manuellen Tests ist das sinnvoll?
 
-# Bugfixing
+### Aufgabe Agent: Webrecherche über Best Practices
+
+## Bugfixing
 
 - Bugs sind eigentlich oftmals ziemlich schwierig, da es Aussnahmen gefunden worden sind, an die niemand gedacht hat. Hier muss das Vorgehen ganz klar daruf sein, den wirklichen ursprung gefunden zu haben, dieser kann natürlich auch im fachlichen Kontext sein. Es wäre gut Hyothensbasiert zu arbeiten und Änderungen herbeizuführen, die diese Thesen unterstüzten, gut ist es auch Tests zu haben die vorher fehlschlagen und nach dem Bugfixing
+
+### Aufgabe Agent: Webrecherche über Best Practices. Recherche über geeignete Skills, ggf Skill selbst schreiben?
 
 # Code Reviews
 
@@ -195,26 +245,40 @@ nur ein /init Befehl finde ich nicht hilfreich, es sollte eher darum gehen die V
 - wie kann ich den Agenten nutzem um Review Kommentare abzuarbeiten
   \*\* auch hier wäre eine schrittweise abarbeitung sinnvoll. Lass uns die Liste aus den Tools ziehen. Am Besten schlägt der Agent den Lösungsweg vor und der Entwickler kann diesen bestätigen oder ändern.
 
+### Aufgabe Agent: Webrecherche über Best Practices. Recherche über geeignete Skills, ggf Skill selbst schreiben?
+
 ## Kosten
 
 Es soll auch eine kurze Diskussion über Kosten entstehen. Wie rechnet man bspw. Github Copilot ab, wie entstehen Premiumrequest, wie kann man die Anzahl an premiumrequests reduzieren.
 
+### Aufgabe Agent: Webrecherche wie entstehen kosten wie kann man diese einsparen
+
 # Welche Aufgaben eignen sich für Coding Agenten
 
-- TBD
+### Aufgabe Agent: Webrecherche
 
 # Welchhe Aufgaben eignen sich nicht Code für Agenten
 
-- wie ist es man nur ganz best
+- These Beispielweise Algorithmik. Komplexe fachliche Logik, Performance?
 - Wie kann diese ggf. doch mit Agenten lösen. Wo bekommt man kein Qualiäts und Zeitvorteil
 
+### Aufgabe Agent: Webrecherche
+
 # Welche Aufgaben kann man komplett automatisieren
+
+These
 
 - Demonstratoren
 - Library Updates
 - Welche noch?
 
-# wie kann man sicherstellen, das man testen, dass alle Plugins und Skills genauso funktionieren wie man es will. Kann man bspw. ein Beispielprompt bereitstellen, mit dem man überprüfen kann, dass alles nach Projektstandards eingebunden ist?
+### Aufgabe Agent: Webrecherche
+
+# Fragestellung Arbeitsweise vereinheitlichen
+
+wie kann man sicherstellen, dass alle empfohlenen und enstandenen Plugins und Skills genauso funktionieren wie man es will. Kann man bspw. ein Beispielprompt bereitstellen, mit dem man überprüfen kann, dass alles nach Projektstandards eingebunden ist?
+
+### Aufgabe Agent: Gibt es Tooling was das bereits kann
 
 # Vorgehen für die Aufgabe
 
