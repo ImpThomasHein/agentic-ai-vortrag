@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.hyperact.co.uk)",
+      "WebFetch(domain:dev.to)",
+      "WebFetch(domain:simonwillison.net)",
+      "WebFetch(domain:thenewstack.io)",
+      "WebFetch(domain:eleks.com)",
+      "WebFetch(domain:reenbit.com)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:andreagigli.medium.com)",
+      "WebFetch(domain:www.glideapps.com)",
+      "WebFetch(domain:eu.36kr.com)",
+      "WebFetch(domain:www.swarmia.com)",
+      "WebFetch(domain:arxiv.org)",
+      "Bash(bash \"C:\\\\Users\\\\Thomas\\\\.claude\\\\plugins\\\\cache\\\\claude-plugins-official\\\\superpowers\\\\5.0.2\\\\skills\\\\brainstorming\\\\scripts\\\\start-server.sh\" --project-dir \"C:\\\\Projects\\\\vortrag-agentic-ai\")"
+    ]
+  }
+}

@@ -2,13 +2,13 @@
 
 Folgendes Schrifftstück dient als Prompt um 3 Dinge zu erreichen. (1. als wichtigstes Kriterium)
 
-1. Wissenserweiterung des Vortragendes zum Thema Agentic Coding
+1. Wissenserweiterung des Vortragendes zum Thema Agentic Engineering
 2. Erstellung von Tooling, Skills und Plugins um die im folgenden dargestellte Arbeitsweise zu Vereinheitlichen und Reproduzierbar zu gestalten.
-3. Erstellung eines Vortrages zum Thema Agentic Coding für meine Arbeitskollegen
+3. Erstellung eines Vortrages zum Thema Agentic Engineering für meine Arbeitskollegen
 
-# Kontext Vibecoding und Agentic Coding
+# Kontext Vibecoding und Agentic Engineering
 
-Ich möchte einen Vortrag halten über die Nutzung von Codidng Agenten wie Claude Code oder Github Copilot als Softwaredienstleister. Es soll vor allem darum genau wie man es zielgenau schafft die Anforderungen des Kunden umzusetzen und nicht nur einfach irgendwie per Vibe Coding. Im Vortrag soll dargestellt werden welche Unterschiede es zwischen Vibecoding und Agentic Coding gibt. TBD: gibt es für Agentic Coding einen Begriff in der Community?. TBD: Welche Methoden gehören zu diesem Ansatz. Weiter unten benenne ich meinen Ansätze. Ich möchte gerne, dass du im Web Recherchierst ob diese auf Konsenz in der Community treffen. Lass uns auch darüber Brainstorem.
+Ich möchte einen Vortrag halten über die Nutzung von Coding Agenten wie Claude Code oder Github Copilot als Softwaredienstleister. Es soll vor allem darum genau wie man es zielgenau schafft die Anforderungen des Kunden umzusetzen und nicht nur einfach irgendwie per Vibe Coding. Im Vortrag soll dargestellt werden welche Unterschiede es zwischen Vibecoding und Agentic Engineering gibt. Der Begriff "Agentic Engineering" wurde von Andrej Karpathy (Feb 2026) als Nachfolger von Vibe Coding geprägt und setzt sich in der Community durch.
 
 # Motivation
 
@@ -90,7 +90,7 @@ Nachteil: Hat aber bestimmt grenzen in der Integration von Umsysteme.
 Rolle: Architekt
 Tools: Brainstorming, Planning Skills, Agentenschwärme
 
-## Agentic Coding Softwaredevelopment
+## Agentic Engineering
 
 Meine Vision für die Arbeitsweise von Entwickler ist folgender
 Es gibt eine Umsetzungsaufgabe mit klaren Anforderungen, der Coding Agent unterstützt den Entwickler von der Planung bis zur kompletten Umsetzung. Bei allen relevanten Entscheidungen stoppt der Agent und geht in die Diskussion mit Entwickler.
@@ -157,7 +157,7 @@ In der Plugin Liste sehe ich noch weitere Plugins die interessant sein können
 
 ### Aufgabe Agent: Brainstorming und Webrecherche
 
-Welche Skills passen zum Agentic Coding ansatz noch
+Welche Skills passen zum Agentic Engineering Ansatz noch
 
 ### Aufgabe Agent: zu empfehlende Plugins für die Arbeit
 
@@ -202,6 +202,12 @@ Auf was ist hierbei noch zu achten? Bitte stelle mir hierzu fragen?
 
 Es wäre gut ein Skill zu haben, der hilft ein ideales agents.md herzustellen.
 nur ein /init Befehl finde ich nicht hilfreich, es sollte eher darum gehen die Vision von oben darzustellen und bereits zentrale Unternehmensvorgaben einzuhalten
+
+# Onboarding von Codebasen
+
+Wie können Agenten helfen, dass man sich schnell in Codebasen einfinden kann
+
+### Aufgabe Agent: gibt es existierendes Tooling
 
 # Umgang mit Testfälle
 
