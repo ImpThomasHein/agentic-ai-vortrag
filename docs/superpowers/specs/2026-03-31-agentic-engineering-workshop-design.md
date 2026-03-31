@@ -56,6 +56,7 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 - Jede Stufe: Was geht rein, was kommt raus, welche Rolle hat der Mensch
 - Kernaussage: Nicht jede Stufe ist schlecht — es kommt auf die Aufgabe an
 - Kleine UI-Aenderung != neues Modul
+- Entscheidungsmatrix: Wann welche Stufe? (Aufgabengroesse x Risiko x Komplexitaet)
 
 **1.3 Wie funktioniert ein Coding Agent?**
 - LLM + Tools + Kontext = Agent
@@ -68,7 +69,13 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
   - MCP Official Architecture Docs
   - GitHub Blog: "Copilot Ask, Edit, Agent modes"
 
-**1.4 Demo: Gleiche Aufgabe, zwei Ansaetze**
+**1.4 Wie aendert sich unsere Arbeitsweise?**
+- Vom Tipper zum Architekten/Steuermann
+- Pair-Programming mit dem Agenten: Zu zweit den Agenten steuern (Planning-Modus)
+- Hypothese: Teams werden kleiner — Anforderungsaufnahme wird laenger als die Entwicklung
+- Fokus verschiebt sich: Technische Qualitaet, Fachlichkeit, Konzeptionsfaehigkeit
+
+**1.5 Demo: Gleiche Aufgabe, zwei Ansaetze**
 - Live oder aufgezeichnet: Vibe Coding vs. Agentic Engineering
 - Unterschied sichtbar machen: Designentscheidungen, Testqualitaet, Nachvollziehbarkeit
 
@@ -104,7 +111,7 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 - Qwen-Modelle (Open Source, lokal einsetzbar)
 - Kosten: Premium-Requests, Einsparmethoden
 
-### Block 3: Von der Umsetzung zum Review (~50min)
+### Block 3: Von der Umsetzung zum Review (~60min)
 
 **3.1 Execution: Den Agenten steuern**
 - Kernprinzip: Agent schlaegt vor, Entwickler entscheidet
@@ -152,6 +159,7 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 - Bedingt: Bugfixing, Integration, Legacy-Code
 - Schwierig: Komplexe Algorithmik, Performance, tiefe fachliche Logik
 - AI Code Archaeology als Querschnittsfaehigkeit
+- Onboarding von Codebasen: Agenten helfen, sich schnell in neue Projekte einzufinden
 
 **4.4 Hands-on-Aufgaben fuer die Projektarbeit**
 - 3-5 konkrete Use Cases mit Contact Software
@@ -176,6 +184,7 @@ vortrag-agentic-ai/
     plugins/                  # Plugin-Empfehlungen und Konfiguration
     kontext-management/       # Anleitungen zur Kontext-Verwaltung
     dokumentation/            # Vorlagen fuer ADRs, Coding Guidelines
+    antipatterns/             # Schlechte Execution Plaene, haeufige Fehler
   use-cases/                  # Konkrete Uebungsaufgaben
     01-einfach/               # Vibe Coding reicht
     02-mittel/                # Spec-Driven
@@ -200,6 +209,7 @@ vortrag-agentic-ai/
 8. **Qwen-Modelle:** Recherche zu Staerken/Schwaechen fuer Modell-Vergleich
 9. **Multi-Agent-Orchestrierung:** Fuer Thomas' eigenes Lernen — nicht Workshop-Inhalt
 10. **Kosten-Recherche:** Copilot Premium-Requests, Abrechnungsmodelle
+11. **Language Server:** Koennen diese auch fuer Contact Software genutzt werden? (Thomas' eigenes Lernen)
 
 ## Referenzen
 
