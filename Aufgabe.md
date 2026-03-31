@@ -283,11 +283,12 @@ wie kann man sicherstellen, dass alle empfohlenen und enstandenen Plugins und Sk
 # Vorgehen für die Aufgabe
 
 - Bitte lass uns über den Vortrag Brainstormen
-- Lass uns zuerst die Agenda definiere
+- Lass uns zuerst die Agenda definieren
+- Lass uns dann für die Agenda die Punkte vertiefen, die für die Enstehung des Coderepos und der Skills relevant sin
 - Lass uns danach Stück für Stück die einzelnen Punkte der Agenda durchgehen. Ich würde immer bestätigen wenn ich denke, dass wir das Abschnitt beendet haben.
 - Für all die Aufgaben Recherchiere im Netz
 - Ich hätte immer gerne auch Bilder oder Code oder Chatbeispiele dafür
-- Erstelle für die Erarbeitung des Vortrags ebenfalls ein Plan-Vortrag.md File mit den gesamten Aufgaben, diesen kannst du nutzen um die bereits erledigten Aufgaben zu markieren
+- Erstelle für die Erarbeitung des Vortrages und der Skills ebenfalls ein Plan-Vortrag.md File mit den gesamten Aufgaben, diesen kannst du nutzen um die bereits erledigten Aufgaben zu markieren
 
 # Dinge die ich selbst noch heraufinden will
 
@@ -295,16 +296,16 @@ wie kann man sicherstellen, dass alle empfohlenen und enstandenen Plugins und Sk
 
 # Ergebnis
 
-1. Als Ergebnis soll ein Markdown File entstehen, dass ich einfach in eine PowerPoint überfahren kann. Also klare prägnante Überschriften, mit jeweils 3-6 Bulletpoints.
+1. Ein Ergebnis des Plans soll ein Markdown File sein, dass ich einfach in eine PowerPoint überfahren kann. Also klare prägnante Überschriften, mit jeweils 3-6 Bulletpoints.
 
 2. Es soll ein Coderepo mit Best practices entstehen
 
 - relevante Skills
 - Neue Skills die genau die Anforderungen erfüllen die ich stelle. Vielleicht gibt es aber gute Skills im Netz
 - Gute Agents.md Files
-- Best Practice zum Thema gute Doku
+- Best Practice zum Thema gute Doku für Agenten
 - Best Practice zum Thema Execution Pläne
-- Schlechte Execution Pläne
+- Darstellung von diversen Antipatterns - Schlechte Execution Pläne
 
 - Use Cases zum ausprobieren.
-- Wie kann ich mein Ziel gut erreichen. Wie verhalten sich die Modelle bei den Aufgaben
+- Wie kann ich mein Ziel zielgerichtet erreichen. Wie verhalten sich die unterschiedliche Modelle bei den Aufgaben
