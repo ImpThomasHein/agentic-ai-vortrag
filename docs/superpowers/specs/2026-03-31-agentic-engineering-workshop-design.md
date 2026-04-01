@@ -13,6 +13,11 @@ Ein 3,5-4h Workshop (4 Blöcke) zum Thema Agentic Engineering fuer Entwickler-Ko
 - **Praesentationsformat:** Marp (Markdown-basierte Slides mit Speaker Notes)
 - **Hands-on:** Ausgelagert in die Projektarbeit, nicht als Workshop-Block
 
+**Gestaltungsprinzipien fuer Slides:**
+- **Bilder und Grafiken:** Fuer alle Konzepte moeglichst existierende Grafiken aus dem Web verwenden (Blogposts, offizielle Docs, Konferenz-Slides). Keine eigenen Grafiken erstellen, wo gute existieren.
+- **Demos:** Fuer jede Demo entweder ein konkretes Beispiel selbst erstellen oder ein gut passendes Video/Beispiel aus dem Web einbinden (z.B. GitHub Blog Demos, Konferenz-Mitschnitte).
+- **Speaker Notes:** Jede Slide enthaelt Speaker Notes in Kurzform, die den Inhalt beschreiben.
+
 ## Das 4-Stufen-Modell
 
 | # | Ansatz | Input | Menschliche Rolle |
@@ -46,11 +51,22 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 
 ### Block 1: Grundlagen & Orientierung (~45min)
 
-**1.1 Einstieg: Was passiert gerade?**
-- Karpathy-Zitat: Von "Vibe Coding" zu "Agentic Engineering" (Feb 2025 -> Feb 2026)
-- Zentrale These: Der Entwickler wird zum Boss des Agenten, nicht umgekehrt
-- Icebreaker: Umfrage/Diskussion zum aktuellen Umgang mit AI-Tools
-- Weitere relevante Zitate und Prognosen aus der Community
+**1.1 Einstieg: Blick in die Zukunft — Was bleibt fuer uns uebrig?**
+- Icebreaker: "Wer von euch findet gut, was gerade in der Softwareentwicklung passiert?"
+- Die grosse Debatte anhand von Zitaten:
+  - Jensen Huang: "Nobody has to program. The programming language is human." (2024)
+  - Bill Gates: "This is the best time yet to learn to code." (2025)
+  - Karpathy: "You are orchestrating agents who do and acting as oversight." (2026)
+- Zahlen und Fakten:
+  - Google: >30% des Codes ist AI-generiert (Pichai, 2025)
+  - Microsoft: 20-30% AI-generiert (Nadella, 2025)
+  - Gartner: 90% der Enterprise-Entwickler nutzen AI bis 2028 — ABER 2500% mehr Defekte durch unkontrollierte AI-Nutzung
+- Kernthese des Workshops:
+  - Softwareentwicklung wird niederschwelliger
+  - Es wird relevanter, Agenten zu beherrschen und punktgenau auszudruecken was gefordert ist
+  - Die Rolle verschiebt sich: Vom Code-Schreiber zum Architekten, Steuermann und Qualitaetssicherer
+  - Der Entwickler wird zum Boss des Agenten, nicht umgekehrt
+- Ueberleitung: "Wie machen wir das konkret? Dafuer gibt es ein Modell."
 
 **1.2 Das 4-Stufen-Modell**
 - Jede Stufe: Was geht rein, was kommt raus, welche Rolle hat der Mensch
@@ -63,11 +79,12 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 - Der Kreislauf: Prompt -> Denken -> Tool aufrufen -> Ergebnis -> weiter denken
 - Unterschied: Autocomplete (inline) vs. Chat vs. Agent (CLI)
 - Landkarte: Skills, Plugins, MCP-Server, Hooks
-- Referenzen:
-  - DEV Community: "Forget the Hype: Agents are Loops"
-  - Oracle: "What Is the AI Agent Loop?"
-  - MCP Official Architecture Docs
-  - GitHub Blog: "Copilot Ask, Edit, Agent modes"
+- Referenzen & Bilder:
+  - DEV Community: "Forget the Hype: Agents are Loops" — Diagramm Agent-Loop
+  - Oracle: "What Is the AI Agent Loop?" — 5-Stufen-Diagramm (Perceive/Reason/Plan/Act/Observe)
+  - MCP Official Architecture Docs — Host-Client-Server Architekturdiagramm
+  - GitHub Blog: "Copilot Ask, Edit, Agent modes" — Vergleichsgrafik der 3 Modi
+  - CodeRabbit: "From Copilot to Agents" — Timeline-Grafik Autocomplete->Chat->Agent
 
 **1.4 Wie aendert sich unsere Arbeitsweise?**
 - Vom Tipper zum Architekten/Steuermann
@@ -78,6 +95,10 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 **1.5 Demo: Gleiche Aufgabe, zwei Ansaetze**
 - Live oder aufgezeichnet: Vibe Coding vs. Agentic Engineering
 - Unterschied sichtbar machen: Designentscheidungen, Testqualitaet, Nachvollziehbarkeit
+- Moegliche Demo-Quellen:
+  - GitHub Blog: "Real-world demo: Using different AI models in Copilot" (Kedasha Kerr)
+  - Eigenes Beispiel erstellen: Einfache Python-Aufgabe, einmal per Vibe Coding, einmal strukturiert
+  - QCon London 2025: "From Autocomplete to Agents" (Birgitta Boeckeler, Thoughtworks)
 
 ### Block 2: Von der Anforderung zum Plan (~50min)
 
@@ -101,9 +122,10 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 
 **2.3 Brainstorming & Planning mit dem Agenten**
 - Workflow: Anforderung -> Brainstorming -> Spec -> Plan -> Execution
-- Demo: Eine Anforderung gemeinsam durchplanen
+- Demo: Eine Anforderung gemeinsam durchplanen (eigenes Beispiel erstellen)
 - Grosse vs. kleine Aufgabe — wann volle Methodik, wann reduziert
 - Ausblick: Subagenten und Multi-Agent-Koordination
+- Bild: Workflow-Diagramm aus Addy Osmani "My LLM Coding Workflow 2026" oder Martin Fowler "Humans and Agents"
 
 **2.4 Modelle und ihre Staerken**
 - Welches Modell fuer welche Aufgabe (Planning, Coding, Review)
@@ -117,7 +139,7 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 - Kernprinzip: Agent schlaegt vor, Entwickler entscheidet
 - Entscheidungspunkte definieren
 - Grosse Aufgabe vs. kleine Aenderung — wann volle Methodik, wann reduziert
-- Demo: Schrittweise Umsetzung mit Diskussionspunkten
+- Demo: Schrittweise Umsetzung mit Diskussionspunkten (eigenes Beispiel erstellen oder Chat-Mitschnitt)
 - **Offener Punkt:** Skills/Plugins fuer Execution recherchieren oder eigene erstellen
 
 **3.2 Testing: Die Kontrolle behalten**
