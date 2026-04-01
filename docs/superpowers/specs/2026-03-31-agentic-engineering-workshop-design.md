@@ -2,7 +2,7 @@
 
 ## Zusammenfassung
 
-Ein 3,5-4h Workshop (4 Blöcke) zum Thema Agentic Engineering fuer Entwickler-Kollegen, begleitet von einem lebenden Best-Practice-Repository als Team-Standard. Der Workshop fuehrt vom Grundverstaendnis ueber die Methodik bis zu konkreten Werkzeugen und gibt den Teilnehmern Hands-on-Aufgaben fuer die Projektarbeit mit.
+Ein 3,5-4h Workshop (3 Bloecke, Block 3 zweigeteilt) zum Thema Agentic Engineering fuer Entwickler-Kollegen, begleitet von einem lebenden Best-Practice-Repository als Team-Standard. Der Workshop fuehrt vom Grundverstaendnis ueber die Methodik bis zu konkreten Werkzeugen und gibt den Teilnehmern Hands-on-Aufgaben fuer die Projektarbeit mit. Fuer Block 3 werden neben den Slides auch funktionierende Agenten, Rules und Skills im Repo erstellt, die das Gezeigte beweisen.
 
 ## Kontext & Motivation
 
@@ -109,6 +109,7 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 - Kontext-Hygiene: Wie entfernt/modifiziert man Kontext
 - Gute Kontextgroesse: Token-Budgets, Relevanz vs. Rauschen
 - Tools zur Kontextverwaltung: Workspaces, `.github/copilot-instructions.md`, MCP-Server
+- **RECHERCHE ERFORDERLICH:** Verschiedene Community-Ansaetze zum Kontextmanagement sammeln, Thomas die Stroeme vorstellen und entscheiden lassen welchen Weg er gehen moechte
 
 **2.2 Dokumentation als Steuerungsinstrument**
 - Warum Doku wieder wichtig wird — sie ist fuer den Agenten
@@ -119,6 +120,7 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
   2. **Aufgabenbezogen:** Feature-Specs, API-Docs, Modul-Dokumentation
   3. **Temporaer:** Recherche-Ergebnisse, Debugging-Kontext
 - Dokumentation als lebendes Projekt — wann und wie aktualisieren
+- **RECHERCHE ERFORDERLICH:** Community-Ansaetze zur Dokumentationsverwaltung fuer Agenten sammeln, Entscheidungspunkt fuer Thomas
 
 **2.3 Brainstorming & Planning mit dem Agenten**
 - Workflow: Anforderung -> Brainstorming -> Spec -> Plan -> Execution
@@ -133,60 +135,59 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 - Qwen-Modelle (Open Source, lokal einsetzbar)
 - Kosten: Premium-Requests, Einsparmethoden
 
-### Block 3: Von der Umsetzung zum Review (~60min)
+### Block 3a: Praxis I — Execution, Testing, Frontend (~45min)
+
+Fuer alle Themen in Block 3 gilt: Neben den Slides werden funktionierende Agenten, Rules und Skills im Repo erstellt, die das Gezeigte beweisen. Das Repo und die empfohlenen Plugins/Skills werden direkt bei den jeweiligen Themen vorgestellt, nicht in einem separaten Block.
 
 **3.1 Execution: Den Agenten steuern**
 - Kernprinzip: Agent schlaegt vor, Entwickler entscheidet
 - Entscheidungspunkte definieren
 - Grosse Aufgabe vs. kleine Aenderung — wann volle Methodik, wann reduziert
 - Demo: Schrittweise Umsetzung mit Diskussionspunkten (eigenes Beispiel erstellen oder Chat-Mitschnitt)
-- **Offener Punkt:** Skills/Plugins fuer Execution recherchieren oder eigene erstellen
+- **Repo-Artefakt:** Skill/Rules fuer Execution-Workflow erstellen oder evaluieren
+- **Repo-Artefakt:** Empfohlene Plugins fuer Execution vorstellen
 
 **3.2 Testing: Die Kontrolle behalten**
 - Kernproblem: Agent passt Test an statt Code zu fixen
 - Best Practice: Tests zuerst, dann Implementierung
 - Fehlgeschlagene Tests einzeln durchgehen: Regression oder erwartete Aenderung?
 - Feedbackschleifen: Unit -> Integration -> Akzeptanz -> Playwright?
-- **Offener Punkt:** Skills/Plugins fuer Testing recherchieren oder eigene erstellen
+- **Repo-Artefakt:** Skill/Rules fuer Testing-Workflow erstellen oder evaluieren
 
 **3.3 Frontend-Entwicklung mit Agenten**
 - UI passgenau beschreiben: Screenshots, Figma-Exports, Design Tokens
 - Pragmatisch: Screenshots + Paint-Annotationen — reicht das?
 - Demo oder Beispiel
+- **Repo-Artefakt:** Best-Practice-Anleitung fuer Frontend-Beschreibungen
+
+--- Pause ---
+
+### Block 3b: Praxis II — Reviews, Bugfixing, Abschluss (~45min)
 
 **3.4 Code Reviews mit dem Agenten**
 - Agent als Reviewer: Konventionen, Security, Best Practices
 - Review-Kommentare schrittweise abarbeiten
-- Geeignete Plugins (Security, Frontend, Backend)
+- **Repo-Artefakt:** Review-Skills/Plugins evaluieren und konfigurieren (Security, Frontend, Backend)
 
 **3.5 Bugfixing**
 - Hypothesenbasiert: Erst Root Cause finden, dann fixen
 - Workflow: Fehlschlagender Test -> Hypothese -> Fix -> Test gruen
 - Wann eignet sich Bugfixing fuer Agenten, wann nicht
+- **Repo-Artefakt:** Bugfixing-Skill/Rules erstellen oder evaluieren
 
-### Block 4: Tooling & Teamstandards (~30min)
-
-**4.1 Euer Best-Practice-Repo**
-- Inhalte: AGENTS.md-Vorlagen, Skills, Plugins, Use Cases, Beispiel-Prompts
-- Nutzung: Repo klonen, in Workspace einbinden, loslegen
-- Lebendes Dokument — Team-Pflege
-
-**4.2 Empfohlene Plugins & Skills**
-- Evaluierte Liste: Copilot-CLI-kompatibel, MCP-basiert
-- Kategorien: Planning, Execution, Reviews, Context-Management, externe Systeme (Jira, GitLab, DB)
-- Kosten-Uebersicht
-
-**4.3 Welche Aufgaben eignen sich — und welche nicht**
-- Gut: CRUD, UI, Boilerplate, Refactoring, Demonstratoren, Library Updates
-- Bedingt: Bugfixing, Integration, Legacy-Code
-- Schwierig: Komplexe Algorithmik, Performance, tiefe fachliche Logik
+**3.6 Abschluss: Euer Werkzeugkasten**
+- Welche Aufgaben eignen sich — und welche nicht:
+  - Gut: CRUD, UI, Boilerplate, Refactoring, Demonstratoren, Library Updates
+  - Bedingt: Bugfixing, Integration, Legacy-Code
+  - Schwierig: Komplexe Algorithmik, Performance, tiefe fachliche Logik
 - AI Code Archaeology als Querschnittsfaehigkeit
 - Onboarding von Codebasen: Agenten helfen, sich schnell in neue Projekte einzufinden
-
-**4.4 Hands-on-Aufgaben fuer die Projektarbeit**
-- 3-5 konkrete Use Cases mit Contact Software
-- Abgestuft: Einfach (Vibe Coding reicht), mittel (Spec-Driven), komplex (Agentic Engineering)
-- Checkliste und Ueberpruefungs-Prompt fuer Projektstandards
+- Das Best-Practice-Repo: Was ist drin, wie nutzt ihr es, wie pflegt das Team es weiter
+- Kosten-Uebersicht: Premium-Requests, Abrechnungsmodelle
+- Hands-on-Aufgaben fuer die Projektarbeit:
+  - 3-5 konkrete Use Cases mit Contact Software
+  - Abgestuft: Einfach (Vibe Coding reicht), mittel (Spec-Driven), komplex (Agentic Engineering)
+  - Checkliste und Ueberpruefungs-Prompt fuer Projektstandards
 
 ## Code-Repository Struktur
 
@@ -197,8 +198,8 @@ vortrag-agentic-ai/
   slides/                     # Marp-basierte Praesentations-Slides
     block-1-grundlagen.md
     block-2-anforderung-plan.md
-    block-3-umsetzung-review.md
-    block-4-tooling-standards.md
+    block-3a-praxis-execution-testing-frontend.md
+    block-3b-praxis-reviews-bugfixing-abschluss.md
     assets/                   # Bilder, Diagramme
   best-practices/
     agents-md/                # AGENTS.md Vorlagen und Beispiele
