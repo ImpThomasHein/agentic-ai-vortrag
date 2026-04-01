@@ -110,4 +110,6 @@ Hier eine Linkliste, die du direkt teilen kannst (nach Themen gruppiert).
 - PR‑Checklist‑Validator (GitHub)  
   https://github.com/wp-media/pr-checklist-action [github](https://github.com/wp-media/pr-checklist-action)
 
+  https://github.com/github/awesome-copilot
+
 Wenn du magst, kann ich dir diese Liste auch noch als `links-agentic-coding.md` vorbereiten, damit du sie direkt in dein Repo legen kannst.
