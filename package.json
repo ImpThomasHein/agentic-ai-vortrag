@@ -1,0 +1,14 @@
+{
+  "name": "vortrag-agentic-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Workshop: Agentic Engineering — Slides & Best Practices",
+  "scripts": {
+    "slides:dev": "npx @marp-team/marp-cli --watch slides/",
+    "slides:build": "npx @marp-team/marp-cli slides/ --output dist/",
+    "slides:pdf": "npx @marp-team/marp-cli slides/ --pdf --output dist/"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.1.0"
+  }
+}
