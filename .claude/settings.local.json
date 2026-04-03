@@ -25,7 +25,32 @@
       "WebFetch(domain:www.windowscentral.com)",
       "WebFetch(domain:www.teamday.ai)",
       "WebFetch(domain:www.finalroundai.com)",
-      "WebFetch(domain:officechai.com)"
+      "WebFetch(domain:officechai.com)",
+      "Bash(for dir:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Projects/vortrag-agentic-ai/**)",
+      "Bash(done)",
+      "Bash(git diff *)",
+      "Bash(cd *)",
+      "Bash(git status *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git status *)",
+      "Bash(git show *)",
+      "Bash(cd * && git status *)",
+      "Bash(cd * && git diff *)",
+      "Bash(cd * && git add *)",
+      "Bash(cd * && git log *)",
+      "Bash(cd * && git show *)",
+      "Bash(ls *)",
+      "Bash(npm install)",
+      "Bash(npx @marp-team/marp-cli --version)",
+      "Bash(npx @marp-team/marp-cli *)",
+      "Bash(wc *)",
+      "Bash(head *)",
+      "Bash(for f:*)",
+      "Bash(find *)",
+      "Bash(for file:*)"
     ]
   }
 }
