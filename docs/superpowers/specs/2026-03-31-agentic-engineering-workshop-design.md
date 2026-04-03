@@ -6,7 +6,8 @@ Ein 3,5-4h Workshop (3 Bloecke, Block 3 zweigeteilt) zum Thema Agentic Engineeri
 
 ## Kontext & Motivation
 
-- **Vortragende(r):** Thomas Hein, nutzt bereits Agentic-Engineering-Workflows (Claude Code, Opra-Skills, Context7)
+- **Vortragende(r):** Thomas Hein (Dataciders), nutzt bereits Agentic-Engineering-Workflows (Claude Code, Opra-Skills, Context7)
+- **Firma:** Dataciders
 - **Plattform-Kontext:** Contact Software — Python 3.11, 20 Jahre alt, LLMs kennen sie nicht
 - **Zielgruppe:** Entwickler-Kollegen, Mischung aus (A) Copilot-Nutzern ohne strukturierte Methodik und (B) AI-Neulingen
 - **Tool-Basis:** GitHub Copilot (Firmenlizenz), primaer Copilot CLI als gemeinsamer Nenner fuer VS Code + JetBrains
@@ -17,6 +18,8 @@ Ein 3,5-4h Workshop (3 Bloecke, Block 3 zweigeteilt) zum Thema Agentic Engineeri
 - **Bilder und Grafiken:** Fuer alle Konzepte moeglichst existierende Grafiken aus dem Web verwenden (Blogposts, offizielle Docs, Konferenz-Slides). Keine eigenen Grafiken erstellen, wo gute existieren.
 - **Demos:** Fuer jede Demo entweder ein konkretes Beispiel selbst erstellen oder ein gut passendes Video/Beispiel aus dem Web einbinden (z.B. GitHub Blog Demos, Konferenz-Mitschnitte).
 - **Speaker Notes:** Jede Slide enthaelt Speaker Notes in Kurzform, die den Inhalt beschreiben.
+- **Link-Folien:** Jede inhaltliche Section (1.1, 1.2, 2.1, ...) erhaelt am Ende eine Folie "Quellen & Weiterlesen" mit den 3-5 relevantesten Links zum Thema, damit Teilnehmer sich selbst vertiefen koennen.
+- **Tool-Beispiele:** Nur Copilot CLI und Claude Code als Beispiel-Tools — kein Codex, kein Cursor, kein Windsurf.
 
 ## Das 4-Stufen-Modell
 
@@ -46,6 +49,7 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 5. **Bugfixing** — Hypothesenbasiert, Root Cause Analysis
 6. **AI Code Archaeology** — Bestehende Codebasen verstehen und unter Kontrolle bringen
 7. **Feedbackschleifen** — Unit Tests, Integration, Akzeptanzkriterien, Developer-in-the-Loop
+8. **Sandboxing & Berechtigungen** — Wesentliche vs. unwesentliche Stopps, Security-Isolation, Team-Konfiguration
 
 ## Workshop-Struktur
 
@@ -105,7 +109,8 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 **2.1 Kontextmanagement — Das Fundament**
 - "Ein Agent ist nur so gut wie sein Kontext"
 - AGENTS.md / Copilot Instructions — Aufbau und Struktur
-- Praxis: Contact Software einem Agenten erklaeren
+  - Referenz: GitHub Blog "How to write a great agents.md" (2500+ Repos analysiert)
+- Praxis: Contact Software Plattform einem Agenten erklaeren
 - Kontext-Hygiene: Wie entfernt/modifiziert man Kontext
 - Gute Kontextgroesse: Token-Budgets, Relevanz vs. Rauschen
 - Tools zur Kontextverwaltung: Workspaces, `.github/copilot-instructions.md`, MCP-Server
@@ -114,9 +119,10 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 **2.2 Dokumentation als Steuerungsinstrument**
 - Warum Doku wieder wichtig wird — sie ist fuer den Agenten
 - Formate: UML, ADRs, Coding Guidelines, Code-Beispiele
-- Wo lebt die Doku: Direkt in Projektordnern vs. separates Repo
+- **Nicht-funktionale Anforderungen (NFRs):** Performance-Vorgaben, Security-Anforderungen, SLAs als Teil der Doku festhalten — gehoeren in Schicht 1 (immer aktiv), damit der Agent sie bei jeder Aenderung kennt
+- Wo lebt die Doku: Direkt in Projektordnern vs. separates Repo — Doku so nah am Code wie moeglich, damit der Agent sie progressiv (automatisch bei Bedarf) ziehen kann
 - 3 Schichten:
-  1. **Immer aktiv:** Konventionen, Architektur, Plattform-Grundlagen
+  1. **Immer aktiv:** Konventionen, Architektur, Plattform-Grundlagen, NFRs
   2. **Aufgabenbezogen:** Feature-Specs, API-Docs, Modul-Dokumentation
   3. **Temporaer:** Recherche-Ergebnisse, Debugging-Kontext
 - Dokumentation als lebendes Projekt — wann und wie aktualisieren
@@ -131,8 +137,8 @@ Diese Themen sind ueber die Bloecke verteilt, wo sie im Entwicklungs-Workflow re
 
 **2.4 Modelle und ihre Staerken**
 - Welches Modell fuer welche Aufgabe (Planning, Coding, Review)
-- Copilot-Modelle: GPT-4o, Claude Sonnet, Gemini
-- Qwen-Modelle (Open Source, lokal einsetzbar)
+- Copilot-Modelle: Codex 5.3, Claude Sonnet/Opus 4.6, Gemini 3.1
+- Open-Source-Modelle: Qwen Coder 3.5, DeepSeek (lokal einsetzbar)
 - Kosten: Premium-Requests, Einsparmethoden
 
 ### Block 3a: Praxis I — Execution, Testing, Frontend (~45min)
@@ -155,7 +161,9 @@ Fuer alle Themen in Block 3 gilt: Neben den Slides werden funktionierende Agente
 - **Repo-Artefakt:** Skill/Rules fuer Testing-Workflow erstellen oder evaluieren
 
 **3.3 Frontend-Entwicklung mit Agenten**
-- UI passgenau beschreiben: Screenshots, Figma-Exports, Design Tokens
+- UI passgenau beschreiben: Screenshots, Figma/Penpot-Exports, Design Tokens
+- **Design Tokens erklaeren:** Zentrale JSON-Datei mit Farben, Abstaenden, Schriften — Agent referenziert diese statt Werte zu raten
+- **Penpot** als Open-Source-Alternative zu Figma (kostenlos, self-hostable)
 - Pragmatisch: Screenshots + Paint-Annotationen — reicht das?
 - Demo oder Beispiel
 - **Repo-Artefakt:** Best-Practice-Anleitung fuer Frontend-Beschreibungen
@@ -175,7 +183,20 @@ Fuer alle Themen in Block 3 gilt: Neben den Slides werden funktionierende Agente
 - Wann eignet sich Bugfixing fuer Agenten, wann nicht
 - **Repo-Artefakt:** Bugfixing-Skill/Rules erstellen oder evaluieren
 
-**3.6 Abschluss: Euer Werkzeugkasten**
+**3.6 Sandboxing & Berechtigungssteuerung**
+- Kernproblem: Zu viele Stopps → "Accept All" → kein Schutz; zu wenige → Kontrollverlust
+- Klassifikation von Aktionen:
+  - **Auto-erlauben:** Dateien lesen/editieren, lokale Tests, Git add/commit (reversibel via Git)
+  - **Nachfragen:** Architektur-Entscheidungen, neue Dependencies, DB-Schema, oeffentliche APIs
+  - **Blockieren:** Netzwerkzugriff, Datenbankverbindungen, SSH, Secrets, Git push
+- Tool-agnostische Umsetzung:
+  - Schicht 1: AGENTS.md Regeln (Always/Ask first/Never) — funktioniert mit allen Tools
+  - Schicht 2: Tool-spezifische Config (Claude Code: `.claude/settings.json`, Copilot CLI: Workspace Trust)
+  - Schicht 3: Team-Profil im Repo versionieren → `git clone` = fertig konfiguriert
+- Nur Copilot CLI und Claude Code als Beispiele (kein Codex)
+- **Repo-Artefakt:** Sandbox-Konfigurationsanleitung mit Aktions-Klassifikation
+
+**3.7 Abschluss: Euer Werkzeugkasten**
 - Welche Aufgaben eignen sich — und welche nicht:
   - Gut: CRUD, UI, Boilerplate, Refactoring, Demonstratoren, Library Updates
   - Bedingt: Bugfixing, Integration, Legacy-Code
@@ -185,7 +206,7 @@ Fuer alle Themen in Block 3 gilt: Neben den Slides werden funktionierende Agente
 - Das Best-Practice-Repo: Was ist drin, wie nutzt ihr es, wie pflegt das Team es weiter
 - Kosten-Uebersicht: Premium-Requests, Abrechnungsmodelle
 - Hands-on-Aufgaben fuer die Projektarbeit:
-  - 3-5 konkrete Use Cases mit Contact Software
+  - 3-5 konkrete Use Cases mit Contact Software Plattform
   - Abgestuft: Einfach (Vibe Coding reicht), mittel (Spec-Driven), komplex (Agentic Engineering)
   - Checkliste und Ueberpruefungs-Prompt fuer Projektstandards
 
@@ -229,10 +250,11 @@ vortrag-agentic-ai/
 5. **Skills fuer Testing (3.2):** Recherchieren oder eigene bauen
 6. **Marp-Setup:** Konfiguration, Theme, Speaker-Notes-Format
 7. **Contact-Software-Beispiele:** Plattform-Dokumente und Code spaeter einbinden
-8. **Qwen-Modelle:** Recherche zu Staerken/Schwaechen fuer Modell-Vergleich
+8. **Modell-Versionen aktualisieren:** Codex 5.3, Claude Sonnet/Opus 4.6, Gemini 3.1, Qwen Coder 3.5 — Staerken/Schwaechen recherchieren
 9. **Multi-Agent-Orchestrierung:** Fuer Thomas' eigenes Lernen — nicht Workshop-Inhalt
 10. **Kosten-Recherche:** Copilot Premium-Requests, Abrechnungsmodelle
-11. **Language Server:** Koennen diese auch fuer Contact Software genutzt werden? (Thomas' eigenes Lernen)
+11. **Language Server:** Koennen diese auch fuer Contact Software Plattform genutzt werden? (Thomas' eigenes Lernen)
+12. **Sandboxing-Recherche:** Copilot CLI Trust Settings + Claude Code Permissions im Detail vergleichen
 
 ## Referenzen
 
