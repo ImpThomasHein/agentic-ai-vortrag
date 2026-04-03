@@ -93,3 +93,51 @@ Ueberleitung: "Wie machen wir das konkret? Dafuer gibt es ein Modell."
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Das 4-Stufen-Modell
+
+| # | Ansatz | Input | Menschliche Rolle |
+|---|--------|-------|-------------------|
+| 1 | **Vibe Coding** | Kurze Phrasen, fachliche Wuensche | Fachanwender |
+| 2 | **Spec-Driven (Business)** | Pflichtenheft, Use Cases | IT Consultant |
+| 3 | **Spec-Driven (Technical)** | UML, ERM, Architektur | Architekt |
+| 4 | **Agentic Engineering** | Anforderungen + kollaborative Umsetzung | Architekt/Entwickler |
+
+<!--
+Besonderheit: Die meisten Frameworks kategorisieren nach AI-Autonomie.
+Unser Modell kategorisiert nach MENSCHLICHER ROLLE — greifbarer fuer Entwickler.
+Begriffe: Vibe Coding (Karpathy 2025), Spec-Driven (Thoughtworks), Agentic Engineering (Karpathy 2026).
+Business vs. Technical Spec ist unser eigener Beitrag.
+-->
+
+---
+
+# Wann welche Stufe?
+
+- **Vibe Coding:** Prototypen, Demos, Wegwerf-Experimente
+- **Spec-Driven (Business):** Wenn Fachbereich fuehrt, wenig technische Tiefe noetig
+- **Spec-Driven (Technical):** Neue Systeme, klare Architektur, gruene Wiese
+- **Agentic Engineering:** Produktionscode, bestehende Systeme, Qualitaet entscheidend
+
+> Kleine UI-Aenderung ≠ neues Modul — die Methodik muss zur Aufgabe passen.
+
+<!--
+Entscheidungsfaktoren: Aufgabengroesse x Risiko x Komplexitaet.
+Wichtig: Niemanden verurteilen, der Vibe Coding nutzt — es hat seinen Platz.
+Der Workshop fokussiert auf Stufe 4, weil das unser Arbeitsalltag ist.
+-->
+
+---
+
+# Quellen & Weiterlesen — Das 4-Stufen-Modell
+
+- [Andrej Karpathy: "Vibe Coding" (X/Twitter, Feb 2025)](https://x.com/karpathy/status/1886192184808149383) — Ursprung des Begriffs "Vibe Coding"
+- [Andrej Karpathy: Software is Changing (X/Twitter, Feb 2026)](https://x.com/karpathy/status/2019137879310836075) — Karpathys Begriff "Agentic Engineering"
+- [Thoughtworks: "Preparing your team for the agentic software development life cycle"](https://www.thoughtworks.com/en-us/insights/articles/preparing-your-team-for-agentic-software-development-life-cycle) — Spec-Driven Ansaetze im Vergleich
+- [DEV Community: "The AI Coding Workflow That Actually Works: Separate Planning from Execution"](https://dev.to/matthewhou/separate-planning-from-execution-the-ai-coding-workflow-that-actually-works-1n00) — Praxis-Perspektive auf Agenten-Ansaetze
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
