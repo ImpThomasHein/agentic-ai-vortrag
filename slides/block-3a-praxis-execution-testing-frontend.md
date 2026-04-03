@@ -176,3 +176,41 @@ Agenten koennen alle diese Schleifen bedienen — wenn man sie richtig konfiguri
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Frontend-Entwicklung mit Agenten
+
+**Wie beschreibe ich eine UI passgenau?**
+
+| Methode | Aufwand | Praezision | Empfehlung |
+|---------|---------|-----------|------------|
+| **Screenshots + Paint** | Niedrig | Mittel | Alltag |
+| **Figma / Penpot** | Hoch | Hoch | Neue Komponenten |
+| **Design Tokens** (JSON) | Mittel | Hoch | Ab mittlerer Projektgroesse |
+| **Storybook** (React / WC) | Mittel | Sehr hoch | Komponenten-Bibliotheken |
+
+> Pragmatisch: Screenshots + Annotationen reichen meistens!
+> Storybook: Stories als lebende Spezifikation fuer den Agenten nutzen.
+
+<!--
+Demo-Idee: Screenshot mit Paint-Annotationen zeigen,
+dann den Agenten daraus Code generieren lassen.
+Repo-Artefakt: best-practices/dokumentation/frontend-beschreibungen.md
+-->
+
+---
+
+# Quellen & Weiterlesen — Frontend mit Agenten
+
+- [Style Dictionary (Amazon)](https://amzn.github.io/style-dictionary/) — Build-Tool fuer Design Tokens: JSON → CSS/JS/native, framework-agnostisch
+- [Tokens Studio fuer Figma](https://tokens.studio/) — Design Tokens direkt in Figma erstellen und als JSON exportieren
+- [Penpot Docs — Design Tokens](https://help.penpot.app/user-guide/design/design-tokens/) — Design Tokens nativ in Penpot verwalten und exportieren
+- [W3C Design Tokens Format](https://design-tokens.github.io/community-group/format/) — Offener Standard fuer Interoperabilitaet zwischen Design-Tools
+- [Figma Dev Mode](https://www.figma.com/dev-mode/) — Figma-Export fuer Entwickler, Handoff und Inspektion
+- [Penpot — Open Source Design Tool](https://penpot.app/) — Kostenlose Open-Source-Alternative zu Figma, self-hostable
+- [Storybook — UI Component Explorer](https://storybook.js.org/) — Komponenten isoliert entwickeln, dokumentieren und als Agent-Spezifikation nutzen
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
