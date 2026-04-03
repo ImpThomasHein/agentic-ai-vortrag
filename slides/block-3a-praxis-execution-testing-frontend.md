@@ -113,3 +113,66 @@ In AGENTS.md als "Ask first" Regeln definieren.
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Testing: Die Kontrolle behalten
+
+## Das Kernproblem
+
+> Der Agent passt den **Test** an, statt den **Code** zu fixen.
+> → Regression wird unsichtbar.
+
+**Loesung: Tests zuerst, dann Implementierung (TDD)**
+
+<!--
+Das ist das groesste Risiko bei AI-generiertem Code.
+Gartner-Warnung: 2500% mehr Defekte durch unkontrollierte AI-Nutzung.
+Die Ursache ist oft genau das: Tests werden "passend gemacht".
+-->
+
+---
+
+# Harte Regeln fuer Tests
+
+1. **Tests zuerst** — erst der Test, dann der Code
+2. **Tests sind heilig** — nicht aendern, um gruen zu werden
+3. **Einzeln durchgehen** — bei Fehlschlaegen: Regression oder erwartete Aenderung?
+4. **Ohne Tests kein Merge**
+
+> Diese Regeln gehoeren als "Hard Facts" in eure AGENTS.md!
+
+<!--
+Referenz: best-practices/skills/testing-workflow.md
+Praxistipp: Den Agent explizit anweisen, Tests NICHT zu aendern.
+-->
+
+---
+
+# Feedbackschleifen
+
+| Ebene | Was | Wann |
+|-------|-----|------|
+| **Unit Tests** | Einzelne Funktionen | Bei jedem Task |
+| **Integration** | Modul-Zusammenspiel | Nach Feature |
+| **Akzeptanz** | Fachliche Korrektheit | Vor Merge |
+| **E2E (Playwright)** | UI-Verhalten automatisiert | Optional, bei UI |
+
+> Je frueher der Fehler gefunden wird, desto guenstiger die Korrektur.
+
+<!--
+Feedbackschleifen sind der Kern der Qualitaetssicherung.
+Agenten koennen alle diese Schleifen bedienen — wenn man sie richtig konfiguriert.
+-->
+
+---
+
+# Quellen & Weiterlesen — Testing und TDD
+
+- [GitHub Blog — Test-driven development (TDD) with GitHub Copilot](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-test-driven-development-tdd-with-github-copilot/) — TDD-Grundlagen und Copilot-Workflow
+- [Nimble Approach — How to Use TDD for better AI coding outputs](https://nimbleapproach.com/blog/how-to-use-test-driven-development-for-better-ai-coding-outputs/) — TDD als Qualitaetssicherung bei AI-generiertem Code
+- [Dev.to — How I Validate Quality When AI Agents Write My Code](https://dev.to/teppana88/how-i-validate-quality-when-ai-agents-write-my-code-481c) — Praxisbericht zur Qualitaetskontrolle bei Agent-generiertem Code
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
