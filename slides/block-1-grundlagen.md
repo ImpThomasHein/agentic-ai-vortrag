@@ -141,3 +141,70 @@ Der Workshop fokussiert auf Stufe 4, weil das unser Arbeitsalltag ist.
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Wie funktioniert ein Coding Agent?
+
+**LLM + Tools + Kontext = Agent**
+
+Der Kreislauf:
+1. **Prompt** empfangen
+2. **Denken** (Reasoning)
+3. **Tool aufrufen** (Dateien lesen, Code schreiben, Tests ausfuehren)
+4. **Ergebnis** auswerten
+5. **Weiter denken** oder antworten
+
+[BILD: Agent Loop Diagramm — Quelle: https://dev.to/jakesweb/forget-the-hype-agents-are-loops-2fi5]
+
+<!--
+Kernkonzept: Ein Agent ist eine Schleife, kein einzelner Aufruf.
+Zeige hier das Agent-Loop-Diagramm von DEV Community oder Oracle.
+Referenz: "Forget the Hype: Agents are Loops" (DEV Community)
+-->
+
+---
+
+# Autocomplete → Chat → Agent
+
+| Modus | Wie es funktioniert | Beispiel |
+|-------|--------------------:|---------|
+| **Autocomplete** | Inline-Vorschlaege beim Tippen | Tab-Completion in IDE |
+| **Chat** | Frage-Antwort im Seitenpanel | "Erklaere diese Funktion" |
+| **Agent** | Autonome Ausfuehrung mit Tool-Zugriff | "Implementiere Feature X mit Tests" |
+
+<!--
+Copilot bietet alle 3 Modi: Ask, Edit, Agent.
+Referenz: GitHub Blog "Copilot Ask, Edit, Agent modes"
+Agent-Modus ist das, was wir heute lernen zu steuern.
+-->
+
+---
+
+# Das Oekosystem eines Coding Agents
+
+- **Skills/Rules:** Vordefinierte Workflows und Regeln (z.B. TDD-Skill)
+- **Plugins:** Erweiterungen (z.B. Context7 fuer aktuelle Doku)
+- **MCP-Server:** Externe Datenquellen anbinden (DB, Jira, Git)
+- **Hooks:** Automatische Aktionen bei bestimmten Events
+
+[BILD: MCP Host-Client-Server Architektur — Quelle: https://modelcontextprotocol.io/docs/concepts/architecture]
+
+<!--
+MCP = Model Context Protocol (Anthropic, jetzt offener Standard).
+Zeige hier das MCP-Architekturdiagramm von modelcontextprotocol.io.
+Wird in Block 3 vertieft — hier nur Ueberblick.
+-->
+
+---
+
+# Quellen & Weiterlesen — Funktionsweise Coding Agent
+
+- [DEV Community: "Forget the Hype: Agents are Loops"](https://dev.to/jakesweb/forget-the-hype-agents-are-loops-2fi5) — Praxis-Erklaerung des Agent-Loop-Konzepts
+- [Oracle: "What Is the AI Agent Loop?"](https://www.oracle.com/artificial-intelligence/what-is-ai-agent-loop/) — Perceive/Reason/Plan/Act/Observe Schleife
+- [Model Context Protocol — Architektur](https://modelcontextprotocol.io/docs/concepts/architecture) — MCP Host-Client-Server Konzept
+- [GitHub Blog: Copilot Ask, Edit, Agent modes](https://github.blog/ai-and-ml/github-copilot/github-copilot-agent-mode-is-now-generally-available/) — Drei Modi im Vergleich
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
