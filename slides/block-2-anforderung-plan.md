@@ -159,3 +159,70 @@ Vorlage: best-practices/dokumentation/doku-fuer-agenten.md
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Brainstorming & Planning mit dem Agenten
+
+```
+Anforderung → Brainstorming → Spec → Plan → Execution
+```
+
+1. **Brainstorming:** Anforderung verstehen, Optionen erkunden
+2. **Spec:** Technische Spezifikation schreiben
+3. **Plan:** Aufgaben in 5-20min Tasks zerlegen (TDD)
+4. **Execution:** Task fuer Task umsetzen mit Entwickler-Checkpoints
+
+<!--
+Das ist der Kern des Agentic Engineering Workflows.
+Demo: Eine Anforderung gemeinsam durchplanen.
+Referenz: Addy Osmani "My LLM Coding Workflow 2026" / Martin Fowler "Humans and Agents"
+-->
+
+---
+
+# Wann volle Methodik, wann reduziert?
+
+| Aufgabe | Methodik |
+|---------|----------|
+| Neues Modul / Feature | Brainstorming → Spec → Plan → TDD |
+| Groesseres Refactoring | Plan → TDD |
+| API-Aenderung | Spec → Plan → TDD |
+| Kleine UI-Aenderung | Direkter Prompt mit Test |
+| Bugfix (lokal) | Failing Test → Fix |
+| Config-Aenderung | Direkter Prompt |
+
+<!--
+Nicht jede Aufgabe braucht den vollen Workflow.
+Die Kunst ist, die richtige Stufe zu waehlen.
+Faustregel: Wenn mehr als 2 Dateien betroffen → mindestens Plan.
+-->
+
+---
+
+# Ausblick: Subagenten & Multi-Agent
+
+- **Subagenten:** Spezialisierte Agenten fuer Teilaufgaben
+  - Recherche-Agent, Test-Agent, Review-Agent
+- **Koordination:** Hauptagent delegiert und integriert
+- **Praxis heute:** Claude Code Subagents, GitHub Copilot Agent Mode
+
+> Noch frueh — aber die Richtung ist klar.
+
+<!--
+Nicht Workshop-Fokus, aber wichtig zu erwaehnen.
+-->
+
+---
+
+# Quellen & Weiterlesen — Brainstorming und Planning
+
+- [Claude Code: Best Practices](https://code.claude.com/docs/en/best-practices) — Offizielle Empfehlungen von Anthropic: Workflow, Planning und Execution mit Claude Code
+- [Dev.to — The AI Coding Workflow That Actually Works: Separate Planning from Execution](https://dev.to/matthewhou/separate-planning-from-execution-the-ai-coding-workflow-that-actually-works-1n00) — Warum Planung und Umsetzung getrennt werden sollten
+- [superpowers — writing-plans Skill (SKILL.md)](https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md) — Praxisvorlage fuer strukturierte Planung mit dem Agenten
+- [InfoQ — From Prompts to Production: a Playbook for Agentic Development](https://www.infoq.com/articles/prompts-to-production-playbook-for-agentic-development/) — Vollstaendiges Playbook vom Prompt bis zum Deployment
+- [Thoughtworks — Preparing your team for the agentic software development life cycle](https://www.thoughtworks.com/en-us/insights/articles/preparing-your-team-for-agentic-software-development-life-cycle) — Team-Vorbereitung auf den Agentic SDLC
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
