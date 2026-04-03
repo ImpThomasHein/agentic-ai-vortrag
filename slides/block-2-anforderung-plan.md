@@ -80,3 +80,82 @@ Details: best-practices/kontext-management/community-ansaetze.md
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Dokumentation als Steuerungsinstrument
+
+**Warum Dokumentation wieder wichtig wird: Sie ist fuer den Agenten.**
+
+- Fehlende Doku = Agent erfindet oder raet
+- Gute Doku = besserer, vorhersagbarer Output
+- Dokumentation wird zum **Steuerungsinstrument**, nicht zum Papiertiger
+
+<!--
+Paradigmenwechsel: Frueher hat niemand Doku gelesen.
+Jetzt liest der Agent sie IMMER — und handelt danach.
+-->
+
+---
+
+# Welche Formate fuer Agenten?
+
+| Format | Wofuer | Agent-Verstaendnis |
+|--------|--------|--------------------|
+| **Markdown** | Alles | ★★★ Exzellent |
+| **UML** (Mermaid) | Architektur, Ablaeufe | ★★☆ Gut |
+| **ADRs** | Designentscheidungen | ★★★ Exzellent |
+| **Code-Beispiele** | Konventionen zeigen | ★★★ Exzellent |
+| **Coding Guidelines** | Standards durchsetzen | ★★★ Exzellent |
+
+<!--
+Praxistipp: Code-Beispiele sind das staerkste Format.
+"Zeig dem Agenten wie es aussehen soll" > "Beschreib dem Agenten wie es aussehen soll"
+-->
+
+---
+
+# NFRs festhalten — auch fuer den Agenten
+
+- **Performance:** Latenz-Budgets, SLAs, Skalierung
+- **Security:** OWASP-Anforderungen, Compliance-Regeln
+- **Verfuegbarkeit:** SLAs, Fallback-Strategien
+- **Format:** ADRs oder NFR-Sektion in Architektur-Doku
+- **Wo:** Schicht 1 (immer aktiv) — Agent muss NFRs bei jeder Aenderung kennen
+
+<!--
+NFRs werden oft vergessen — aber der Agent braucht sie,
+um keine Performance-Killer oder Security-Luecken einzubauen.
+Beispiel: "Max 200ms Response Time" verhindert, dass der Agent
+eine N+1-Query einbaut.
+-->
+
+---
+
+# 3 Schichten der Dokumentation
+
+1. **Immer aktiv:** Konventionen, Architektur, Plattform-Grundlagen
+2. **Aufgabenbezogen:** Feature-Specs, API-Docs, Modul-Dokumentation
+3. **Temporaer:** Recherche-Ergebnisse, Debugging-Kontext
+
+> Dokumentation als lebendes Projekt — bei jedem Feature mitaktualisieren.
+
+<!--
+Parallel zu den 3 Kontext-Schichten aus 2.1.
+Die Doku FUELLT die Kontext-Schichten.
+Vorlage: best-practices/dokumentation/doku-fuer-agenten.md
+-->
+
+---
+
+# Quellen & Weiterlesen — Dokumentation als Steuerungsinstrument
+
+- [Mintlify — What to Include in AGENTS.md](https://www.mintlify.com/agentsmd/agents.md/guides/what-to-include) — Welche Doku-Inhalte Agenten wirklich brauchen
+- [AI Hero — A Complete Guide To AGENTS.md](https://www.aihero.dev/a-complete-guide-to-agents-md) — Praxisleitfaden fuer agentengerechte Dokumentation
+- [Harness — The Agent-Native Repo: Why AGENTS.MD is the New Standard](https://www.harness.io/blog/the-agent-native-repo-why-agents-md-is-the-new-standard) — ADRs, Guidelines und Doku-Schichten im Ueberblick
+- [GitHub Blog — How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) — Lessons from over 2,500 repositories
+- [Elastic — What is Context Engineering? Architecting Reliable AI](https://www.elastic.co/what-is/context-engineering) — Doku als Kontext-Fundament fuer zuverlaessige Agenten
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
