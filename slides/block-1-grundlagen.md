@@ -208,3 +208,45 @@ Wird in Block 3 vertieft — hier nur Ueberblick.
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Wie aendert sich unsere Arbeitsweise?
+
+**Vom Code-Tipper zum Architekten und Steuermann**
+
+- Du schreibst weniger Code — du **steuerst** mehr
+- Pair-Programming mit dem Agenten: Zu zweit den Agenten steuern
+- Fokus verschiebt sich: Technische Qualitaet, Fachlichkeit, Konzeptionsfaehigkeit
+
+<!--
+Konkret: Im Planning-Modus zu zweit vor einem Bildschirm.
+Einer formuliert die Anforderung, der andere prueft die Agent-Vorschlaege.
+-->
+
+---
+
+# Hypothese: Was bedeutet das fuer Teams?
+
+- Teams werden **kleiner** — max. 2 Entwickler pro Product Owner
+- **Anforderungsaufnahme wird laenger** als die Entwicklung
+- Der Product Owner wird zum Engpass, nicht der Entwickler
+- Qualitaet der Anforderungen bestimmt Qualitaet des Ergebnisses
+
+<!--
+Provokante These — zur Diskussion stellen.
+Referenz: Anthropic 2026 Agentic Coding Trends Report
+-->
+
+---
+
+# Quellen & Weiterlesen — Veraenderte Arbeitsweise
+
+- [Andrej Karpathy: "You are orchestrating agents" (X/Twitter, 2026)](https://x.com/karpathy/status/2019137879310836075) — Die neue Rolle: Steuermann statt Tipper
+- [Thoughtworks: Preparing your team for the agentic SDLC](https://www.thoughtworks.com/en-us/insights/articles/preparing-your-team-for-agentic-software-development-life-cycle) — Teamstruktur und Rollen im agentic Umfeld
+- [GitHub Blog: Quantifying GitHub Copilot's impact on developer productivity](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/) — Entwickler 55,8% schneller mit AI-Unterstuetzung
+- [InfoQ: From Prompts to Production — a Playbook for Agentic Development](https://www.infoq.com/articles/prompts-to-production-playbook-for-agentic-development/) — Praxis-Playbook fuer Teams
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
