@@ -250,3 +250,37 @@ Referenz: Anthropic 2026 Agentic Coding Trends Report
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Demo: Gleiche Aufgabe, zwei Ansaetze
+
+**Aufgabe:** _[ENTSCHEIDUNGSPUNKT: Thomas waehlt Demo-Aufgabe vor Workshop]_
+
+| | Vibe Coding | Agentic Engineering |
+|---|---|---|
+| **Input** | "Bau mir X" | Spec → Plan → TDD |
+| **Designentscheidungen** | Agent entscheidet | Entwickler entscheidet |
+| **Tests** | Vielleicht | Erst Test, dann Code |
+| **Nachvollziehbarkeit** | Gering | Hoch (Plan, Commits, Doku) |
+
+<!--
+Option A: Live-Demo (empfohlen, ~10min).
+Option B: Aufgezeichnetes Video oder Chat-Mitschnitt.
+Option C: Referenz-Video von GitHub Blog oder QCon.
+Entscheidung: [Thomas waehlt vor dem Workshop]
+-->
+
+---
+
+# Quellen & Weiterlesen — Demo und Ansaetze im Vergleich
+
+- [Andrej Karpathy: Vibe Coding (X/Twitter, Feb 2025)](https://x.com/karpathy/status/1886192184808149383) — Ursprung des Begriffs: Coding im Flow ohne Code-Verstaendnis
+- [The New Stack: Vibe Coding is Passé](https://thenewstack.io/vibe-coding-is-passe/) — Warum Vibe Coding an Grenzen stoesst und Agentic Engineering folgt
+- [Dev.to: Separate Planning from Execution — The AI Coding Workflow That Actually Works](https://dev.to/matthewhou/separate-planning-from-execution-the-ai-coding-workflow-that-actually-works-1n00) — Praxis-Vergleich beider Ansaetze mit konkretem Workflow
+- [GitHub Blog: Test-Driven Development with GitHub Copilot](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-test-driven-development-tdd-with-github-copilot/) — TDD als Grundlage fuer nachvollziehbares Agentic Engineering
+- [Glide Blog: What is Agentic Engineering](https://www.glideapps.com/blog/what-is-agentic-engineering) — Karpathys Definition und Abgrenzung zu Vibe Coding
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
