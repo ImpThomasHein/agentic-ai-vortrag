@@ -68,3 +68,51 @@ Repo-Artefakt: best-practices/skills/review-workflow.md
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Bugfixing: Hypothesenbasiert
+
+**70% Analyse — 30% Fix**
+
+1. **Kontext sammeln:** Logs, Fehlermeldung, betroffene Module
+2. **Hypothese bilden:** "Der Bug entsteht weil..."
+3. **Failing Test:** Test reproduziert den Bug → ROT
+4. **Minimaler Fix:** Kleinstmoegliche Aenderung → GRUEN
+5. **Absichern:** Regression-Tests + Clean-Code-Check
+
+<!--
+Der Agent ist ein guter Detektiv — er kann viel Code schnell lesen.
+Aber: Der Mensch muss die Hypothese validieren.
+Nicht einfach "Fix this bug" sagen — sondern die Root Cause suchen.
+Repo-Artefakt: best-practices/skills/bugfixing-workflow.md
+-->
+
+---
+
+# Bugfixing: Wann Agent, wann nicht?
+
+| Szenario | Agent-Eignung |
+|----------|:------------:|
+| Klarer Stacktrace, reproduzierbar | ✅ Gut |
+| Regressions-Bug | ✅ Gut |
+| Komplexe Geschaeftslogik | ⚠️ Bedingt |
+| Intermittierend / Race Condition | ❌ Schwierig |
+| Performance-Bug | ❌ Schwierig |
+
+<!--
+Bei schwierigen Bugs: Agent als Recherche-Assistent nutzen,
+aber Fix-Entscheidung bleibt beim Entwickler.
+-->
+
+---
+
+# Quellen & Weiterlesen — Bugfixing mit Agenten
+
+- [Test-driven development (TDD) with GitHub Copilot](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-test-driven-development-tdd-with-github-copilot/) — TDD-Workflow mit Copilot, schrittweise Anleitung fuer Einsteiger
+- [How to Use TDD for better AI coding outputs](https://nimbleapproach.com/blog/how-to-use-test-driven-development-for-better-ai-coding-outputs/) — TDD als Qualitaetssicherung fuer KI-generierten Code
+- [How I Validate Quality When AI Agents Write My Code](https://dev.to/teppana88/how-i-validate-quality-when-ai-agents-write-my-code-481c) — Praxisbericht: Qualitaetssicherung und Bugfixing mit KI-Agenten
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
