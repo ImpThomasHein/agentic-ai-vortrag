@@ -5,8 +5,8 @@
   "description": "Workshop: Agentic Engineering — Slides & Best Practices",
   "scripts": {
     "slides:dev": "npx @marp-team/marp-cli --watch slides/",
-    "slides:build": "npx @marp-team/marp-cli slides/ --output dist/",
-    "slides:pdf": "npx @marp-team/marp-cli slides/ --pdf --output dist/"
+    "slides:build": "npx @marp-team/marp-cli -I slides/ -o dist/",
+    "slides:pdf": "npx @marp-team/marp-cli -I slides/ --pdf -o dist/"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4.1.0"
