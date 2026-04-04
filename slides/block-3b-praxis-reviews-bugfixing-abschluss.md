@@ -286,6 +286,21 @@ sondern in der Projektarbeit danach.
 
 ---
 
+# Quellen & Weiterlesen — Abschluss und Ausblick
+
+- [Addy Osmani: My LLM Coding Workflow Going Into 2026](https://addyosmani.com/blog/llm-coding-workflow/) — Praxisworkflow eines Staff-Engineers bei Google: Brainstorming, Spec, Execution, Review
+- [Anthropic: Agentic Coding Trends 2026](https://www.anthropic.com/research/agentic-coding-trends-2026) — Marktentwicklung, Team-Strukturen und Produktivitaetsdaten aus der Praxis
+- [Martin Fowler: Humans and Agents in SE Loops](https://martinfowler.com/articles/exploring-gen-ai.html) — In-the-loop, on-the-loop, out-of-the-loop: Kontrolle und Delegation im Agentic-Workflow
+- [Thoughtworks Tech Radar: Spec-Driven Development](https://www.thoughtworks.com/radar/techniques/spec-driven-development) — Etablierter Ansatz fuer strukturierte Entwicklung mit klaren Spezifikationen
+- [GitHub Copilot Workspace](https://githubnext.com/projects/copilot-workspace) — Spec-to-Code Workflow direkt in GitHub: von Issue bis Pull Request
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+Besonders Addy Osmani und Martin Fowler fuer die praktische Vertiefung empfohlen.
+-->
+
+---
+
 <!-- _class: lead -->
 
 # Der Entwickler ist der Boss.
