@@ -1,0 +1,279 @@
+---
+marp: true
+theme: contact
+paginate: true
+header: 'Agentic Engineering Workshop'
+footer: 'Thomas Hein | Dataciders | 2026'
+---
+
+<!-- _class: lead -->
+
+# Block 2: Von der Anforderung zum Plan
+
+**Workshop: Agentic Engineering**
+Thomas Hein — Dataciders
+
+<!--
+Dauer: ~50 Minuten
+Ziel: Strukturierte Anforderungsanalyse und Planung mit dem Agenten
+-->
+
+---
+
+# Kontextmanagement — Das Fundament
+
+> "Ein Agent ist nur so gut wie sein Kontext"
+
+- **AGENTS.md / Copilot Instructions** — dem Agenten das Projekt erklaeren
+- **Kontext-Hygiene:** Irrelevantes entfernen, Relevantes fokussieren
+- **Token-Budgets:** Nicht alles reinpacken — Relevanz > Vollstaendigkeit
+
+<!--
+Das ist DAS Kernthema. Ohne guten Kontext funktioniert nichts.
+Praxisbeispiel: Contact Software — 20 Jahre alte Python-Plattform,
+die LLMs nicht kennen. Wir MUESSEN dem Agenten erklaeren, wie sie funktioniert.
+-->
+
+---
+
+# Die 3 Kontext-Schichten
+
+| Schicht | Inhalt | Beispiel |
+|---------|--------|----------|
+| **Immer aktiv** | Konventionen, Architektur, Plattform | AGENTS.md, Coding Guidelines |
+| **Aufgabenbezogen** | Feature-Specs, API-Docs, Modul-Doku | Spec fuer aktuelles Ticket |
+| **Temporaer** | Recherche, Debugging-Kontext | Logfiles, Stacktraces |
+
+<!--
+Schicht 1 wird einmal aufgebaut und gepflegt.
+Schicht 2 wechselt pro Aufgabe.
+Schicht 3 wird nach der Aufgabe verworfen.
+Details und Vorlage: best-practices/kontext-management/kontext-schichten.md
+-->
+
+---
+
+# Tools zur Kontextverwaltung
+
+- **`.github/copilot-instructions.md`** — Copilot-spezifisch, immer geladen
+- **AGENTS.md** — Tool-agnostisch, wachsender Standard
+- **VS Code Workspaces** — mehrere Repos als Kontext einbinden
+- **MCP-Server** — dynamischer Kontext (DB-Schema, Jira-Tickets, Git-Historie)
+- **Context7** — aktuelle Library-Dokumentation on demand
+
+<!--
+Empfehlung fuer das Team:
+Copilot Instructions als gemeinsamer Nenner (VS Code + JetBrains).
+Details: best-practices/kontext-management/community-ansaetze.md
+-->
+
+---
+
+# Quellen & Weiterlesen — Kontextmanagement
+
+- [Martin Fowler — Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) — Grundlagen und Patterns fuer kontextbewusstes Agenten-Design
+- [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Empfehlungen direkt vom Hersteller
+- [GitHub Blog — How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) — Lessons from over 2,500 repositories
+- [AGENTS.md Specification — ASDLC](https://asdlc.io/practices/agents-md-spec/) — Offizielle Spec und Best Practices
+- [JetBrains Research — Smarter Context Management for LLM-Powered Agents](https://blog.jetbrains.com/research/2025/12/efficient-context-management/) — Effizientes Kontext-Management in der Praxis
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
+
+---
+
+# Dokumentation als Steuerungsinstrument
+
+**Warum Dokumentation wieder wichtig wird: Sie ist fuer den Agenten.**
+
+- Fehlende Doku = Agent erfindet oder raet
+- Gute Doku = besserer, vorhersagbarer Output
+- Dokumentation wird zum **Steuerungsinstrument**, nicht zum Papiertiger
+
+<!--
+Paradigmenwechsel: Frueher hat niemand Doku gelesen.
+Jetzt liest der Agent sie IMMER — und handelt danach.
+-->
+
+---
+
+# Welche Formate fuer Agenten?
+
+| Format | Wofuer | Agent-Verstaendnis |
+|--------|--------|--------------------|
+| **Markdown** | Alles | ★★★ Exzellent |
+| **UML** (Mermaid) | Architektur, Ablaeufe | ★★☆ Gut |
+| **ADRs** | Designentscheidungen | ★★★ Exzellent |
+| **Code-Beispiele** | Konventionen zeigen | ★★★ Exzellent |
+| **Coding Guidelines** | Standards durchsetzen | ★★★ Exzellent |
+
+<!--
+Praxistipp: Code-Beispiele sind das staerkste Format.
+"Zeig dem Agenten wie es aussehen soll" > "Beschreib dem Agenten wie es aussehen soll"
+-->
+
+---
+
+# NFRs festhalten — auch fuer den Agenten
+
+- **Performance:** Latenz-Budgets, SLAs, Skalierung
+- **Security:** OWASP-Anforderungen, Compliance-Regeln
+- **Verfuegbarkeit:** SLAs, Fallback-Strategien
+- **Format:** ADRs oder NFR-Sektion in Architektur-Doku
+- **Wo:** Schicht 1 (immer aktiv) — Agent muss NFRs bei jeder Aenderung kennen
+
+<!--
+NFRs werden oft vergessen — aber der Agent braucht sie,
+um keine Performance-Killer oder Security-Luecken einzubauen.
+Beispiel: "Max 200ms Response Time" verhindert, dass der Agent
+eine N+1-Query einbaut.
+-->
+
+---
+
+# 3 Schichten der Dokumentation
+
+1. **Immer aktiv:** Konventionen, Architektur, Plattform-Grundlagen
+2. **Aufgabenbezogen:** Feature-Specs, API-Docs, Modul-Dokumentation
+3. **Temporaer:** Recherche-Ergebnisse, Debugging-Kontext
+
+> Dokumentation als lebendes Projekt — bei jedem Feature mitaktualisieren.
+
+<!--
+Parallel zu den 3 Kontext-Schichten aus 2.1.
+Die Doku FUELLT die Kontext-Schichten.
+Vorlage: best-practices/dokumentation/doku-fuer-agenten.md
+-->
+
+---
+
+# Quellen & Weiterlesen — Dokumentation als Steuerungsinstrument
+
+- [Mintlify — What to Include in AGENTS.md](https://www.mintlify.com/agentsmd/agents.md/guides/what-to-include) — Welche Doku-Inhalte Agenten wirklich brauchen
+- [AI Hero — A Complete Guide To AGENTS.md](https://www.aihero.dev/a-complete-guide-to-agents-md) — Praxisleitfaden fuer agentengerechte Dokumentation
+- [Harness — The Agent-Native Repo: Why AGENTS.MD is the New Standard](https://www.harness.io/blog/the-agent-native-repo-why-agents-md-is-the-new-standard) — ADRs, Guidelines und Doku-Schichten im Ueberblick
+- [GitHub Blog — How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) — Lessons from over 2,500 repositories
+- [Elastic — What is Context Engineering? Architecting Reliable AI](https://www.elastic.co/what-is/context-engineering) — Doku als Kontext-Fundament fuer zuverlaessige Agenten
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
+
+---
+
+# Brainstorming & Planning mit dem Agenten
+
+```
+Anforderung → Brainstorming → Spec → Plan → Execution
+```
+
+1. **Brainstorming:** Anforderung verstehen, Optionen erkunden
+2. **Spec:** Technische Spezifikation schreiben
+3. **Plan:** Aufgaben in 5-20min Tasks zerlegen (TDD)
+4. **Execution:** Task fuer Task umsetzen mit Entwickler-Checkpoints
+
+<!--
+Das ist der Kern des Agentic Engineering Workflows.
+Demo: Eine Anforderung gemeinsam durchplanen.
+Referenz: Addy Osmani "My LLM Coding Workflow 2026" / Martin Fowler "Humans and Agents"
+-->
+
+---
+
+# Wann volle Methodik, wann reduziert?
+
+| Aufgabe | Methodik |
+|---------|----------|
+| Neues Modul / Feature | Brainstorming → Spec → Plan → TDD |
+| Groesseres Refactoring | Plan → TDD |
+| API-Aenderung | Spec → Plan → TDD |
+| Kleine UI-Aenderung | Direkter Prompt mit Test |
+| Bugfix (lokal) | Failing Test → Fix |
+| Config-Aenderung | Direkter Prompt |
+
+<!--
+Nicht jede Aufgabe braucht den vollen Workflow.
+Die Kunst ist, die richtige Stufe zu waehlen.
+Faustregel: Wenn mehr als 2 Dateien betroffen → mindestens Plan.
+-->
+
+---
+
+# Ausblick: Subagenten & Multi-Agent
+
+- **Subagenten:** Spezialisierte Agenten fuer Teilaufgaben
+  - Recherche-Agent, Test-Agent, Review-Agent
+- **Koordination:** Hauptagent delegiert und integriert
+- **Praxis heute:** Claude Code Subagents, GitHub Copilot Agent Mode
+
+> Noch frueh — aber die Richtung ist klar.
+
+<!--
+Nicht Workshop-Fokus, aber wichtig zu erwaehnen.
+-->
+
+---
+
+# Quellen & Weiterlesen — Brainstorming und Planning
+
+- [Claude Code: Best Practices](https://code.claude.com/docs/en/best-practices) — Offizielle Empfehlungen von Anthropic: Workflow, Planning und Execution mit Claude Code
+- [Dev.to — The AI Coding Workflow That Actually Works: Separate Planning from Execution](https://dev.to/matthewhou/separate-planning-from-execution-the-ai-coding-workflow-that-actually-works-1n00) — Warum Planung und Umsetzung getrennt werden sollten
+- [superpowers — writing-plans Skill (SKILL.md)](https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md) — Praxisvorlage fuer strukturierte Planung mit dem Agenten
+- [InfoQ — From Prompts to Production: a Playbook for Agentic Development](https://www.infoq.com/articles/prompts-to-production-playbook-for-agentic-development/) — Vollstaendiges Playbook vom Prompt bis zum Deployment
+- [Thoughtworks — Preparing your team for the agentic software development life cycle](https://www.thoughtworks.com/en-us/insights/articles/preparing-your-team-for-agentic-software-development-life-cycle) — Team-Vorbereitung auf den Agentic SDLC
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
+
+---
+
+# Modelle und ihre Staerken
+
+| Aufgabe | Empfohlenes Modell | Warum |
+|---------|-------------------|-------|
+| **Planning** | Claude Opus/Sonnet 4.6 | Beste Instruktionsbefolgung |
+| **Coding** | Codex 5.3, Claude Sonnet 4.6 | Schnell + praezise |
+| **Review** | Claude 4.6, Gemini 3.1 | Regelanalyse, grosser Kontext |
+| **Recherche** | Gemini 3.1 | Grosses Kontextfenster |
+
+<!--
+Copilot erlaubt Modellwahl pro Aufgabe — das ist ein Vorteil.
+Open Source: Qwen 2.5 Coder fuer lokale/offline-Szenarien.
+Details: referenzen/modell-vergleich.md
+-->
+
+---
+
+# Kosten im Griff behalten
+
+- **Premium-Requests:** Entstehen bei Nutzung leistungsstaerkerer Modelle
+- **Einsparen durch:**
+  - Richtiges Modell fuer die richtige Aufgabe
+  - Guten Kontext (weniger Iterationen = weniger Requests)
+  - Standard-Modelle fuer einfache Aufgaben
+- **Investition:** Bessere Methodik → weniger Nacharbeit → weniger Kosten
+
+<!--
+Konkrete Zahlen aus referenzen/modell-vergleich.md:
+Copilot Pro = 300 Premium Requests/Monat ($10/Monat); Copilot Pro+ = 1.500/Monat ($39/Monat).
+Overage: $0,04 USD pro zusaetzlichem Premium Request.
+Claude Opus 4.6 = 3x Multiplier (3 Requests pro Prompt); Claude Sonnet 4.6 = 1x Multiplier.
+Sonnet statt Opus spart 67% der Premium Requests bei ~98% der Alltagsleistung.
+Auto-Modus gewaehrt zusaetzlich 10% Rabatt auf Premium-Request-Multiplier.
+-->
+
+---
+
+# Quellen & Weiterlesen — Modelle und Kosten
+
+- [GitHub Copilot Plans & Pricing](https://github.com/features/copilot/plans) — Offizielle Uebersicht aller Plaene mit Premium-Request-Kontingenten und Preisen
+- [GitHub Docs: Supported AI Models](https://docs.github.com/en/copilot/reference/ai-models/supported-models) — Welche Modelle in Copilot verfuegbar sind und ihre Premium-Request-Multiplier
+- [GitHub Docs: Model Comparison](https://docs.github.com/en/copilot/reference/ai-models/model-comparison) — Detaillierter Vergleich der Copilot-Modelle nach Staerken und Anwendungsfall
+- [Microsoft Tech Community: Choosing the Right Model in GitHub Copilot](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/choosing-the-right-model-in-github-copilot-a-practical-guide-for-developers/4491623) — Praxisleitfaden zur Modellwahl fuer Entwickler
+- [NxCode: Claude Sonnet 4.6 vs Opus 4.6](https://www.nxcode.io/resources/news/claude-sonnet-4-6-vs-opus-4-6-complete-comparison-2026) — Detailvergleich: Benchmarks, Kosten, Empfehlung fuer welche Aufgaben
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
