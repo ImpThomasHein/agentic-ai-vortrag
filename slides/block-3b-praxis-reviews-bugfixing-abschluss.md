@@ -116,3 +116,79 @@ aber Fix-Entscheidung bleibt beim Entwickler.
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Sandboxing: Die richtigen Stopps setzen
+
+## Das Problem
+
+> Zu viele Stopps → "Accept All" → kein Schutz
+> Zu wenige Stopps → Agent entscheidet allein → Kontrollverlust
+
+**Ziel: Nur bei wichtigen Dingen stoppen.**
+
+<!--
+Kernproblem in der Praxis: Der Agent fragt bei JEDER Dateiaenderung.
+Entwickler gewoehnen sich an "Ja, ja, ja" → gefaehrlich.
+Oder sie schalten alles aus → genauso gefaehrlich.
+Die Loesung: Bewusstes Konfigurieren der Sandbox.
+-->
+
+---
+
+# Welche Aktionen brauchen welchen Schutz?
+
+| | Aktion | Warum |
+|---|--------|-------|
+| ✅ **Auto** | Dateien lesen/editieren, lokale Tests | Reversibel via Git |
+| ✅ **Auto** | Git add/commit (lokal) | Reversibel |
+| ⚠️ **Fragen** | Architektur-Entscheidung, neue Dependency | Nicht-trivial reversibel |
+| ⚠️ **Fragen** | DB-Schema, oeffentliche API | Breaking Change |
+| 🚫 **Block** | Netzwerk, Datenbank, SSH, Secrets | Security-kritisch |
+| 🚫 **Block** | Git push, sudo | Oeffentlich / Systemrisiko |
+
+<!--
+Der Schluessel: File-Edits sind NICHT sicherheitskritisch — Git macht sie reversibel.
+Entscheidungen und Netzwerk/externe Systeme SIND kritisch.
+Das muss man dem Team einmal erklaeren, dann konfigurieren.
+-->
+
+---
+
+# Sandbox konfigurieren — tooluebergreifend
+
+**Schicht 1: AGENTS.md (alle Tools)**
+```
+## Grenzen & No-Gos
+Always: Dateien lesen, editieren, Tests ausfuehren
+Ask first: Neue Dependencies, DB-Schema, API-Aenderungen
+Never: Netzwerk, Secrets, Push ohne Review
+```
+
+**Schicht 2: Tool-spezifische Config**
+- Claude Code: `.claude/settings.json` (im Repo versionierbar)
+- Copilot CLI: Workspace Trust + Copilot Instructions
+
+**Schicht 3: Team-Profil bereitstellen**
+- Config im Repo → `git clone` = fertig konfiguriert
+
+<!--
+Die AGENTS.md-Regeln sind die erste Verteidigungslinie (alle Tools).
+Die tool-spezifische Sandbox ist die zweite (technische Durchsetzung).
+Repo-Artefakt: best-practices/skills/sandbox-konfiguration.md
+-->
+
+---
+
+# Quellen & Weiterlesen — Sandboxing und Berechtigungssteuerung
+
+- [Claude Code: Configure Permissions (Docs)](https://code.claude.com/docs/en/permissions) — allowedTools/blockedTools, deny-Regeln, Wildcard-Syntax fuer `.claude/settings.json`
+- [Claude Code Security Best Practices — Backslash](https://www.backslash.security/blog/claude-code-security-best-practices) — Praxisleitfaden: Filesystem-Restrictions, Secrets-Management, Sandbox-Konfiguration
+- [VS Code Copilot Security (Docs)](https://code.visualstudio.com/docs/copilot/security) — Workspace Trust, Agent Sandboxing, MCP-Server-Sicherheit
+- [Safeguarding VS Code against prompt injections — GitHub Blog](https://github.blog/security/vulnerability-research/safeguarding-vs-code-against-prompt-injections/) — Angriffsvektoren auf Agent Mode und Gegenmassnahmen
+- [Knostic — AI Coding Agent Governance Policies That Work](https://www.knostic.ai/blog/ai-coding-agent-governance) — Team-Governance: Policies definieren, durchsetzen, reviewen
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
