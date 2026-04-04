@@ -182,4 +182,56 @@
 
 ## Bücher & Papers
 
-- arXiv: "Vibe Coding vs. Agentic Coding: Fundamentals" (Mai 2025)
+- [arXiv:2505.19443](https://arxiv.org/abs/2505.19443) — "Vibe Coding vs. Agentic Coding: Fundamentals and Practical Implications of Agentic AI" (Mai 2025), Sapkota et al.
+
+---
+
+## Weiterführende Quellen (spec-required)
+
+- [Martin Fowler: "Humans and Agents in Software Engineering Loops"](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) — On-the-loop Konzept, Harness Engineering, Kief Morris / Fowler (2026)
+
+- [BMAD Method — Breakthrough Method for Agile AI-Driven Development](https://github.com/bmad-code-org/BMAD-METHOD) — Open-Source Methodik für KI-gestützte Entwicklung über den gesamten SDLC
+
+- [Addy Osmani: "My LLM Coding Workflow Going into 2026"](https://addyosmani.com/blog/ai-coding-workflow/) — Praxis-Workflow: Planning, Iteration, Quality Gates (Dez 2025)
+
+- [Anthropic: 2026 Agentic Coding Trends Report](https://resources.anthropic.com/2026-agentic-coding-trends-report) — Multi-Agent-Systeme, Human-AI-Kollaboration, Skalierung im Enterprise (2026)
+
+- [Pragmatic Engineer: "How Claude Code is Built"](https://newsletter.pragmaticengineer.com/p/how-claude-code-is-built) — Architektur und Entwicklungsprozess von Claude Code, Gergely Orosz / Boris Cherny
+
+---
+
+## Funktionsweise von Coding Agents
+
+- [DEV Community — "Forget the Hype: Agents are Loops"](https://dev.to/jakesweb/forget-the-hype-agents-are-loops-2fi5) — Praxis-Erklärung des Agent-Loop-Konzepts
+
+- [Oracle — "What Is the AI Agent Loop?"](https://www.oracle.com/artificial-intelligence/what-is-ai-agent-loop/) — Perceive/Reason/Plan/Act/Observe-Schleife
+
+- [GitHub Blog — GitHub Copilot Agent Mode is now generally available](https://github.blog/ai-and-ml/github-copilot/github-copilot-agent-mode-is-now-generally-available/) — Ask, Edit, Agent-Modi im Vergleich
+
+- [Claude Code — Best Practices](https://code.claude.com/docs/en/best-practices) — Offizielle Empfehlungen: Workflow, Planning und Execution
+
+---
+
+## Code Reviews mit Agenten
+
+- [CodeRabbit — AI Code Reviews](https://www.coderabbit.ai/) — Automatische PR-Reviews auf GitHub & GitLab
+
+- [Claude Code — Code Review (Docs)](https://code.claude.com/docs/en/code-review) — Multi-Agent-Review mit Confidence Scoring
+
+- [GitHub Copilot Code Review (Docs)](https://docs.github.com/en/copilot/concepts/agents/code-review) — Agentic Review mit vollem Repository-Kontext
+
+- [GitHub Blog — Request Copilot code review from GitHub CLI](https://github.blog/changelog/2026-03-11-request-copilot-code-review-from-github-cli/) — Copilot-Review direkt aus dem Terminal
+
+- [DevTools Academy — State of AI Code Review Tools 2025](https://www.devtoolsacademy.com/blog/state-of-ai-code-review-tools-2025/) — Vergleich der wichtigsten Tools
+
+---
+
+## Sandboxing & Sicherheit
+
+- [Claude Code — Configure Permissions (Docs)](https://code.claude.com/docs/en/permissions) — allowedTools/blockedTools, deny-Regeln
+
+- [Backslash Security — Claude Code Security Best Practices](https://www.backslash.security/blog/claude-code-security-best-practices) — Filesystem-Restrictions, Secrets-Management
+
+- [VS Code — Copilot Security (Docs)](https://code.visualstudio.com/docs/copilot/security) — Workspace Trust, Agent Sandboxing, MCP-Server-Sicherheit
+
+- [GitHub Blog — Safeguarding VS Code against prompt injections](https://github.blog/security/vulnerability-research/safeguarding-vs-code-against-prompt-injections/) — Angriffsvektoren auf Agent Mode und Gegenmaßnahmen
