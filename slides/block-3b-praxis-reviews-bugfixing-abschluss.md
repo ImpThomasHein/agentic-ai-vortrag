@@ -192,3 +192,109 @@ Repo-Artefakt: best-practices/skills/sandbox-konfiguration.md
 <!--
 Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
+
+---
+
+# Euer Werkzeugkasten: Was eignet sich?
+
+| Eignung | Aufgabentyp |
+|---------|-------------|
+| ✅ **Gut** | CRUD, UI, Boilerplate, Refactoring, Demonstratoren, Library Updates |
+| ⚠️ **Bedingt** | Bugfixing, Integration, Legacy-Code |
+| ❌ **Schwierig** | Komplexe Algorithmik, Performance, tiefe fachliche Logik |
+
+<!--
+Die Liste ist nicht absolut — sie aendert sich mit der Modellentwicklung.
+In 6 Monaten kann "bedingt" zu "gut" werden.
+-->
+
+---
+
+# AI Code Archaeology
+
+**Bestehende Codebasen verstehen und unter Kontrolle bringen**
+
+- Agent liest und erklaert bestehenden Code
+- Erzeugt Dokumentation fuer undokumentierte Module
+- Hilft beim Onboarding in neue Projekte
+- Identifiziert Patterns, Antipatterns, Abhaengigkeiten
+
+> Besonders wertvoll fuer unsere 20-Jahre-Plattform!
+
+<!--
+Querschnittsfaehigkeit: Nuetzlich in allen Stufen.
+Praxisbeispiel: Agent erklaert ein unbekanntes Modul der Contact-Plattform.
+-->
+
+---
+
+# Das Best-Practice-Repo
+
+```
+vortrag-agentic-ai/
+  best-practices/
+    agents-md/          ← AGENTS.md Vorlagen
+    skills/             ← Evaluierte Workflows
+    plugins/            ← Plugin-Empfehlungen
+    kontext-management/ ← Kontext-Schichten
+    dokumentation/      ← Doku-Vorlagen
+    antipatterns/       ← Was NICHT tun
+  use-cases/            ← Uebungsaufgaben
+```
+
+> Lebendes Dokument — das Team pflegt es weiter!
+
+<!--
+Das Repo gehoert dem Team, nicht dem Vortragenden.
+Jeder kann PRs einreichen, Skills hinzufuegen, Antipatterns dokumentieren.
+-->
+
+---
+
+# Kosten im Blick
+
+- **Copilot Business:** 300 Premium-Requests/Monat inklusive
+- **Premium-Modelle** (Claude, o1) verbrauchen mehr Requests
+- **Einsparen:** Richtiges Modell waehlen, guten Kontext liefern, Standard-Modelle fuer einfache Aufgaben
+- **ROI:** Weniger Nacharbeit durch Methodik > Kosten fuer Premium-Requests
+
+> Details: `referenzen/modell-vergleich.md`
+
+<!--
+Kurzer Recap von Block 2.4.
+-->
+
+---
+
+# Hands-on: Aufgaben fuer die Projektarbeit
+
+1. **Einfach (Vibe Coding reicht):**
+   UI-Text aendern, Config anpassen
+
+2. **Mittel (Spec-Driven):**
+   Neuen API-Endpoint mit Tests erstellen
+
+3. **Komplex (Agentic Engineering):**
+   Neues Modul mit Architektur-Entscheidungen
+
+> Use Cases mit Contact-Software-Kontext: `use-cases/`
+
+<!--
+Die Aufgaben werden nicht im Workshop gemacht,
+sondern in der Projektarbeit danach.
+-->
+
+---
+
+<!-- _class: lead -->
+
+# Der Entwickler ist der Boss.
+# Der Agent ist das Werkzeug.
+
+> "You are orchestrating agents who do and acting as oversight."
+> — Andrej Karpathy, 2026
+
+<!--
+Schlussfolie: Die Kernbotschaft nochmal auf den Punkt.
+Dann: Fragen und Diskussion.
+-->
