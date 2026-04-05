@@ -14,3 +14,7 @@ brainstorm- validate- plan - validate- execute plan - validate
 festhalten am plan durch Checkliste 
 
 https://dev.to/teppana88/how-i-validate-quality-when-ai-agents-write-my-code-481c
+
+wann braucht es Agenten team, wenn das Ergebnis nicht für Menschen benötigt wird oder in viele Teile gebrochen werden kann.
+
+ai can produce goog code, prevent it from shipping bad code
