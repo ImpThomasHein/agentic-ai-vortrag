@@ -12,3 +12,5 @@ spec driven as prd talk master um es zu implementieren
 brainstorm- validate- plan - validate- execute plan - validate 
 
 festhalten am plan durch Checkliste 
+
+https://dev.to/teppana88/how-i-validate-quality-when-ai-agents-write-my-code-481c
