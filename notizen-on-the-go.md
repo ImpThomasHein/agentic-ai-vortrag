@@ -8,3 +8,5 @@ wie kann man die goverancw herstellen
 
 
 spec driven as prd talk master um es zu implementieren 
+
+brainstorm- validate- plan - validate- execute plan - validate 
