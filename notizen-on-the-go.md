@@ -21,3 +21,5 @@ ai can produce goog code, prevent it from shipping bad code
 
 
 kann man den flow auch mit teams lösen, bringt das Vorteile?
+
+https://www.epam.com/insights/ai/blogs/reimagining-testing-pyramid-for-genai-applications
