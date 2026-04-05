@@ -5,3 +5,6 @@ für unternehmen wird es wichtig sein, Wissen bereitzustellen , integration conf
 Beherrschen von Agenten ströme
 
 wie kann man die goverancw herstellen 
+
+
+spec driven as prd talk master um es zu implementieren 
