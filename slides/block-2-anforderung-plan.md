@@ -2,8 +2,8 @@
 marp: true
 theme: contact
 paginate: true
-header: 'Agentic Engineering Workshop'
-footer: 'Thomas Hein | Dataciders | 2026'
+header: "Agentic Engineering Workshop"
+footer: "Thomas Hein | Dataciders | 2026"
 ---
 
 <!-- _class: lead -->
@@ -17,6 +17,74 @@ Thomas Hein — Dataciders
 Dauer: ~50 Minuten
 Ziel: Strukturierte Anforderungsanalyse und Planung mit dem Agenten
 -->
+
+# Wie funktioniert ein Coding Agent?
+
+**LLM + Tools + Kontext = Agent**
+
+Der Kreislauf:
+
+1. **Prompt** empfangen
+2. **Denken** (Reasoning)
+3. **Tool aufrufen** (Dateien lesen, Code schreiben, Tests ausfuehren)
+4. **Ergebnis** auswerten
+5. **Weiter denken** oder antworten
+
+[BILD: Agent Loop Diagramm — Quelle: https://dev.to/jakesweb/forget-the-hype-agents-are-loops-2fi5]
+
+<!--
+Kernkonzept: Ein Agent ist eine Schleife, kein einzelner Aufruf.
+Zeige hier das Agent-Loop-Diagramm von DEV Community oder Oracle.
+Referenz: "Forget the Hype: Agents are Loops" (DEV Community)
+-->
+
+---
+
+# Autocomplete → Chat → Agent
+
+| Modus            |                   Wie es funktioniert | Beispiel                            |
+| ---------------- | ------------------------------------: | ----------------------------------- |
+| **Autocomplete** |        Inline-Vorschlaege beim Tippen | Tab-Completion in IDE               |
+| **Chat**         |          Frage-Antwort im Seitenpanel | "Erklaere diese Funktion"           |
+| **Agent**        | Autonome Ausfuehrung mit Tool-Zugriff | "Implementiere Feature X mit Tests" |
+
+<!--
+Copilot bietet alle 3 Modi: Ask, Edit, Agent.
+Referenz: GitHub Blog "Copilot Ask, Edit, Agent modes"
+Agent-Modus ist das, was wir heute lernen zu steuern.
+-->
+
+---
+
+# Das Oekosystem eines Coding Agents
+
+- **Skills/Rules:** Vordefinierte Workflows und Regeln (z.B. TDD-Skill)
+- **Plugins:** Erweiterungen (z.B. Context7 fuer aktuelle Doku)
+- **MCP-Server:** Externe Datenquellen anbinden (DB, Jira, Git)
+- **Hooks:** Automatische Aktionen bei bestimmten Events
+
+[BILD: MCP Host-Client-Server Architektur — Quelle: https://modelcontextprotocol.io/docs/concepts/architecture]
+
+<!--
+MCP = Model Context Protocol (Anthropic, jetzt offener Standard).
+Zeige hier das MCP-Architekturdiagramm von modelcontextprotocol.io.
+Wird in Block 3 vertieft — hier nur Ueberblick.
+-->
+
+---
+
+# Quellen & Weiterlesen — Funktionsweise Coding Agent
+
+- [DEV Community: "Forget the Hype: Agents are Loops"](https://dev.to/jakesweb/forget-the-hype-agents-are-loops-2fi5) — Praxis-Erklaerung des Agent-Loop-Konzepts
+- [Oracle: "What Is the AI Agent Loop?"](https://www.oracle.com/artificial-intelligence/what-is-ai-agent-loop/) — Perceive/Reason/Plan/Act/Observe Schleife
+- [Model Context Protocol — Architektur](https://modelcontextprotocol.io/docs/concepts/architecture) — MCP Host-Client-Server Konzept
+- [GitHub Blog: Copilot Ask, Edit, Agent modes](https://github.blog/ai-and-ml/github-copilot/github-copilot-agent-mode-is-now-generally-available/) — Drei Modi im Vergleich
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
+
+---
 
 ---
 
@@ -38,11 +106,11 @@ die LLMs nicht kennen. Wir MUESSEN dem Agenten erklaeren, wie sie funktioniert.
 
 # Die 3 Kontext-Schichten
 
-| Schicht | Inhalt | Beispiel |
-|---------|--------|----------|
-| **Immer aktiv** | Konventionen, Architektur, Plattform | AGENTS.md, Coding Guidelines |
-| **Aufgabenbezogen** | Feature-Specs, API-Docs, Modul-Doku | Spec fuer aktuelles Ticket |
-| **Temporaer** | Recherche, Debugging-Kontext | Logfiles, Stacktraces |
+| Schicht             | Inhalt                               | Beispiel                     |
+| ------------------- | ------------------------------------ | ---------------------------- |
+| **Immer aktiv**     | Konventionen, Architektur, Plattform | AGENTS.md, Coding Guidelines |
+| **Aufgabenbezogen** | Feature-Specs, API-Docs, Modul-Doku  | Spec fuer aktuelles Ticket   |
+| **Temporaer**       | Recherche, Debugging-Kontext         | Logfiles, Stacktraces        |
 
 <!--
 Schicht 1 wird einmal aufgebaut und gepflegt.
@@ -100,13 +168,13 @@ Jetzt liest der Agent sie IMMER — und handelt danach.
 
 # Welche Formate fuer Agenten?
 
-| Format | Wofuer | Agent-Verstaendnis |
-|--------|--------|--------------------|
-| **Markdown** | Alles | ★★★ Exzellent |
-| **UML** (Mermaid) | Architektur, Ablaeufe | ★★☆ Gut |
-| **ADRs** | Designentscheidungen | ★★★ Exzellent |
-| **Code-Beispiele** | Konventionen zeigen | ★★★ Exzellent |
-| **Coding Guidelines** | Standards durchsetzen | ★★★ Exzellent |
+| Format                | Wofuer                | Agent-Verstaendnis |
+| --------------------- | --------------------- | ------------------ |
+| **Markdown**          | Alles                 | ★★★ Exzellent      |
+| **UML** (Mermaid)     | Architektur, Ablaeufe | ★★☆ Gut            |
+| **ADRs**              | Designentscheidungen  | ★★★ Exzellent      |
+| **Code-Beispiele**    | Konventionen zeigen   | ★★★ Exzellent      |
+| **Coding Guidelines** | Standards durchsetzen | ★★★ Exzellent      |
 
 <!--
 Praxistipp: Code-Beispiele sind das staerkste Format.
@@ -183,14 +251,14 @@ Referenz: Addy Osmani "My LLM Coding Workflow 2026" / Martin Fowler "Humans and 
 
 # Wann volle Methodik, wann reduziert?
 
-| Aufgabe | Methodik |
-|---------|----------|
-| Neues Modul / Feature | Brainstorming → Spec → Plan → TDD |
-| Groesseres Refactoring | Plan → TDD |
-| API-Aenderung | Spec → Plan → TDD |
-| Kleine UI-Aenderung | Direkter Prompt mit Test |
-| Bugfix (lokal) | Failing Test → Fix |
-| Config-Aenderung | Direkter Prompt |
+| Aufgabe                | Methodik                          |
+| ---------------------- | --------------------------------- |
+| Neues Modul / Feature  | Brainstorming → Spec → Plan → TDD |
+| Groesseres Refactoring | Plan → TDD                        |
+| API-Aenderung          | Spec → Plan → TDD                 |
+| Kleine UI-Aenderung    | Direkter Prompt mit Test          |
+| Bugfix (lokal)         | Failing Test → Fix                |
+| Config-Aenderung       | Direkter Prompt                   |
 
 <!--
 Nicht jede Aufgabe braucht den vollen Workflow.
@@ -231,12 +299,12 @@ Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 
 # Modelle und ihre Staerken
 
-| Aufgabe | Empfohlenes Modell | Warum |
-|---------|-------------------|-------|
-| **Planning** | Claude Opus/Sonnet 4.6 | Beste Instruktionsbefolgung |
-| **Coding** | Codex 5.3, Claude Sonnet 4.6 | Schnell + praezise |
-| **Review** | Claude 4.6, Gemini 3.1 | Regelanalyse, grosser Kontext |
-| **Recherche** | Gemini 3.1 | Grosses Kontextfenster |
+| Aufgabe       | Empfohlenes Modell           | Warum                         |
+| ------------- | ---------------------------- | ----------------------------- |
+| **Planning**  | Claude Opus/Sonnet 4.6       | Beste Instruktionsbefolgung   |
+| **Coding**    | Codex 5.3, Claude Sonnet 4.6 | Schnell + praezise            |
+| **Review**    | Claude 4.6, Gemini 3.1       | Regelanalyse, grosser Kontext |
+| **Recherche** | Gemini 3.1                   | Grosses Kontextfenster        |
 
 <!--
 Copilot erlaubt Modellwahl pro Aufgabe — das ist ein Vorteil.
