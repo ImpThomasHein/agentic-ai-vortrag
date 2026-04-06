@@ -1,3 +1,5 @@
+Basierend auf diesen Prompt ist der Votrag und das Repo enstatenden
+
 # Aufgabenkontext
 
 Folgendes Schrifftstück dient als Prompt um 3 Dinge zu erreichen. (1. als wichtigstes Kriterium)
