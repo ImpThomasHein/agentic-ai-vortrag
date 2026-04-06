@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+.github
+*.md
+.env*
+.claude
+docs
+e2e
+stories
+.storybook

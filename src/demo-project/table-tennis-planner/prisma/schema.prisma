@@ -1,0 +1,278 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id           String   @id @default(uuid())
+  username     String   @unique
+  passwordHash String   @map("password_hash")
+  displayName  String   @map("display_name")
+  email        String?
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  roles        Role[]
+  groupMembers GroupMember[]
+  votes        Vote[]
+  attendance   Attendance[]
+  exercises          Exercise[]    @relation("CreatedBy")
+  teamMembers        TeamMember[]
+  pushSubscriptions    PushSubscription[]
+  matchAvailabilities  MatchAvailability[]
+  matchLineups         MatchLineup[]
+  chatMessages         ChatMessage[]
+
+  @@map("users")
+}
+
+model UserRole {
+  id          String  @id @default(uuid())
+  name        String  @unique
+  description String?
+
+  roles Role[]
+
+  @@map("user_roles")
+}
+
+model Role {
+  id         String @id @default(uuid())
+  userId     String @map("user_id")
+  userRoleId String @map("user_role_id")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userRole UserRole @relation(fields: [userRoleId], references: [id])
+
+  @@map("roles")
+}
+
+model Group {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  description String?
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  members  GroupMember[]
+  schedule TrainingSchedule?
+  sessions TrainingSession[]
+
+  @@map("groups")
+}
+
+model GroupMember {
+  id        String   @id @default(uuid())
+  groupId   String   @map("group_id")
+  userId    String   @map("user_id")
+  role      String   // "trainer" | "player"
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  group Group @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([groupId, userId])
+  @@map("group_members")
+}
+
+model Exercise {
+  id              String   @id @default(uuid())
+  name            String
+  type            String   @default("exercise") // "exercise" | "note"
+  description     String
+  hints           String[]
+  category        String
+  difficulty      String
+  ttrMin          Int      @map("ttr_min")
+  ttrMax          Int      @map("ttr_max")
+  durationMinutes Int?     @map("duration_minutes")
+  diagram         Json
+  tags            String[]
+  createdById     String?  @map("created_by")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  createdBy   User?                @relation("CreatedBy", fields: [createdById], references: [id], onDelete: SetNull)
+  assignments TrainingAssignment[]
+  votes       Vote[]
+
+  @@map("exercises")
+}
+
+model TrainingSchedule {
+  id        String   @id @default(uuid())
+  groupId   String   @unique @map("group_id")
+  weekdays  Int[]
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  group Group @relation(fields: [groupId], references: [id], onDelete: Cascade)
+
+  @@map("training_schedules")
+}
+
+model TrainingSession {
+  id          String   @id @default(uuid())
+  groupId     String   @map("group_id")
+  sessionDate DateTime @map("session_date") @db.Date
+  notes       String?
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  group       Group                @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  assignments TrainingAssignment[]
+  votes       Vote[]
+  attendance  Attendance[]
+
+  @@unique([groupId, sessionDate])
+  @@map("training_sessions")
+}
+
+model TrainingAssignment {
+  id         String   @id @default(uuid())
+  sessionId  String   @map("session_id")
+  exerciseId String   @map("exercise_id")
+  sortOrder  Int      @default(0) @map("sort_order")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  session  TrainingSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  exercise Exercise        @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, exerciseId])
+  @@map("training_assignments")
+}
+
+model Vote {
+  id         String   @id @default(uuid())
+  userId     String   @map("user_id")
+  exerciseId String   @map("exercise_id")
+  sessionId  String   @map("session_id")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  user     User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  exercise Exercise        @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  session  TrainingSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, exerciseId, sessionId])
+  @@map("votes")
+}
+
+model Attendance {
+  id        String   @id @default(uuid())
+  userId    String?  @map("user_id")
+  sessionId String   @map("session_id")
+  status    String   // "yes" | "no"
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user    User?           @relation(fields: [userId], references: [id], onDelete: SetNull)
+  session TrainingSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, sessionId])
+  @@map("attendance")
+}
+
+model Team {
+  id         String    @id @default(uuid())
+  name       String    @unique
+  clickTtUrl String?   @map("click_tt_url")
+  leagueData String?   @map("league_data")
+  lastSync   DateTime? @map("last_sync")
+  createdAt  DateTime  @default(now()) @map("created_at")
+  updatedAt  DateTime  @updatedAt @map("updated_at")
+
+  members             TeamMember[]
+  matchAvailabilities MatchAvailability[]
+  matchLineups        MatchLineup[]
+  chatMessages        ChatMessage[]
+
+  @@map("teams")
+}
+
+model TeamMember {
+  id        String   @id @default(uuid())
+  teamId    String   @map("team_id")
+  userId    String   @map("user_id")
+  role      String   @default("player") @map("role")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
+
+  team Team @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([teamId, userId])
+  @@map("team_members")
+}
+
+model MatchAvailability {
+  id        String   @id @default(uuid())
+  teamId    String   @map("team_id")
+  matchId   String   @map("match_id")
+  userId    String   @map("user_id")
+  status    String   @map("status")
+  canDrive  Boolean  @default(false) @map("can_drive")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  team Team @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([teamId, matchId, userId])
+  @@map("match_availability")
+}
+
+model MatchLineup {
+  id        String   @id @default(uuid())
+  teamId    String   @map("team_id")
+  matchId   String   @map("match_id")
+  userId    String   @map("user_id")
+  isDriver  Boolean  @default(false) @map("is_driver")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  team Team @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([teamId, matchId, userId])
+  @@map("match_lineup")
+}
+
+model PushSubscription {
+  id        String   @id @default(uuid())
+  userId    String   @map("user_id")
+  endpoint  String   @unique
+  p256dh    String
+  auth      String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("push_subscriptions")
+}
+
+model ChatImage {
+  id        String   @id @default(uuid())
+  data      Bytes
+  mimeType  String   @map("mime_type")
+  fileName  String   @map("file_name")
+  width     Int
+  height    Int
+  createdAt DateTime @default(now()) @map("created_at")
+
+  messages ChatMessage[]
+
+  @@map("chat_images")
+}
+
+model ChatMessage {
+  id        String   @id @default(uuid())
+  teamId    String   @map("team_id")
+  userId    String   @map("user_id")
+  content   String?
+  imageId   String?  @map("image_id")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  team  Team       @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  user  User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  image ChatImage? @relation(fields: [imageId], references: [id], onDelete: SetNull)
+
+  @@map("chat_messages")
+}

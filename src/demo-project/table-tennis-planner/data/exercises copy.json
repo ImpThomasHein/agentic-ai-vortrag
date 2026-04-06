@@ -1,0 +1,498 @@
+{
+  "exercises": [
+    {
+      "id": "bein-001",
+      "name": "Falkenberg",
+      "description": "Klassische Beinarbeit mit Seitenwechsel: Vorhand aus der Vorhandseite, Vorhand aus der Rückhandseite, Rückhand aus der Mitte.",
+      "hints": ["Immer in Grundstellung zurückkehren", "Kleine, schnelle Schritte", "Gewicht auf den Fußballen"],
+      "category": "beinarbeit",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1200, "max": 1600 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 75, "startY": 90, "endX": 25, "endY": 15, "type": "topspin", "order": 1 },
+          { "id": "t2", "startX": 25, "startY": 90, "endX": 75, "endY": 15, "type": "topspin", "order": 2 },
+          { "id": "t3", "startX": 50, "startY": 90, "endX": 50, "endY": 15, "type": "topspin", "order": 3 }
+        ]
+      },
+      "tags": ["klassisch", "kondition"]
+    },
+    {
+      "id": "bein-002",
+      "name": "Sidestep Vorhand",
+      "description": "Seitliche Schritte entlang der Grundlinie mit Vorhand-Topspin auf wechselnde Platzierungen.",
+      "hints": ["Schulter zur Spielrichtung drehen", "Nach jedem Schlag zurück zur Mitte"],
+      "category": "beinarbeit",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 900, "max": 1300 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 30, "startY": 90, "endX": 70, "endY": 15, "type": "topspin", "order": 1 },
+          { "id": "t2", "startX": 70, "startY": 90, "endX": 30, "endY": 15, "type": "topspin", "order": 2 }
+        ]
+      }
+    },
+    {
+      "id": "bein-003",
+      "name": "Umspringen VH",
+      "description": "Umspringen aus der Rückhand-Ecke zur Vorhand. Schneller Positionswechsel mit Pivot-Schritt.",
+      "hints": ["Explosiv abstoßen", "Schläger früh zurücknehmen", "Körperschwerpunkt tief"],
+      "category": "beinarbeit",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 1800 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 25, "startY": 90, "endX": 75, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "bein-004",
+      "name": "1-2 Schritt Rückhand",
+      "description": "Kurzer 1-2 Schritt zur Rückhandseite für optimale Schlagposition.",
+      "hints": ["Erster Schritt klein", "Zweiter Schritt in Schlagposition"],
+      "category": "beinarbeit",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 800, "max": 1200 },
+      "duration": 6,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 35, "startY": 90, "endX": 65, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "bein-005",
+      "name": "Kreuzschritt",
+      "description": "Kreuzschritt-Beinarbeit für weite Bälle. Ein Fuß kreuzt hinter dem anderen.",
+      "hints": ["Oberkörper stabil halten", "Blick zum Ball"],
+      "category": "beinarbeit",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1500, "max": 1900 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 85, "startY": 90, "endX": 15, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "aufschlag-001",
+      "name": "Kurz-Kurz Aufschlag",
+      "description": "Kurzer Aufschlag mit Unterschnitt diagonal, Rückschlag kurz halten.",
+      "hints": ["Ball muss zweimal auf der gegnerischen Seite aufspringen können", "Handgelenk locker", "Flacher Ballwurf"],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 800, "max": 1300 },
+      "duration": 5,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 25, "startY": 85, "endX": 30, "endY": 35, "type": "backspin" }
+        ]
+      }
+    },
+    {
+      "id": "aufschlag-002",
+      "name": "Pendulum Aufschlag",
+      "description": "Pendulum-Aufschlag mit Seitschnitt. Schläger schwingt wie ein Pendel von außen nach innen.",
+      "hints": ["Handgelenk-Rotation nutzen", "Kontakt am tiefsten Punkt", "Variation der Schnittmenge"],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1100, "max": 1500 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 40, "startY": 85, "endX": 25, "endY": 30, "type": "sidespin" }
+        ]
+      }
+    },
+    {
+      "id": "aufschlag-003",
+      "name": "Langer Aufschlag Rückhand",
+      "description": "Langer, schneller Aufschlag auf die Rückhand des Gegners mit Topspin.",
+      "hints": ["Überraschungseffekt nutzen", "Volle Geschwindigkeit", "Flache Flugkurve"],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1400 },
+      "duration": 5,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 50, "startY": 85, "endX": 30, "endY": 10, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "aufschlag-004",
+      "name": "Flip Rückschlag",
+      "description": "Aggressiver Flip-Rückschlag auf kurze Aufschläge. Ball wird über dem Tisch angegriffen.",
+      "hints": ["Früh am Tisch positionieren", "Handgelenk einsetzen", "Ball vor dem Körper treffen"],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1300, "max": 1700 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 35, "startY": 50, "endX": 65, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "aufschlag-005",
+      "name": "Schupf Rückschlag",
+      "description": "Kontrollierter Schupf-Rückschlag auf unterschnittene Aufschläge.",
+      "hints": ["Schläger öffnen", "Ball streichen, nicht schlagen", "Platzierung vor Tempo"],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 5,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 65, "startY": 55, "endX": 35, "endY": 25, "type": "backspin" }
+        ]
+      }
+    },
+    {
+      "id": "technik-001",
+      "name": "Topspin gegen Block",
+      "description": "Spieler spielt Topspin, Trainer blockt zurück. Fokus auf Rotation und Platzierung.",
+      "hints": ["Knie beugen, von unten nach oben durchziehen", "Ball im höchsten Punkt treffen", "Körperrotation nutzen"],
+      "category": "technik",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 50, "startY": 90, "endX": 50, "endY": 15, "type": "topspin", "color": "#ef4444" },
+          { "id": "t2", "startX": 50, "startY": 15, "endX": 55, "endY": 85, "type": "flat", "color": "#3b82f6" }
+        ]
+      }
+    },
+    {
+      "id": "technik-002",
+      "name": "Topspin gegen Unterschnitt",
+      "description": "Eröffnungs-Topspin gegen unterschnittene Bälle. Grundtechnik für das Angriffsspiel.",
+      "hints": ["Mehr nach oben spielen", "Ball fallen lassen", "Beine durchstrecken"],
+      "category": "technik",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1100, "max": 1600 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 50, "startY": 15, "endX": 50, "endY": 70, "type": "backspin" },
+          { "id": "t2", "startX": 50, "startY": 90, "endX": 50, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "technik-003",
+      "name": "Konter-Topspin",
+      "description": "Topspin gegen Topspin. Schnelles Timing, kompakte Bewegung.",
+      "hints": ["Früher Treffpunkt", "Kurze Ausholbewegung", "Block-Komponente nutzen"],
+      "category": "technik",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 1800 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 40, "startY": 15, "endX": 60, "endY": 80, "type": "topspin" },
+          { "id": "t2", "startX": 60, "startY": 90, "endX": 40, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "technik-004",
+      "name": "Block Grundübung",
+      "description": "Passive Blocktechnik gegen Topspin. Ball vor dem Körper blocken.",
+      "hints": ["Schläger leicht schließen", "Ruhige Handführung", "Position früh einnehmen"],
+      "category": "technik",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 800, "max": 1200 },
+      "duration": 6,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 50, "startY": 15, "endX": 50, "endY": 80, "type": "topspin" },
+          { "id": "t2", "startX": 50, "startY": 90, "endX": 50, "endY": 20, "type": "flat" }
+        ]
+      }
+    },
+    {
+      "id": "technik-005",
+      "name": "Schupf-Duell",
+      "description": "Unterschnitt-Schupf hin und her. Fokus auf Kontrolle und Platzierung.",
+      "hints": ["Ball streichen", "Länge variieren", "Rotation lesen"],
+      "category": "technik",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 5,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 40, "startY": 85, "endX": 60, "endY": 25, "type": "backspin" },
+          { "id": "t2", "startX": 60, "startY": 15, "endX": 40, "endY": 75, "type": "backspin" }
+        ]
+      }
+    },
+    {
+      "id": "vh-001",
+      "name": "VH Topspin Diagonale",
+      "description": "Kontinuierlicher Vorhand-Topspin diagonal auf regelmäßiges Zuspiel.",
+      "hints": ["Gewichtsverlagerung von rechts nach links", "Hüfte eindrehen", "Durchschwingen"],
+      "category": "vorhandzentriert",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 900, "max": 1300 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 75, "startY": 90, "endX": 25, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "vh-002",
+      "name": "VH Topspin Longline",
+      "description": "Vorhand-Topspin parallel zur Seitenlinie. Präzise Platzierung erforderlich.",
+      "hints": ["Schulter zum Ziel ausrichten", "Später Treffpunkt", "Voller Durchschwung"],
+      "category": "vorhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1100, "max": 1500 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 75, "startY": 90, "endX": 75, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "vh-003",
+      "name": "VH Power-Schuss",
+      "description": "Maximaler Vorhand-Schuss auf hohe Bälle. Volle Körperrotation.",
+      "hints": ["Ball fallen lassen", "Maximale Beschleunigung", "Körpergewicht einsetzen"],
+      "category": "vorhandzentriert",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1300, "max": 1700 },
+      "duration": 6,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 60, "startY": 90, "endX": 40, "endY": 10, "type": "flat" }
+        ]
+      }
+    },
+    {
+      "id": "vh-004",
+      "name": "VH Wechsel Diagonal/Longline",
+      "description": "Wechsel zwischen diagonalem und parallelem Vorhand-Topspin auf Zuruf.",
+      "hints": ["Schnelle Entscheidung", "Unterschiedliche Körperdrehung", "Blick zum Ziel"],
+      "category": "vorhandzentriert",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 1800 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 70, "startY": 90, "endX": 25, "endY": 15, "type": "topspin", "order": 1 },
+          { "id": "t2", "startX": 70, "startY": 90, "endX": 75, "endY": 15, "type": "topspin", "order": 2 }
+        ]
+      }
+    },
+    {
+      "id": "vh-005",
+      "name": "VH aus der Mitte",
+      "description": "Vorhand-Topspin aus der Tischmitte. Umspringen und angreifen.",
+      "hints": ["Schnell zur Position", "Körper nicht im Weg", "Volle Rotation möglich"],
+      "category": "vorhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1200, "max": 1600 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 50, "startY": 90, "endX": 50, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "rh-001",
+      "name": "RH Schupf kurz",
+      "description": "Rückhand Unterschnitt-Schupf kurz über das Netz platziert.",
+      "hints": ["Ball früh treffen", "Schläger öffnen", "Kurze Bewegung"],
+      "category": "rueckhandzentriert",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 800, "max": 1200 },
+      "duration": 5,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 35, "startY": 85, "endX": 65, "endY": 35, "type": "backspin" }
+        ]
+      }
+    },
+    {
+      "id": "rh-002",
+      "name": "RH Topspin Diagonale",
+      "description": "Rückhand-Topspin diagonal gespielt. Kompakte Technik, schnelle Ausführung.",
+      "hints": ["Ellbogen als Drehpunkt", "Handgelenk einsetzen", "Nach vorne spielen"],
+      "category": "rueckhandzentriert",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 900, "max": 1300 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 25, "startY": 90, "endX": 75, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "rh-003",
+      "name": "RH Topspin Longline",
+      "description": "Rückhand-Topspin parallel. Präzise Technik für überraschende Platzierung.",
+      "hints": ["Schulter eindrehen", "Später Kontakt", "Arm durchstrecken"],
+      "category": "rueckhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1100, "max": 1500 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 25, "startY": 90, "endX": 25, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "rh-004",
+      "name": "RH Block aktiv",
+      "description": "Aktiver Rückhand-Block mit leichtem Gegendruck gegen Topspin.",
+      "hints": ["Schläger leicht schließen", "Timing vor Kraft", "Kompakte Bewegung"],
+      "category": "rueckhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1400 },
+      "duration": 6,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 60, "startY": 15, "endX": 35, "endY": 80, "type": "topspin" },
+          { "id": "t2", "startX": 35, "startY": 90, "endX": 60, "endY": 20, "type": "flat" }
+        ]
+      }
+    },
+    {
+      "id": "rh-005",
+      "name": "RH Banane (Flip)",
+      "description": "Seitlich angeschnittener Rückhand-Flip über dem Tisch. Moderne Angriffstechnik.",
+      "hints": ["Ellbogen hoch", "Handgelenk nach außen drehen", "Ball seitlich treffen"],
+      "category": "rueckhandzentriert",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 1900 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 40, "startY": 55, "endX": 70, "endY": 15, "type": "sidespin" }
+        ]
+      }
+    },
+    {
+      "id": "rh-006",
+      "name": "RH-VH Wechsel",
+      "description": "Schneller Wechsel zwischen Rückhand und Vorhand auf Zuspiel zur Mitte.",
+      "hints": ["Neutrale Grundstellung", "Schnelle Entscheidung", "Körperbalance halten"],
+      "category": "rueckhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1100, "max": 1500 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 45, "startY": 90, "endX": 55, "endY": 15, "type": "topspin", "order": 1 },
+          { "id": "t2", "startX": 55, "startY": 90, "endX": 45, "endY": 15, "type": "topspin", "order": 2 }
+        ]
+      }
+    },
+    {
+      "id": "doppel-001",
+      "name": "Grundübung Doppel diagonal",
+      "description": "Beide Doppelpartner spielen diagonal auf ihre jeweiligen Gegner. Fokus auf Rhythmus und Positionswechsel.",
+      "hints": ["Nach jedem Schlag Partner wechseln lassen", "Nicht im Weg stehen", "Klare Laufwege absprechen"],
+      "category": "doppel",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 900, "max": 1300 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 60, "startY": 90, "endX": 40, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "doppel-002",
+      "name": "Aufschlag im Doppel",
+      "description": "Aufschlagübung im Doppel: diagonal in die rechte gegnerische Hälfte. Fokus auf Platzierung und kurze Aufschläge.",
+      "hints": ["Immer diagonal servieren", "Rechte Tischhälfte nutzen", "Zweimaliges Aufspringen auf gegnerischer Seite"],
+      "category": "doppel",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 800, "max": 1200 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 65, "startY": 85, "endX": 35, "endY": 30, "type": "backspin" }
+        ]
+      }
+    },
+    {
+      "id": "doppel-003",
+      "name": "Positionswechsel im Doppel",
+      "description": "Systematisches Üben des Partnerwechsels nach jedem Schlag. A spielt, B übernimmt, A geht nach links/rechts.",
+      "hints": ["Klare Kommunikation", "Nicht zu weit laufen", "Rhythmus finden", "Blickkontakt zum Partner"],
+      "category": "doppel",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1400 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 55, "startY": 90, "endX": 45, "endY": 15, "type": "topspin", "order": 1 },
+          { "id": "t2", "startX": 45, "startY": 90, "endX": 55, "endY": 15, "type": "topspin", "order": 2 }
+        ]
+      }
+    },
+    {
+      "id": "doppel-004",
+      "name": "Doppel-Mitte spielen",
+      "description": "Zuspiel auf die Mitte zwischen beiden Gegnern. Partner müssen klären, wer spielt.",
+      "hints": ["Absprachen treffen: 'Meiner!'", "Stärkerer Schlag hat Vorrang", "Schnelle Entscheidung"],
+      "category": "doppel",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1100, "max": 1500 },
+      "duration": 8,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 50, "startY": 90, "endX": 50, "endY": 15, "type": "topspin" }
+        ]
+      }
+    },
+    {
+      "id": "doppel-005",
+      "name": "Doppel-Spielzug: Flip-Topspin",
+      "description": "Einstudierter Spielzug: Spieler A flipt kurz, Spieler B spielt Topspin auf den Return.",
+      "hints": ["Rollen klar verteilen", "Timing abstimmen", "Zweiter Spieler bereit an der Seite"],
+      "category": "doppel",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1300, "max": 1700 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 40, "startY": 55, "endX": 60, "endY": 20, "type": "topspin", "order": 1 },
+          { "id": "t2", "startX": 60, "startY": 90, "endX": 40, "endY": 15, "type": "topspin", "order": 2 }
+        ]
+      }
+    },
+    {
+      "id": "doppel-006",
+      "name": "Doppel gegen Einzel",
+      "description": "Zwei Spieler im Doppel gegen einen Einzelspieler. Doppelpartner üben Koordination unter Druck.",
+      "hints": ["Einzelspieler hat Vorteil", "Gute Kommunikation wichtig", "Fehler vermeiden"],
+      "category": "doppel",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 12,
+      "diagram": {
+        "trajectories": [
+          { "id": "t1", "startX": 55, "startY": 90, "endX": 50, "endY": 15, "type": "topspin" }
+        ]
+      }
+    }
+  ]
+}

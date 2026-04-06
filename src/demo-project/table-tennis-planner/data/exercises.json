@@ -1,0 +1,3344 @@
+{
+  "exercises": [
+    {
+      "id": "auf-001",
+      "name": "Kurzer US-Aufschlag Grundlagen",
+      "description": "Kurzen Unterschnitt-Aufschlag üben: Ball muss 2x auf gegnerischer Hälfte aufspringen. Fokus auf tiefes Ballwerfen und Handgelenkschnitt.",
+      "hints": [
+        "Ballwurf nur 16cm hoch",
+        "Ball am tiefsten Punkt treffen",
+        "Schläger fast waagerecht halten"
+      ],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "auf001-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 50,
+            "endY": 45,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "auf001-t2",
+            "startX": 50,
+            "startY": 45,
+            "endX": 45,
+            "endY": 80,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["aufschlag", "unterschnitt"]
+    },
+    {
+      "id": "auf-002",
+      "name": "Langer Aufschlag mit Tempo",
+      "description": "Langer schneller Aufschlag tief in die RH- oder VH-Ecke des Gegners. Ziel ist maximale Länge und Geschwindigkeit.",
+      "hints": [
+        "Erster Aufsprung nah am Netz",
+        "Schläger geschlossen",
+        "Ganzen Arm durchschwingen"
+      ],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "auf002-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 25,
+            "endY": 10,
+            "type": "flat",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "auf002-t2",
+            "startX": 25,
+            "startY": 10,
+            "endX": 50,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["aufschlag", "tempo"]
+    },
+    {
+      "id": "auf-003",
+      "name": "Aufschlag 3. Ball Angriff",
+      "description": "Kurzer US-Aufschlag, Partner schupft zurück, 3. Ball mit VH-Topspin eröffnen. Taktisch wichtigste Übung im modernen Tischtennis.",
+      "hints": [
+        "Nach Aufschlag sofort Grundstellung",
+        "Aufschlag kurz halten",
+        "3. Ball konsequent angreifen"
+      ],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "auf003-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 45,
+            "endY": 45,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "auf003-t2",
+            "startX": 45,
+            "startY": 45,
+            "endX": 65,
+            "endY": 80,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "auf003-t3",
+            "startX": 65,
+            "startY": 80,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["aufschlag", "topspin", "taktik"]
+    },
+    {
+      "id": "auf-004",
+      "name": "RH-Flip als Rückschlag",
+      "description": "Auf kurzen Aufschlag mit RH-Banana-Flip antworten. Aggressive Rückschlag-Technik für kurze Bälle in die Rückhand.",
+      "hints": [
+        "Ellbogen über den Tisch führen",
+        "Handgelenk explosiv",
+        "Ball am höchsten Punkt"
+      ],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "auf004-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 35,
+            "endY": 50,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "auf004-t2",
+            "startX": 35,
+            "startY": 50,
+            "endX": 70,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["rueckschlag", "flip"]
+    },
+    {
+      "id": "auf-005",
+      "name": "VH-Flip auf kurzen Ball",
+      "description": "Auf kurzen Aufschlag in Tischmitte mit VH-Flip aggressiv antworten. Erfordert schnelles Herantreten an den Tisch.",
+      "hints": [
+        "Rechten Fuß unter den Tisch",
+        "Kurze schnelle Armbewegung",
+        "Ball früh nehmen"
+      ],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "auf005-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 50,
+            "endY": 48,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "auf005-t2",
+            "startX": 50,
+            "startY": 48,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["rueckschlag", "flip", "vorhand"]
+    },
+    {
+      "id": "auf-006",
+      "name": "Aufschlag-Variation mit gleichem Bewegungsablauf",
+      "description": "Gleiche Aufschlagbewegung, aber Wechsel zwischen Unterschnitt, Überschnitt und leerem Aufschlag. Partner muss den Schnitt erraten.",
+      "hints": [
+        "Handgelenk variiert minimal",
+        "Bewegungsablauf identisch",
+        "Partner rät den Schnitt"
+      ],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "auf006-t1",
+            "startX": 45,
+            "startY": 85,
+            "endX": 40,
+            "endY": 42,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "auf006-t2",
+            "startX": 50,
+            "startY": 85,
+            "endX": 50,
+            "endY": 40,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "auf006-t3",
+            "startX": 55,
+            "startY": 85,
+            "endX": 60,
+            "endY": 43,
+            "type": "flat",
+            "player": "self",
+            "stroke": "RH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["aufschlag", "variation", "taeuschung"]
+    },
+    {
+      "id": "auf-007",
+      "name": "Aufschlag mit Seitschnitt links-rechts",
+      "description": "Abwechselnd Aufschlag mit Links- und Rechts-Seitschnitt bei gleicher Bewegung. Erfordert präzise Kontrolle des Kontaktpunkts am Ball.",
+      "hints": [
+        "Kontaktpunkt am Ball variieren",
+        "Oberkörper gleich halten",
+        "Ballflugkurve beobachten"
+      ],
+      "category": "aufschlag-rueckschlag",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "auf007-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 30,
+            "endY": 35,
+            "type": "sidespin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "auf007-t2",
+            "startX": 50,
+            "startY": 85,
+            "endX": 70,
+            "endY": 35,
+            "type": "sidespin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["aufschlag", "seitschnitt"]
+    },
+    {
+      "id": "top-001",
+      "name": "VH-Topspin auf Unterschnitt diagonal",
+      "description": "Partner schupft regelmäßig diagonal in die Vorhand, Spieler eröffnet mit VH-Topspin diagonal. Grundlegende Eröffnungstechnik.",
+      "hints": [
+        "Knie beugen",
+        "Schläger tief starten und nach oben",
+        "Ganzen Körper einsetzen"
+      ],
+      "category": "topspin",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "top001-t1",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "top001-t2",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["topspin", "vorhand", "eroeffnung"]
+    },
+    {
+      "id": "top-002",
+      "name": "RH-Topspin auf Unterschnitt diagonal",
+      "description": "Partner schupft diagonal in die Rückhand, Spieler eröffnet mit RH-Topspin diagonal zurück. Wichtig für beidhändiges Eröffnungsspiel.",
+      "hints": [
+        "Ellbogen als Drehpunkt",
+        "Kurze explosive Bewegung",
+        "Schlägerwinkel anpassen"
+      ],
+      "category": "topspin",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "top002-t1",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "top002-t2",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["topspin", "rueckhand", "eroeffnung"]
+    },
+    {
+      "id": "top-003",
+      "name": "VH-Topspin gegen Block diagonal",
+      "description": "Partner blockt stabil diagonal, Spieler spielt VH-Topspin-Serie diagonal. Fokus auf Kontinuität und gleichbleibende Qualität.",
+      "hints": [
+        "Nach jedem Schlag Grundstellung",
+        "Mehr Spin als Tempo",
+        "Gewicht verlagern"
+      ],
+      "category": "topspin",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "top003-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "top003-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "top003-t3",
+            "startX": 75,
+            "startY": 85,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "top003-t4",
+            "startX": 30,
+            "startY": 12,
+            "endX": 70,
+            "endY": 88,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["topspin", "vorhand", "serie"]
+    },
+    {
+      "id": "top-004",
+      "name": "RH-Topspin gegen Block diagonal",
+      "description": "Partner blockt in die RH-Seite, Spieler zieht RH-Topspin-Serie diagonal. Wichtig für stabiles RH-Topspinspiel.",
+      "hints": [
+        "Vor dem Körper spielen",
+        "Ellbogen nah am Körper",
+        "Schnelle Beschleunigung"
+      ],
+      "category": "topspin",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "top004-t1",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "top004-t2",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "top004-t3",
+            "startX": 25,
+            "startY": 85,
+            "endX": 70,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 3
+          },
+          {
+            "id": "top004-t4",
+            "startX": 70,
+            "startY": 12,
+            "endX": 30,
+            "endY": 88,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["topspin", "rueckhand", "serie"]
+    },
+    {
+      "id": "top-005",
+      "name": "Topspin-Gegentopspin VH diagonal",
+      "description": "Beide Spieler spielen VH-Topspin diagonal gegeneinander. Höchste Intensität, erfordert gute Beinarbeit und Timing.",
+      "hints": [
+        "Abstand zum Tisch vergrößern",
+        "Ball in aufsteigender Phase",
+        "Beine aktiv"
+      ],
+      "category": "topspin",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "top005-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "top005-t2",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "top005-t3",
+            "startX": 75,
+            "startY": 85,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "top005-t4",
+            "startX": 70,
+            "startY": 12,
+            "endX": 30,
+            "endY": 88,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["topspin", "gegentopspin", "vorhand"]
+    },
+    {
+      "id": "top-006",
+      "name": "VH-Topspin Platzierungswechsel",
+      "description": "VH-Topspin abwechselnd diagonal und parallel spielen, Partner blockt. Trainiert die Fähigkeit, die Richtung kurzfristig zu ändern.",
+      "hints": [
+        "Handgelenk für Richtung",
+        "Schlagbewegung minimal ändern",
+        "Treffpunkt nutzen"
+      ],
+      "category": "topspin",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "top006-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "top006-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "top006-t3",
+            "startX": 75,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "top006-t4",
+            "startX": 75,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["topspin", "platzierung", "vorhand"]
+    },
+    {
+      "id": "top-007",
+      "name": "Topspin Tempowechsel",
+      "description": "Abwechselnd langsamen spinreichen Topspin und schnellen Power-Topspin. Gegner aus dem Rhythmus bringen durch Tempowechsel.",
+      "hints": [
+        "Spinball mehr nach oben",
+        "Powerball mehr nach vorne",
+        "Gegner aus Rhythmus bringen"
+      ],
+      "category": "topspin",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "top007-t1",
+            "startX": 75,
+            "startY": 88,
+            "endX": 30,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "top007-t2",
+            "startX": 30,
+            "startY": 15,
+            "endX": 70,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "top007-t3",
+            "startX": 70,
+            "startY": 85,
+            "endX": 25,
+            "endY": 10,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "top007-t4",
+            "startX": 25,
+            "startY": 10,
+            "endX": 75,
+            "endY": 88,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["topspin", "variation", "tempo"]
+    },
+    {
+      "id": "bein-001",
+      "name": "1 VH - 1 RH Sidestep",
+      "description": "Sidesteps zwischen VH und RH, Partner blockt abwechselnd in VH- und RH-Ecke. Grundlegende Beinarbeit für den Seitenwechsel.",
+      "hints": [
+        "Immer zurück in Grundstellung",
+        "Kleine schnelle Schritte",
+        "Gewicht auf Fußballen"
+      ],
+      "category": "beinarbeit",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "bein001-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "bein001-t2",
+            "startX": 75,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "bein001-t3",
+            "startX": 50,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "bein001-t4",
+            "startX": 25,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["beinarbeit", "sidestep", "grundlagen"]
+    },
+    {
+      "id": "bein-002",
+      "name": "2 VH - 2 RH",
+      "description": "Partner blockt 2x in die VH-Seite dann 2x in die RH-Seite. Spieler spielt Topspin und muss den Rhythmus finden.",
+      "hints": [
+        "Rhythmus finden",
+        "Nicht hetzen",
+        "Gleiche Qualität auf beiden Seiten"
+      ],
+      "category": "beinarbeit",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "bein002-t1",
+            "startX": 40,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "bein002-t2",
+            "startX": 75,
+            "startY": 85,
+            "endX": 35,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "bein002-t3",
+            "startX": 35,
+            "startY": 15,
+            "endX": 70,
+            "endY": 88,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "bein002-t4",
+            "startX": 70,
+            "startY": 88,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          },
+          {
+            "id": "bein002-t5",
+            "startX": 60,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 5
+          },
+          {
+            "id": "bein002-t6",
+            "startX": 25,
+            "startY": 85,
+            "endX": 65,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 6
+          }
+        ]
+      },
+      "tags": ["beinarbeit", "sidestep"]
+    },
+    {
+      "id": "bein-003",
+      "name": "Falkenberg (2-1)",
+      "description": "Klassiker: Partner blockt 2x in RH-Ecke, 1x in VH-Ecke. Spieler spielt RH-Topspin, VH-Topspin aus Mitte, VH-Topspin aus VH-Ecke.",
+      "hints": [
+        "Nach RH-Topspin sofort Ausfallschritt",
+        "VH aus Mitte mit Gewichtsverlagerung",
+        "Zurück in Mitte"
+      ],
+      "category": "beinarbeit",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "bein003-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "bein003-t2",
+            "startX": 25,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "bein003-t3",
+            "startX": 50,
+            "startY": 15,
+            "endX": 50,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "bein003-t4",
+            "startX": 50,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          },
+          {
+            "id": "bein003-t5",
+            "startX": 50,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 5
+          },
+          {
+            "id": "bein003-t6",
+            "startX": 75,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 6
+          }
+        ]
+      },
+      "tags": ["falkenberg", "beinarbeit", "klassiker"]
+    },
+    {
+      "id": "bein-004",
+      "name": "3-Punkt VH Beinarbeit",
+      "description": "Ball kommt in VH-Ecke, Mitte und RH-Ecke. Spieler muss alle 3 Positionen anlaufen und mit Topspin antworten.",
+      "hints": [
+        "Schnelle Kreuzschritte",
+        "Immer hinter den Ball",
+        "Nicht überkreuzen"
+      ],
+      "category": "beinarbeit",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "bein004-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "bein004-t2",
+            "startX": 75,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "bein004-t3",
+            "startX": 50,
+            "startY": 15,
+            "endX": 50,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "bein004-t4",
+            "startX": 50,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          },
+          {
+            "id": "bein004-t5",
+            "startX": 50,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 5
+          },
+          {
+            "id": "bein004-t6",
+            "startX": 25,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 6
+          }
+        ]
+      },
+      "tags": ["beinarbeit", "3-punkt"]
+    },
+    {
+      "id": "bein-005",
+      "name": "Falkenberg erweitert",
+      "description": "Falkenberg-Muster für 6 Bälle, danach frei spielen. Trainiert den Übergang von fester Übung zu freiem Spiel.",
+      "hints": [
+        "Saubere Technik in fester Phase",
+        "Beim Freispielen taktisch denken",
+        "Qualität nicht verlieren"
+      ],
+      "category": "beinarbeit",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "bein005-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "bein005-t2",
+            "startX": 25,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "bein005-t3",
+            "startX": 50,
+            "startY": 15,
+            "endX": 50,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "bein005-t4",
+            "startX": 50,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          },
+          {
+            "id": "bein005-t5",
+            "startX": 50,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 5
+          },
+          {
+            "id": "bein005-t6",
+            "startX": 75,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 6
+          }
+        ]
+      },
+      "tags": ["falkenberg", "beinarbeit", "erweitert"]
+    },
+    {
+      "id": "bein-006",
+      "name": "Unregelmäßige Beinarbeit",
+      "description": "Partner blockt unregelmäßig in verschiedene Ecken. Spieler muss reaktiv den Ball erlaufen und mit Topspin antworten.",
+      "hints": [
+        "Auf Splitstep achten",
+        "Ball des Partners beobachten",
+        "Explosiv starten"
+      ],
+      "category": "beinarbeit",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "bein006-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 80,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "bein006-t2",
+            "startX": 80,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "bein006-t3",
+            "startX": 50,
+            "startY": 15,
+            "endX": 20,
+            "endY": 88,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "bein006-t4",
+            "startX": 20,
+            "startY": 88,
+            "endX": 50,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["beinarbeit", "unregelmaessig", "reaktion"]
+    },
+    {
+      "id": "bein-007",
+      "name": "VH-Umlaufen mit Rückweg",
+      "description": "Ball kommt in RH-Ecke, Spieler umläuft und spielt VH-Topspin, dann sofort zurück zur VH-Seite. Trainiert explosives Umlaufen.",
+      "hints": [
+        "Schneller Ausfallschritt links",
+        "Nach Schlag sofort abstoßen",
+        "Partner blockt nach VH-Ecke"
+      ],
+      "category": "beinarbeit",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "bein007-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 20,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "bein007-t2",
+            "startX": 20,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "bein007-t3",
+            "startX": 50,
+            "startY": 15,
+            "endX": 80,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "bein007-t4",
+            "startX": 80,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["beinarbeit", "umlaufen", "vorhand"]
+    },
+    {
+      "id": "ball-001",
+      "name": "Schupf-Rallye diagonal",
+      "description": "Beide Spieler schupfen kontrolliert RH diagonal. Fokus auf gleichmäßigen Unterschnitt und Platzierung.",
+      "hints": [
+        "Schläger öffnen",
+        "Ball unter Äquator treffen",
+        "Unterschnitt variieren"
+      ],
+      "category": "ballwechsel",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "ball001-t1",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "ball001-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["schupf", "rallye", "grundlagen"]
+    },
+    {
+      "id": "ball-002",
+      "name": "Konter-Rallye VH diagonal",
+      "description": "Beide Spieler spielen VH-Konter diagonal. Fokus auf Timing, kurze Schlagbewegung und Regelmäßigkeit.",
+      "hints": [
+        "Tischnahe Position",
+        "Kurze Schlagbewegung",
+        "Timing wichtiger als Tempo"
+      ],
+      "category": "ballwechsel",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "ball002-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "ball002-t2",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["konter", "rallye", "vorhand"]
+    },
+    {
+      "id": "ball-003",
+      "name": "VH-Konter parallel und diagonal - Achter",
+      "description": "Eine Seite spielt immer diagonal, die andere Seite spielt immer parallel. Es entsteht ein Achter-Muster auf dem Tisch.",
+      "hints": [
+        "Laufwege antizipieren",
+        "Kurze Ausholbewegung",
+        "Beide bewegen sich"
+      ],
+      "category": "ballwechsel",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "ball003-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "ball003-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "ball003-t3",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "RH",
+            "order": 3
+          },
+          {
+            "id": "ball003-t4",
+            "startX": 75,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["achter", "konter", "laufwege"]
+    },
+    {
+      "id": "ball-004",
+      "name": "Schupf-Eröffnung-Block",
+      "description": "A schupft lang, B eröffnet mit Topspin, A blockt, dann frei spielen. Trainiert den Übergang vom Unterschnittspiel zum Topspinspiel.",
+      "hints": [
+        "Schupf lang und tief",
+        "Topspin mit Spin eröffnen",
+        "Block kontrolliert"
+      ],
+      "category": "ballwechsel",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "ball004-t1",
+            "startX": 30,
+            "startY": 85,
+            "endX": 70,
+            "endY": 15,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "ball004-t2",
+            "startX": 70,
+            "startY": 15,
+            "endX": 30,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "ball004-t3",
+            "startX": 30,
+            "startY": 85,
+            "endX": 65,
+            "endY": 12,
+            "type": "block",
+            "player": "self",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "ball004-t4",
+            "startX": 65,
+            "startY": 12,
+            "endX": 35,
+            "endY": 88,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["ballwechsel", "eroeffnung", "block"]
+    },
+    {
+      "id": "ball-005",
+      "name": "Topspin-Block-Endschlag",
+      "description": "A spielt Topspin, B blockt kontrolliert, A spielt gezielten Endschlag. Trainiert den Aufbau eines Punktes über Topspin zum Abschluss.",
+      "hints": [
+        "Ersten Topspin als Vorbereitung",
+        "Nicht sofort voll drauf",
+        "Endschlag platzieren"
+      ],
+      "category": "ballwechsel",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "ball005-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "ball005-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 70,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "ball005-t3",
+            "startX": 70,
+            "startY": 85,
+            "endX": 75,
+            "endY": 10,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["ballwechsel", "endschlag", "topspin"]
+    },
+    {
+      "id": "ball-006",
+      "name": "5-Ball Aufschlag-Choreografie",
+      "description": "Aufschlag, Schupf-Rückschlag, Topspin-Eröffnung, Block, Endschlag. Kompletter Ballwechsel als festgelegte Choreografie.",
+      "hints": [
+        "Jeden Ball mit Absicht",
+        "Qualität vor Tempo",
+        "Übergang fließend"
+      ],
+      "category": "ballwechsel",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "ball006-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 45,
+            "endY": 45,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "ball006-t2",
+            "startX": 45,
+            "startY": 45,
+            "endX": 60,
+            "endY": 82,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "ball006-t3",
+            "startX": 60,
+            "startY": 82,
+            "endX": 30,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "ball006-t4",
+            "startX": 30,
+            "startY": 15,
+            "endX": 70,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          },
+          {
+            "id": "ball006-t5",
+            "startX": 70,
+            "startY": 85,
+            "endX": 25,
+            "endY": 10,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 5
+          }
+        ]
+      },
+      "tags": ["choreografie", "aufschlag", "komplex"]
+    },
+    {
+      "id": "ball-007",
+      "name": "Rollenwechsel Angriff-Verteidigung",
+      "description": "Nach 3 Topspins tauschen die Rollen: Der Angreifer wird zum Blocker und umgekehrt. Trainiert schnelles Umschalten.",
+      "hints": [
+        "Schnelles Umschalten",
+        "Block nah am Tisch",
+        "Topspin Schritt zurück"
+      ],
+      "category": "ballwechsel",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "ball007-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "ball007-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 70,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "ball007-t3",
+            "startX": 70,
+            "startY": 85,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "ball007-t4",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 4
+          },
+          {
+            "id": "ball007-t5",
+            "startX": 25,
+            "startY": 85,
+            "endX": 70,
+            "endY": 15,
+            "type": "block",
+            "player": "self",
+            "stroke": "BL",
+            "order": 5
+          }
+        ]
+      },
+      "tags": ["rollenwechsel", "angriff", "verteidigung"]
+    },
+    {
+      "id": "takt-001",
+      "name": "Platzierung auf Wechselpunkt",
+      "description": "Topspin gezielt auf den Umschaltpunkt (Ellbogen) des Gegners spielen. Der Gegner kann nicht entscheiden ob VH oder RH.",
+      "hints": [
+        "Zwischen VH und RH des Gegners zielen",
+        "Gegner beobachten",
+        "Variation Ellbogen/Ecke"
+      ],
+      "category": "taktik",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "takt001-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 45,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "takt001-t2",
+            "startX": 45,
+            "startY": 15,
+            "endX": 70,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "takt001-t3",
+            "startX": 70,
+            "startY": 85,
+            "endX": 50,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["taktik", "platzierung", "wechselpunkt"]
+    },
+    {
+      "id": "takt-002",
+      "name": "Diagonal-Parallel Wechsel",
+      "description": "Bewusst zwischen diagonal und parallel wechseln. Diagonal ist sicherer, parallel überrascht den Gegner.",
+      "hints": [
+        "Diagonal ist sicherer",
+        "Parallel überrascht",
+        "Richtungswechsel durch Handgelenk"
+      ],
+      "category": "taktik",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "takt002-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "takt002-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "takt002-t3",
+            "startX": 75,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "takt002-t4",
+            "startX": 75,
+            "startY": 15,
+            "endX": 70,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["taktik", "platzierung", "richtungswechsel"]
+    },
+    {
+      "id": "takt-003",
+      "name": "Kurz-Lang Wechsel",
+      "description": "Wechsel zwischen kurzen Bällen und langen Angriffen. Erzwingt beim Gegner ständige Positionswechsel am Tisch.",
+      "hints": [
+        "Kurzen Ball sehr kurz",
+        "Langen Ball tief in Ecke",
+        "Rhythmuswechsel erzwingen"
+      ],
+      "category": "taktik",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "takt003-t1",
+            "startX": 40,
+            "startY": 85,
+            "endX": 50,
+            "endY": 45,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "takt003-t2",
+            "startX": 50,
+            "startY": 45,
+            "endX": 55,
+            "endY": 80,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "takt003-t3",
+            "startX": 55,
+            "startY": 80,
+            "endX": 25,
+            "endY": 10,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["taktik", "kurz-lang", "variation"]
+    },
+    {
+      "id": "takt-004",
+      "name": "Tempo-Variation",
+      "description": "Abwechselnd langsame spinreiche Topspins und schnelle flache Schüsse. Ziel ist es, den Gegner aus dem Rhythmus zu bringen.",
+      "hints": [
+        "Spin-Ball hoch über Netz",
+        "Speed-Ball flach und schnell",
+        "Nicht vorhersehbar"
+      ],
+      "category": "taktik",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "takt004-t1",
+            "startX": 75,
+            "startY": 88,
+            "endX": 30,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "takt004-t2",
+            "startX": 30,
+            "startY": 15,
+            "endX": 70,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "takt004-t3",
+            "startX": 70,
+            "startY": 85,
+            "endX": 25,
+            "endY": 10,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["taktik", "tempo", "variation"]
+    },
+    {
+      "id": "takt-005",
+      "name": "Spieleröffnung nach Plan",
+      "description": "3 Aufschlag-Varianten mit festgelegtem Folgeangriff üben. Aufschlag bestimmt den gesamten Ballwechsel.",
+      "hints": [
+        "Aufschlag bestimmt Ballwechsel",
+        "Rückschlag antizipieren",
+        "Plan B haben"
+      ],
+      "category": "taktik",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "takt005-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 40,
+            "endY": 42,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "takt005-t2",
+            "startX": 40,
+            "startY": 42,
+            "endX": 65,
+            "endY": 80,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "takt005-t3",
+            "startX": 65,
+            "startY": 80,
+            "endX": 25,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["taktik", "spieleroeffnung", "aufschlag"]
+    },
+    {
+      "id": "takt-006",
+      "name": "Schwachstelle systematisch anspielen",
+      "description": "Partner gibt Schwachseite an, Spieler baut Ballwechsel so auf, dass er die Schwachstelle gezielt anspielen kann.",
+      "hints": [
+        "Nicht sofort auf Schwachstelle",
+        "Erst öffnen dann Schwachstelle",
+        "Muster variieren"
+      ],
+      "category": "taktik",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "takt006-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "takt006-t2",
+            "startX": 75,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "takt006-t3",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["taktik", "schwachstelle", "analyse"]
+    },
+    {
+      "id": "takt-007",
+      "name": "Drucksituation Aufschlag",
+      "description": "Spielsituationen simulieren: 9:9 oder Satzball. Aufschlag und 3. Ball unter Druckbedingungen üben.",
+      "hints": [
+        "Routine beibehalten",
+        "Sicheren Aufschlag wählen",
+        "Ballwechsel nicht verkürzen"
+      ],
+      "category": "taktik",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "takt007-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 45,
+            "endY": 40,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "takt007-t2",
+            "startX": 45,
+            "startY": 40,
+            "endX": 60,
+            "endY": 82,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "takt007-t3",
+            "startX": 60,
+            "startY": 82,
+            "endX": 30,
+            "endY": 10,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["taktik", "druck", "mental"]
+    },
+    {
+      "id": "wett-001",
+      "name": "Rundlauf",
+      "description": "Klassischer Rundlauf mit 3-10 Spielern, die um den Tisch rotieren. Spaßübung für das Ende des Trainings.",
+      "hints": [
+        "Schläger bereithalten",
+        "Schnell zur anderen Seite",
+        "Sicher spielen im Finale"
+      ],
+      "category": "wettkampf",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "wett001-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "wett001-t2",
+            "startX": 50,
+            "startY": 15,
+            "endX": 50,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["wettkampf", "rundlauf", "spass"]
+    },
+    {
+      "id": "wett-002",
+      "name": "Kaisertisch",
+      "description": "Mehrere Tische, Gewinner rückt zum nächsten Tisch auf, Verlierer rückt ab. Wettbewerb mit wechselnden Gegnern.",
+      "hints": [
+        "Anpassungsfähigkeit",
+        "Aufschlag als Waffe",
+        "Schnell einstellen"
+      ],
+      "category": "wettkampf",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "wett002-t1",
+            "startX": 40,
+            "startY": 85,
+            "endX": 60,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "wett002-t2",
+            "startX": 60,
+            "startY": 15,
+            "endX": 40,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["wettkampf", "kaisertisch", "turnier"]
+    },
+    {
+      "id": "wett-003",
+      "name": "11-Punkte mit Vorgabe",
+      "description": "Normales Spiel bis 11, der schwächere Spieler startet mit Vorsprung (z.B. 5:0 oder 7:0). Motiviert beide Seiten.",
+      "hints": [
+        "Geduldig spielen",
+        "Vorsprung nicht verspielen",
+        "Vorgabe anpassen"
+      ],
+      "category": "wettkampf",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "wett003-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 35,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "wett003-t2",
+            "startX": 35,
+            "startY": 15,
+            "endX": 65,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["wettkampf", "vorgabe", "handicap"]
+    },
+    {
+      "id": "wett-004",
+      "name": "Satz nur mit Rückhand",
+      "description": "Ganzer Satz nur mit Rückhand spielen. Erzwingt RH-Topspin, RH-Schupf und RH-Aufschlag.",
+      "hints": [
+        "RH-Topspin als Hauptwaffe",
+        "RH-Schupf variieren",
+        "Aufschlag nur mit RH"
+      ],
+      "category": "wettkampf",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "wett004-t1",
+            "startX": 35,
+            "startY": 85,
+            "endX": 65,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "wett004-t2",
+            "startX": 65,
+            "startY": 15,
+            "endX": 35,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "wett004-t3",
+            "startX": 35,
+            "startY": 85,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["wettkampf", "rueckhand", "einschraenkung"]
+    },
+    {
+      "id": "wett-005",
+      "name": "Satz mit Pflicht-Eröffnung",
+      "description": "Jeder Punkt muss mit Topspin eröffnet werden, kein passives Schupfen. Fördert aggressives Denken.",
+      "hints": [
+        "Aggressiv denken",
+        "Auch schwierige Bälle eröffnen",
+        "Mut zum Risiko"
+      ],
+      "category": "wettkampf",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "wett005-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 60,
+            "endY": 80,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "wett005-t2",
+            "startX": 60,
+            "startY": 80,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["wettkampf", "eroeffnung", "pflicht"]
+    },
+    {
+      "id": "wett-006",
+      "name": "1 gegen 2 - Einzel vs. Doppel",
+      "description": "Ein Spieler gegen ein Doppelpaar. Der Einzelspieler nutzt Platzierung, das Doppel muss Laufwege abstimmen.",
+      "hints": [
+        "Einzelspieler Platzierung nutzen",
+        "Doppel Laufwege abstimmen",
+        "Kommunikation"
+      ],
+      "category": "wettkampf",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "wett006-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "wett006-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 60,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "wett006-t3",
+            "startX": 60,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["wettkampf", "doppel", "einzel"]
+    },
+    {
+      "id": "wett-007",
+      "name": "Deuce-Spiel ab 9:9",
+      "description": "Jeder Punkt beginnt simuliert bei 9:9. Drucksituation üben in der entscheidenden Phase des Satzes.",
+      "hints": [
+        "Konzentration auf jeden Ball",
+        "Sichere Aufschläge",
+        "Eigenes Tempo"
+      ],
+      "category": "wettkampf",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "wett007-t1",
+            "startX": 50,
+            "startY": 85,
+            "endX": 40,
+            "endY": 40,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "wett007-t2",
+            "startX": 40,
+            "startY": 40,
+            "endX": 55,
+            "endY": 82,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "wett007-t3",
+            "startX": 55,
+            "startY": 82,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          }
+        ]
+      },
+      "tags": ["wettkampf", "druck", "mental"]
+    },
+    {
+      "id": "vh-001",
+      "name": "VH-Konter diagonal",
+      "description": "Beide spielen VH-Konter diagonal mit Fokus auf Regelmäßigkeit und Timing. Grundübung für die Vorhand.",
+      "hints": [
+        "Kurze Schlagbewegung",
+        "Ball vor dem Körper",
+        "Handgelenk locker"
+      ],
+      "category": "vorhandzentriert",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "vh001-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "vh001-t2",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["vorhand", "konter", "grundlagen"]
+    },
+    {
+      "id": "vh-002",
+      "name": "VH-Schupf diagonal",
+      "description": "VH-Schupf diagonal mit kontrolliertem Unterschnitt. Wichtig für Aufschlagrückschlag und passive Spielsituationen.",
+      "hints": [
+        "Schläger öffnen",
+        "Unter den Ball greifen",
+        "Arm nach vorne"
+      ],
+      "category": "vorhandzentriert",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "vh002-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "vh002-t2",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["vorhand", "schupf", "grundlagen"]
+    },
+    {
+      "id": "vh-003",
+      "name": "VH-Topspin parallel und diagonal",
+      "description": "Partner blockt stabil, Spieler spielt VH-Topspin abwechselnd diagonal und parallel. Trainiert Richtungskontrolle.",
+      "hints": [
+        "Handgelenk steuert Richtung",
+        "Körperrotation gleich",
+        "Nicht telegrafieren"
+      ],
+      "category": "vorhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "vh003-t1",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "vh003-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "vh003-t3",
+            "startX": 75,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "vh003-t4",
+            "startX": 75,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["vorhand", "topspin", "platzierung"]
+    },
+    {
+      "id": "vh-004",
+      "name": "VH-Topspin aus der Halbdistanz",
+      "description": "Schritt zurück vom Tisch, VH-Topspin mit viel Rotation spielen. Wichtig für die Abwehr gegen harte Angriffsbälle.",
+      "hints": [
+        "Mehr Oberkörperrotation",
+        "Längerer Schlagarm",
+        "Ball in fallender Phase"
+      ],
+      "category": "vorhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "vh004-t1",
+            "startX": 25,
+            "startY": 15,
+            "endX": 70,
+            "endY": 90,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "vh004-t2",
+            "startX": 70,
+            "startY": 90,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "vh004-t3",
+            "startX": 30,
+            "startY": 12,
+            "endX": 75,
+            "endY": 92,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "vh004-t4",
+            "startX": 75,
+            "startY": 92,
+            "endX": 25,
+            "endY": 10,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["vorhand", "topspin", "halbdistanz"]
+    },
+    {
+      "id": "vh-005",
+      "name": "VH-Loop gegen Schupf - Balleimer",
+      "description": "Trainer spielt aus Balleimer Unterschnitt-Bälle, Spieler eröffnet jeden Ball mit VH-Topspin. Hohe Wiederholungszahl.",
+      "hints": [
+        "Schnell zum Ball",
+        "Knie tief",
+        "Jeden Ball wie den ersten"
+      ],
+      "category": "vorhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "vh005-t1",
+            "startX": 40,
+            "startY": 15,
+            "endX": 65,
+            "endY": 82,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "vh005-t2",
+            "startX": 65,
+            "startY": 82,
+            "endX": 35,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "vh005-t3",
+            "startX": 55,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 3
+          },
+          {
+            "id": "vh005-t4",
+            "startX": 75,
+            "startY": 85,
+            "endX": 30,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["vorhand", "topspin", "balleimer"]
+    },
+    {
+      "id": "vh-006",
+      "name": "VH-Umlaufen aus RH-Ecke",
+      "description": "Ball kommt in die RH-Ecke, Spieler umläuft und spielt VH-Topspin. Klassische Übung für dominantes VH-Spiel.",
+      "hints": [
+        "Schneller Ausfallschritt",
+        "Schulter drehen",
+        "Sofort abstoßen"
+      ],
+      "category": "vorhandzentriert",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "vh006-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 20,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 1
+          },
+          {
+            "id": "vh006-t2",
+            "startX": 20,
+            "startY": 85,
+            "endX": 60,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "vh006-t3",
+            "startX": 60,
+            "startY": 12,
+            "endX": 25,
+            "endY": 88,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 3
+          },
+          {
+            "id": "vh006-t4",
+            "startX": 25,
+            "startY": 88,
+            "endX": 55,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["vorhand", "umlaufen", "beinarbeit"]
+    },
+    {
+      "id": "vh-007",
+      "name": "VH-Schuss auf hohen Ball",
+      "description": "Partner spielt hohe Bälle, Spieler schmettert mit VH-Schuss. Trainiert den Abschluss auf hohe Rückgaben.",
+      "hints": [
+        "Ball am höchsten Punkt",
+        "Ganze Körperdrehung",
+        "Platziert statt nur hart"
+      ],
+      "category": "vorhandzentriert",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "vh007-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 65,
+            "endY": 75,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "vh007-t2",
+            "startX": 65,
+            "startY": 75,
+            "endX": 25,
+            "endY": 10,
+            "type": "flat",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["vorhand", "schuss", "schmettern"]
+    },
+    {
+      "id": "rh-001",
+      "name": "RH-Konter diagonal",
+      "description": "Beide spielen RH-Konter diagonal. Grundübung für stabile Rückhand mit gleichmäßigem Rhythmus.",
+      "hints": [
+        "Vor dem Körper spielen",
+        "Ellbogen ruhig",
+        "Gleichmäßiger Rhythmus"
+      ],
+      "category": "rueckhandzentriert",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "rh001-t1",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "flat",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "rh001-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "flat",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["rueckhand", "konter", "grundlagen"]
+    },
+    {
+      "id": "rh-002",
+      "name": "RH-Schupf diagonal",
+      "description": "RH-Schupf diagonal mit kontrolliertem Unterschnitt. Grundübung für den passiven Rückhandschlag.",
+      "hints": [
+        "Schläger unter Ball",
+        "Handgelenk für Schnitt",
+        "Kurz oder lang variieren"
+      ],
+      "category": "rueckhandzentriert",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "rh002-t1",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "rh002-t2",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["rueckhand", "schupf", "grundlagen"]
+    },
+    {
+      "id": "rh-003",
+      "name": "RH-Topspin-Serie gegen Block",
+      "description": "Partner blockt stabil in die RH-Seite, Spieler spielt RH-Topspin-Serie diagonal. Fokus auf Kontinuität und Beschleunigung.",
+      "hints": [
+        "Ellbogen als Drehachse",
+        "Kurze Ausholbewegung",
+        "Beschleunigung am Ball"
+      ],
+      "category": "rueckhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "rh003-t1",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "rh003-t2",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "rh003-t3",
+            "startX": 25,
+            "startY": 85,
+            "endX": 70,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 3
+          },
+          {
+            "id": "rh003-t4",
+            "startX": 70,
+            "startY": 12,
+            "endX": 30,
+            "endY": 88,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["rueckhand", "topspin", "serie"]
+    },
+    {
+      "id": "rh-004",
+      "name": "RH-Topspin mit Richtungswechsel",
+      "description": "RH-Topspin abwechselnd diagonal und parallel spielen. Trainiert Richtungskontrolle aus der Rückhand.",
+      "hints": [
+        "Treffpunkt variieren",
+        "Nicht ganzen Arm drehen",
+        "Handgelenk steuert"
+      ],
+      "category": "rueckhandzentriert",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "rh004-t1",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "rh004-t2",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "rh004-t3",
+            "startX": 25,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 3
+          },
+          {
+            "id": "rh004-t4",
+            "startX": 25,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "block",
+            "player": "opponent",
+            "stroke": "BL",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["rueckhand", "topspin", "platzierung"]
+    },
+    {
+      "id": "rh-005",
+      "name": "RH-Flick auf kurzen Ball",
+      "description": "Partner spielt kurzen Ball in die Rückhand, Spieler flippt aggressiv mit RH-Flick. Schnelle Handgelenkbewegung am Tisch.",
+      "hints": [
+        "Ellbogen über den Tisch",
+        "Handgelenk peitschenartig",
+        "Ball am höchsten Punkt"
+      ],
+      "category": "rueckhandzentriert",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "rh005-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 35,
+            "endY": 48,
+            "type": "backspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "rh005-t2",
+            "startX": 35,
+            "startY": 48,
+            "endX": 65,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["rueckhand", "flick", "aggressiv"]
+    },
+    {
+      "id": "rh-006",
+      "name": "RH-Gegentopspin",
+      "description": "Partner spielt VH-Topspin diagonal, Spieler zieht RH-Gegentopspin. Höchste Schwierigkeit: eigenen Spin gegen gegnerischen Topspin setzen.",
+      "hints": [
+        "Timing entscheidend",
+        "Ball früh nehmen",
+        "Eigene Rotation gegen Spin"
+      ],
+      "category": "rueckhandzentriert",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "rh006-t1",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "rh006-t2",
+            "startX": 25,
+            "startY": 85,
+            "endX": 70,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "rh006-t3",
+            "startX": 70,
+            "startY": 15,
+            "endX": 30,
+            "endY": 88,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "rh006-t4",
+            "startX": 30,
+            "startY": 88,
+            "endX": 75,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["rueckhand", "gegentopspin", "fortgeschritten"]
+    },
+    {
+      "id": "block-001",
+      "name": "VH-Block gegen Topspin",
+      "description": "Partner spielt VH-Topspin diagonal, Spieler blockt kontrolliert zurück. Grundübung für die Vorhandblockabwehr.",
+      "hints": [
+        "Schläger vor Körper",
+        "Ball kommen lassen",
+        "Schlägerwinkel anpassen"
+      ],
+      "category": "block",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "block001-t1",
+            "startX": 75,
+            "startY": 15,
+            "endX": 25,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "block001-t2",
+            "startX": 75,
+            "startY": 85,
+            "endX": 25,
+            "endY": 15,
+            "type": "block",
+            "player": "self",
+            "stroke": "VH",
+            "order": 2
+          },
+          {
+            "id": "block001-t3",
+            "startX": 75,
+            "startY": 15,
+            "endX": 30,
+            "endY": 88,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "block001-t4",
+            "startX": 70,
+            "startY": 88,
+            "endX": 30,
+            "endY": 12,
+            "type": "block",
+            "player": "self",
+            "stroke": "VH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["block", "vorhand", "grundlagen"]
+    },
+    {
+      "id": "block-002",
+      "name": "RH-Block gegen Topspin",
+      "description": "Partner spielt Topspin in die RH-Seite, Spieler blockt mit RH kontrolliert zurück. Grundübung für die Rückhandblockabwehr.",
+      "hints": [
+        "Kompakte Stellung",
+        "Schläger geschlossen",
+        "Ball vor Körper"
+      ],
+      "category": "block",
+      "difficulty": "beginner",
+      "ttrRange": { "min": 700, "max": 1100 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "block002-t1",
+            "startX": 25,
+            "startY": 15,
+            "endX": 75,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 1
+          },
+          {
+            "id": "block002-t2",
+            "startX": 25,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "block",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "block002-t3",
+            "startX": 25,
+            "startY": 15,
+            "endX": 70,
+            "endY": 88,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "RH",
+            "order": 3
+          },
+          {
+            "id": "block002-t4",
+            "startX": 30,
+            "startY": 88,
+            "endX": 70,
+            "endY": 12,
+            "type": "block",
+            "player": "self",
+            "stroke": "RH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["block", "rueckhand", "grundlagen"]
+    },
+    {
+      "id": "block-003",
+      "name": "Block mit Platzierungswechsel",
+      "description": "Spieler blockt abwechselnd in VH-Ecke, Mitte und RH-Ecke. Aktives Blocken mit bewusster Platzierung.",
+      "hints": [
+        "Handgelenk für Richtung",
+        "Nicht nur passiv",
+        "Gegner in Bewegung"
+      ],
+      "category": "block",
+      "difficulty": "intermediate",
+      "ttrRange": { "min": 1000, "max": 1500 },
+      "duration": 15,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "block003-t1",
+            "startX": 50,
+            "startY": 15,
+            "endX": 40,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "block003-t2",
+            "startX": 40,
+            "startY": 85,
+            "endX": 75,
+            "endY": 15,
+            "type": "block",
+            "player": "self",
+            "stroke": "BL",
+            "order": 2
+          },
+          {
+            "id": "block003-t3",
+            "startX": 75,
+            "startY": 15,
+            "endX": 50,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "block003-t4",
+            "startX": 50,
+            "startY": 85,
+            "endX": 50,
+            "endY": 15,
+            "type": "block",
+            "player": "self",
+            "stroke": "BL",
+            "order": 4
+          },
+          {
+            "id": "block003-t5",
+            "startX": 50,
+            "startY": 15,
+            "endX": 45,
+            "endY": 88,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 5
+          },
+          {
+            "id": "block003-t6",
+            "startX": 45,
+            "startY": 88,
+            "endX": 25,
+            "endY": 12,
+            "type": "block",
+            "player": "self",
+            "stroke": "BL",
+            "order": 6
+          }
+        ]
+      },
+      "tags": ["block", "platzierung", "aktiv"]
+    },
+    {
+      "id": "block-004",
+      "name": "Chopblock",
+      "description": "Auf Topspin mit Chopblock antworten: kurze Abwärtsbewegung erzeugt überraschenden Unterschnitt. Taktisches Überraschungselement.",
+      "hints": [
+        "Kurze Abwärtsbewegung",
+        "Timing exakt",
+        "Sparsam einsetzen"
+      ],
+      "category": "block",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "block004-t1",
+            "startX": 75,
+            "startY": 15,
+            "endX": 30,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "block004-t2",
+            "startX": 30,
+            "startY": 85,
+            "endX": 60,
+            "endY": 25,
+            "type": "backspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          }
+        ]
+      },
+      "tags": ["block", "chopblock", "ueberraschung"]
+    },
+    {
+      "id": "block-005",
+      "name": "Aktivblock mit Gegenspin",
+      "description": "Ball aktiv mit eigenem Topspin am Tisch zurückspielen. Mini-Gegentopspin direkt am Tisch als offensive Blockform.",
+      "hints": [
+        "Kurze Vorwärts-Aufwärts-Bewegung",
+        "Ball früh nehmen",
+        "Mehr Spin als Tempo"
+      ],
+      "category": "block",
+      "difficulty": "advanced",
+      "ttrRange": { "min": 1400, "max": 2000 },
+      "duration": 10,
+      "diagram": {
+        "trajectories": [
+          {
+            "id": "block005-t1",
+            "startX": 70,
+            "startY": 15,
+            "endX": 30,
+            "endY": 85,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 1
+          },
+          {
+            "id": "block005-t2",
+            "startX": 30,
+            "startY": 85,
+            "endX": 65,
+            "endY": 12,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 2
+          },
+          {
+            "id": "block005-t3",
+            "startX": 65,
+            "startY": 12,
+            "endX": 35,
+            "endY": 88,
+            "type": "topspin",
+            "player": "opponent",
+            "stroke": "VH",
+            "order": 3
+          },
+          {
+            "id": "block005-t4",
+            "startX": 35,
+            "startY": 88,
+            "endX": 70,
+            "endY": 15,
+            "type": "topspin",
+            "player": "self",
+            "stroke": "RH",
+            "order": 4
+          }
+        ]
+      },
+      "tags": ["block", "aktivblock", "gegenspin"]
+    }
+  ]
+}

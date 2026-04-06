@@ -1,0 +1,188 @@
+erDiagram
+    users {
+        uuid id PK
+        text username UK "Eindeutiger Login-Name"
+        text password_hash "Gehashtes Passwort"
+        text display_name "Anzeigename"
+        text email "Optional: E-Mail fuer Passwort-Reset"
+        timestamptz updated_at
+    }
+
+    user_roles {
+        uuid id PK
+        text name UK "trainer | player"
+        text description
+    }
+
+    roles {
+        uuid id PK
+        uuid user_role_id FK
+        uuid user_id FK
+    }
+
+    groups {
+        uuid id PK
+        text name UK "z.B. Jugend, Herren 1"
+        text description "Optional"
+        timestamptz updated_at
+    }
+
+    group_members {
+        uuid id PK
+        uuid group_id FK
+        uuid user_id FK
+        text role "trainer | player (fuer diese Gruppe)"
+        timestamptz updated_at
+    }
+
+    exercises {
+        uuid id PK
+        text name "Falkenberg Klassisch"
+        text type "exercise | note"
+        text description
+        text[] hints "Tipps zur Ausfuehrung"
+        text category "beinarbeit | technik | ..."
+        text difficulty "beginner | intermediate | ..."
+        int ttr_min
+        int ttr_max
+        int duration_minutes "Optional"
+        jsonb diagram "trajectories + playerPositions"
+        text[] tags
+        uuid created_by FK "users.id - Trainer"
+        timestamptz updated_at
+    }
+
+    training_schedules {
+        uuid id PK
+        uuid group_id FK "Ein Schedule pro Gruppe"
+        int[] weekdays "z.B. {1,3,5} fuer Mo/Mi/Fr"
+        timestamptz updated_at
+    }
+
+    training_sessions {
+        uuid id PK
+        uuid group_id FK "Welche Gruppe"
+        date session_date "Konkretes Trainingsdatum"
+        text notes "Optionale Notizen"
+        timestamptz updated_at
+    }
+
+    training_assignments {
+        uuid id PK
+        uuid session_id FK "Welche Trainingseinheit"
+        uuid exercise_id FK "Welche Uebung"
+        int sort_order "Reihenfolge im Training"
+        timestamptz updated_at
+    }
+
+    votes {
+        uuid id PK
+        uuid user_id FK
+        uuid exercise_id FK
+        uuid session_id FK "Abstimmung fuer welche Session"
+        timestamptz updated_at
+    }
+
+    attendance {
+        uuid id PK
+        uuid user_id FK
+        uuid session_id FK "Anwesenheit bei welcher Session"
+        text status "yes | no"
+        timestamptz updated_at
+    }
+
+    users ||--o{ roles : "hat globale Rolle"
+    user_roles ||--o{ roles : "wird zugeordnet"
+    users ||--o{ group_members : "ist in mehreren Gruppen"
+    groups ||--o{ group_members : "hat Mitglieder"
+    groups ||--o| training_schedules : "hat Schedule"
+    groups ||--o{ training_sessions : "hat Einheiten"
+    training_sessions ||--o{ training_assignments : "enthaelt Uebungen"
+    training_sessions ||--o{ votes : "hat Abstimmung"
+    training_sessions ||--o{ attendance : "hat Anwesenheit"
+    users ||--o{ votes : "gibt ab"
+    users |o--o{ attendance : "meldet sich"
+    users ||--o{ exercises : "erstellt"
+    exercises ||--o{ votes : "wird gevotet"
+    exercises ||--o{ training_assignments : "wird zugeordnet"
+
+    push_subscriptions {
+        uuid id PK
+        uuid user_id FK
+        text endpoint UK "URL des Browser-Push-Service"
+        text p256dh "Verschluesselungsschluessel"
+        text auth "Auth-Secret"
+        timestamptz created_at
+        timestamptz updated_at
+    }
+
+    users ||--o{ push_subscriptions : "hat Push-Subscriptions"
+
+    teams {
+        uuid id PK
+        text name UK "z.B. Herren 1, Jugend 2"
+        text click_tt_url "Optional: URL zur click-TT Ligatabelle"
+        text league_data "JSON: standings + matches + clickTtTeamName (Liga-Mannschaftsname)"
+        timestamptz last_sync "Letzter click-TT Import"
+        timestamptz created_at
+        timestamptz updated_at
+    }
+
+    team_members {
+        uuid id PK
+        uuid team_id FK
+        uuid user_id FK
+        text role "player | captain"
+        timestamptz created_at
+        timestamptz updated_at
+    }
+
+    match_availability {
+        uuid id PK
+        uuid team_id FK
+        uuid match_id "click-TT match identifier"
+        uuid user_id FK
+        text status "yes | no | maybe"
+        boolean can_drive
+        timestamptz updated_at
+    }
+
+    match_lineup {
+        uuid id PK
+        uuid team_id FK
+        uuid match_id "click-TT match identifier"
+        uuid user_id FK
+        boolean is_driver
+        timestamptz updated_at
+    }
+
+    teams ||--o{ team_members : "hat Mitglieder"
+    users ||--o{ team_members : "spielt in"
+    teams ||--o{ match_availability : "hat Verfuegbarkeiten"
+    users ||--o{ match_availability : "meldet Verfuegbarkeit"
+    teams ||--o{ match_lineup : "hat Aufstellung"
+    users ||--o{ match_lineup : "steht in Aufstellung"
+
+    chat_images {
+        uuid id PK
+        bytes data "Komprimierte Bilddaten (WebP)"
+        text mime_type "immer image/webp nach Konvertierung"
+        text file_name "Originalname"
+        int width
+        int height
+        timestamptz created_at
+    }
+
+    chat_messages {
+        uuid id PK
+        uuid team_id FK
+        uuid user_id FK
+        text content "Nullable: fuer reine Bild-Nachrichten"
+        uuid image_id FK "Nullable: Referenz auf ChatImage"
+        timestamptz created_at
+        timestamptz updated_at
+    }
+
+    teams ||--o{ chat_messages : "hat Chat-Nachrichten"
+    users ||--o{ chat_messages : "sendet Nachrichten"
+    chat_images ||--o{ chat_messages : "wird referenziert in"

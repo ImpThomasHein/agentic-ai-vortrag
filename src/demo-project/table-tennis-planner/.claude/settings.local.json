@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)",
+      "Bash(timeout 10 npm run dev:*)",
+      "Bash(xargs:*)",
+      "Bash(du:*)",
+      "Bash(npm run dev)",
+      "Bash(timeout:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx storybook@latest init --type nextjs --no-dev)",
+      "Bash(npx prisma init:*)",
+      "Bash(npx prisma:*)",
+      "Bash(npx vitest run --project unit)",
+      "Bash(node scripts/dev-setup.mjs:*)",
+      "Bash(npx ts-node:*)",
+      "Bash(node:*)",
+      "Bash(npx tsx:*)",
+      "Bash(DATABASE_URL=\"file:./prisma/dev.db\" npx tsx:*)",
+      "Bash(npx vitest:*)",
+      "WebFetch(domain:www.mytischtennis.de)",
+      "Bash(DATABASE_URL=\"file:./prisma/dev.db\" npx vitest:*)",
+      "WebSearch",
+      "Bash(ls *)",
+      "Bash(git add:*)",
+      "Bash(git config:*)",
+      "Bash(npm show:*)",
+      "Bash(npm run:*)",
+      "Bash(cp /home/thomas/tischtennis-planner/table-tennis-planner-1/.agents/skills/datacider-planning/SKILL.md /home/thomas/tischtennis-planner/table-tennis-planner-1/.claude/skills/datacider-planning/SKILL.md && cp /home/thomas/tischtennis-planner/table-tennis-planner-1/.agents/skills/datacider-executing/SKILL.md /home/thomas/tischtennis-planner/table-tennis-planner-1/.claude/skills/datacider-executing/SKILL.md && cp /home/thomas/tischtennis-planner/table-tennis-planner-1/.agents/skills/dc-easy-feature-dev/SKILL.md /home/thomas/tischtennis-planner/table-tennis-planner-1/.claude/skills/dc-easy-feature-dev/SKILL.md)",
+      "Bash(grep -A 5 \"return NextResponse\" /home/thomas/tischtennis-planner/table-tennis-planner-1/app/api/teams/\\\\[id\\\\]/route.ts | head -20)",
+      "Bash(git worktree:*)",
+      "Bash(cd * && npx *)",
+      "EditFile(*)",
+      "WebFetch(domain:registry.npmjs.org)",
+      "Bash(pkill -f \"storybook dev\" 2>/dev/null; sleep 1; CI=true npx storybook dev -p 6006 --no-open 2>&1)",
+      "Bash(cd /home/thomas/tischtennis-planner/table-tennis-planner-1/.worktrees/uebungen-gruppenauswahl && STORYBOOK_DISABLE_TELEMETRY=1 npx storybook dev -p 6006 --no-open 2>&1)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  }
+}
