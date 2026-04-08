@@ -8,6 +8,29 @@ footer: "Thomas Hein | Dataciders | 2026"
 
 <!-- _class: lead -->
 
+# Workshop: Agentic Engineering
+
+Thomas Hein — Dataciders
+
+---
+
+# Agenda
+
+| Block | Thema | Inhalt |
+| ----- | ----- | ------ |
+| **1** | **Grundlagen & Orientierung** | Vom LLM zum Agenten, Methodik, Rollen |
+| **2** | **Von der Anforderung zum Plan** | Kontextmanagement, Dokumentation, Brainstorming & Planning |
+| **3a** | **Praxis I — Execution & Testing** | Agenten steuern, TDD, Frontend-Entwicklung |
+| **3b** | **Praxis II — Reviews & Abschluss** | Code Reviews, Bugfixing, Sandboxing, Werkzeugkasten |
+
+<!--
+Orientierungsfolie fuer Teilnehmer — gibt den Rahmen des gesamten Workshops.
+-->
+
+---
+
+<!-- _class: lead -->
+
 # Block 1: Grundlagen & Orientierung
 
 **Workshop: Agentic Engineering**
@@ -84,6 +107,97 @@ Genau deshalb brauchen wir Methodik — das ist die Bruecke zum Rest des Worksho
 
 ---
 
+# Was ist eigentlich ein Agent? — Vom GPT zum Agenten
+
+**Sprachmodelle sind Wahrscheinlichkeitsmaschinen**
+
+Ein LLM vervollständigt immer den nächsten Token — gesteuert durch Kontext:
+
+| Eingabe                        | Mögliche Fortsetzung               |
+| ------------------------------ | ---------------------------------- |
+| `Das ist eine Geschichte über` | `Tiere`, `Freundschaft`, `Drachen` |
+| `Das ist eine Firma in`        | `Hennigsdorf`, `Berlin`, `München` |
+| `def calculate_tax(income):`   | `return income * 0.19`             |
+
+- Kein Verständnis, keine Intention — nur **nächster wahrscheinlichster Token**
+- Qualität hängt ab von: **Trainingsdaten + Kontext (Prompt)**
+
+<!--
+Kernbotschaft: Das Modell "denkt" nicht — es vervollstaendigt.
+Das ist der Ausgangspunkt, um zu verstehen warum Prompt-Qualitaet so relevant ist.
+-->
+
+---
+
+# Was ist eigentlich ein Agent? — Das Chat-Protokoll
+
+**Wie Entwickler mit LLMs arbeiten: strukturierter Kontext**
+
+```json
+[
+  { "role": "system", "content": "Du bist ein hilfreicher Assistent..." },
+  { "role": "user", "content": "Schreibe einen Unittest fuer Funktion X" },
+  { "role": "assistant", "content": "def test_x(): ..." },
+  { "role": "user", "content": "Ergaenze den Test fuer den Fehlerfall" }
+]
+```
+
+- **System-Prompt:** Rolle, Kontext, Regeln, Wissen (AGENTS.md, CLAUDE.md)
+- **User:** Aufgabe oder Folgefrage
+- **Assistant:** Antwort des Modells — wird Teil des nächsten Kontexts
+
+**Das Protokoll ist der eigentliche Hebel** — wer den Kontext kontrolliert, steuert den Agenten.
+
+<!--
+Entwickler-Perspektive: API-Aufruf vs. Chat-UI.
+Der Kontext ist akkumuliert — jede Antwort wird Teil der naechsten Anfrage.
+Schluessel fuer spaetere Einheiten: AGENTS.md, Systemprompt-Design.
+-->
+
+---
+
+# Was ist eigentlich ein Agent? — Architektur
+
+![center contain](./assets/block1/agent-overview.png)
+
+<small>Quelle: Lilian Weng — "LLM Powered Autonomous Agents" (2023)</small>
+
+<!--
+Drei Subsysteme: Planning (Zerlegung, Reflexion), Memory (kurz-/langfristig), Tool Use (APIs, Ausfuehrung, Datenzugriff).
+Das LLM ist der "Brain" in der Mitte — alles andere ist Infrastruktur drum herum.
+-->
+
+---
+
+# Was ist eigentlich ein Agent? — Der Agenten-Loop
+
+**Ein AI Agent = LLM + Werkzeuge + Schleife**
+
+```python
+tools = [search_web, read_file, run_tests, write_code]
+
+while not task_done:
+    response = llm.call(messages, tools=tools)      # LLM entscheidet
+    if response.tool_call:
+        result = execute_tool(response.tool_call)   # Werkzeug ausfuehren
+        messages.append(result)                     # Ergebnis in Kontext
+    elif response.is_input_needed:
+        user_input = ask_human(response.question)   # Mensch gefragt
+        messages.append(user_input)                 # Human-in-the-Loop
+    elif response.is_reflecting:
+        messages.append(response.reflection)        # Selbstkorrektur
+    else:
+        task_done = True                            # Aufgabe abgeschlossen
+```
+
+<!--
+Referenz: Anthropic "Building Effective Agents" (anthropic.com/engineering/building-effective-agents)
+Der Loop ist das Kernmuster — alles andere (Subagenten, Schwaerme) baut darauf auf.
+Ueberleitung: "Und genau das ist der Unterschied zu Vibe Coding..."
+-->
+
+---
+
 # Was ist Agentic Engineering nicht
 
 | #   | Ansatz                      | Input                             | Menschliche Rolle |
@@ -131,6 +245,17 @@ Business vs. Technical Spec ist unser eigener Beitrag.
 - Dokumentation ist für den Menschen gemacht!
   ![bg left:33% contain](./assets/block1/human-in-the-loop.png)
   **Nein, aber was wird seine Aufgabe in der Zukunft sein?**
+
+---
+
+# Human in the Loop?
+
+![bg left:33% contain](./assets/block1/evolution.png)
+
+- Ich denke es ist keine Evolution sondern verschiedene Anwendungsfälle benötigen mehr oder weniger Agenten
+- Umso mehr der Mensch eingebunden ist um so zielgenauer kann man arbeiten
+- Coding Agenten: Claude Code, Github Copilot, Codex
+- Agentenschwärme: Gastown,Get Shit Done (GSD), Claude Agents
 
 ---
 
@@ -283,6 +408,7 @@ Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 
 # Quellen & Weiterlesen — Agentic Engineering
 
+- [Lilian Weng: "LLM Powered Autonomous Agents" (2023)](https://lilianweng.github.io/posts/2023-06-23-agent/) — Architektur-Übersicht: Planning, Memory, Tool Use als drei Subsysteme
 - [Andrej Karpathy: "Vibe Coding" (X/Twitter, Feb 2025)](https://x.com/karpathy/status/1886192184808149383) — Ursprung des Begriffs "Vibe Coding"
 - [Andrej Karpathy: Software is Changing (X/Twitter, Feb 2026)](https://x.com/karpathy/status/2019137879310836075) — Karpathys Begriff "Agentic Engineering"
 - [Thoughtworks: "Preparing your team for the agentic software development life cycle"](https://www.thoughtworks.com/en-us/insights/articles/preparing-your-team-for-agentic-software-development-life-cycle) — Spec-Driven Ansaetze im Vergleich

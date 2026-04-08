@@ -51,7 +51,11 @@
       "Bash(for f:*)",
       "Bash(find *)",
       "Bash(for file:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:lilianweng.github.io)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:www.deeplearning.ai)"
     ]
   }
 }
