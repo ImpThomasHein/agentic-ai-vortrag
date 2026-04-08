@@ -16,12 +16,12 @@ Thomas Hein — Dataciders
 
 # Agenda
 
-| Block | Thema | Inhalt |
-| ----- | ----- | ------ |
-| **1** | **Grundlagen & Orientierung** | Vom LLM zum Agenten, Methodik, Rollen |
-| **2** | **Von der Anforderung zum Plan** | Kontextmanagement, Dokumentation, Brainstorming & Planning |
-| **3a** | **Praxis I — Execution & Testing** | Agenten steuern, TDD, Frontend-Entwicklung |
-| **3b** | **Praxis II — Reviews & Abschluss** | Code Reviews, Bugfixing, Sandboxing, Werkzeugkasten |
+| Block  | Thema                               | Inhalt                                                     |
+| ------ | ----------------------------------- | ---------------------------------------------------------- |
+| **1**  | **Grundlagen & Orientierung**       | Vom LLM zum Agenten, Methodik, Rollen                      |
+| **2**  | **Von der Anforderung zum Plan**    | Kontextmanagement, Dokumentation, Brainstorming & Planning |
+| **3a** | **Praxis I — Execution & Testing**  | Agenten steuern, TDD, Frontend-Entwicklung                 |
+| **3b** | **Praxis II — Reviews & Abschluss** | Code Reviews, Bugfixing, Sandboxing, Werkzeugkasten        |
 
 ![center contain](./assets/block2/augmented-llm.png)
 
@@ -391,6 +391,55 @@ Option A: Live-Demo (empfohlen, ~10min).
 Option B: Aufgezeichnetes Video oder Chat-Mitschnitt.
 Option C: Referenz-Video von GitHub Blog oder QCon.
 Entscheidung: [Thomas waehlt vor dem Workshop]
+-->
+
+# Modelle und ihre Staerken
+
+| Aufgabe       | Empfohlenes Modell           | Warum                         |
+| ------------- | ---------------------------- | ----------------------------- |
+| **Planning**  | Claude Opus/Sonnet 4.6       | Beste Instruktionsbefolgung   |
+| **Coding**    | Codex 5.3, Claude Sonnet 4.6 | Schnell + praezise            |
+| **Review**    | Claude 4.6, Gemini 3.1       | Regelanalyse, grosser Kontext |
+| **Recherche** | Gemini 3.1                   | Grosses Kontextfenster        |
+
+<!--
+Copilot erlaubt Modellwahl pro Aufgabe — das ist ein Vorteil.
+Open Source: Qwen 2.5 Coder fuer lokale/offline-Szenarien.
+Details: referenzen/modell-vergleich.md
+-->
+
+---
+
+# Kosten im Griff behalten
+
+- **Premium-Requests:** Entstehen bei Nutzung leistungsstaerkerer Modelle
+- **Einsparen durch:**
+  - Richtiges Modell fuer die richtige Aufgabe
+  - Guten Kontext (weniger Iterationen = weniger Requests)
+  - Standard-Modelle fuer einfache Aufgaben
+- **Investition:** Bessere Methodik → weniger Nacharbeit → weniger Kosten
+
+<!--
+Konkrete Zahlen aus referenzen/modell-vergleich.md:
+Copilot Pro = 300 Premium Requests/Monat ($10/Monat); Copilot Pro+ = 1.500/Monat ($39/Monat).
+Overage: $0,04 USD pro zusaetzlichem Premium Request.
+Claude Opus 4.6 = 3x Multiplier (3 Requests pro Prompt); Claude Sonnet 4.6 = 1x Multiplier.
+Sonnet statt Opus spart 67% der Premium Requests bei ~98% der Alltagsleistung.
+Auto-Modus gewaehrt zusaetzlich 10% Rabatt auf Premium-Request-Multiplier.
+-->
+
+---
+
+# Quellen & Weiterlesen — Modelle und Kosten
+
+- [GitHub Copilot Plans & Pricing](https://github.com/features/copilot/plans) — Offizielle Uebersicht aller Plaene mit Premium-Request-Kontingenten und Preisen
+- [GitHub Docs: Supported AI Models](https://docs.github.com/en/copilot/reference/ai-models/supported-models) — Welche Modelle in Copilot verfuegbar sind und ihre Premium-Request-Multiplier
+- [GitHub Docs: Model Comparison](https://docs.github.com/en/copilot/reference/ai-models/model-comparison) — Detaillierter Vergleich der Copilot-Modelle nach Staerken und Anwendungsfall
+- [Microsoft Tech Community: Choosing the Right Model in GitHub Copilot](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/choosing-the-right-model-in-github-copilot-a-practical-guide-for-developers/4491623) — Praxisleitfaden zur Modellwahl fuer Entwickler
+- [NxCode: Claude Sonnet 4.6 vs Opus 4.6](https://www.nxcode.io/resources/news/claude-sonnet-4-6-vs-opus-4-6-complete-comparison-2026) — Detailvergleich: Benchmarks, Kosten, Empfehlung fuer welche Aufgaben
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
 
 ---

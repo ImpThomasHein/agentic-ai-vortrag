@@ -55,7 +55,9 @@
       "WebFetch(domain:www.anthropic.com)",
       "WebFetch(domain:lilianweng.github.io)",
       "WebFetch(domain:docs.anthropic.com)",
-      "WebFetch(domain:www.deeplearning.ai)"
+      "WebFetch(domain:www.deeplearning.ai)",
+      "WebFetch(domain:www.thoughtworks.com)",
+      "WebFetch(domain:www.elastic.co)"
     ]
   }
 }

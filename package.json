@@ -4,9 +4,9 @@
   "private": true,
   "description": "Workshop: Agentic Engineering — Slides & Best Practices",
   "scripts": {
-    "slides:dev": "npx @marp-team/marp-cli --watch slides/",
-    "slides:build": "npx @marp-team/marp-cli -I slides/ -o dist/ && node -e \"require('fs').cpSync('./slides/assets', './dist/assets', {recursive: true})\"",
-    "slides:pdf": "npx @marp-team/marp-cli -I slides/ --pdf -o dist/"
+    "slides:dev": "npx @marp-team/marp-cli --config-file slides/marp.config.js --watch slides/",
+    "slides:build": "npx @marp-team/marp-cli --config-file slides/marp.config.js -I slides/ -o dist/ && node -e \"require('fs').cpSync('./slides/assets', './dist/assets', {recursive: true})\"",
+    "slides:pdf": "npx @marp-team/marp-cli --config-file slides/marp.config.js -I slides/ --pdf -o dist/"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^4.1.0"
