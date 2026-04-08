@@ -152,9 +152,10 @@ Business vs. Technical Spec ist unser eigener Beitrag.
 1. Softwareentwicklung wird **niederschwelliger**, es wird mehr Software geben
 2. Es wird relevanter, Agenten zu **beherrschen** und das Wissen benötigte Wissen in den Kontext zu kriegen
 3. Die Rolle verschiebt sich: **Code-Schreiber → Architekt, Steuermann, Qualitaetssicherer, UX Designer, Dev/Ops Engineer, AI Agent Engineer**
-4. AI Agenten können **100% des Codes erzeugen**, es liegt an uns, dass kein **schlechter** Code released wird.
+4. Oder ein Team besteht ausschließlich aus **UX Designer, AI Agent Engineer und PO**
+5. AI Agenten können **100% des Codes erzeugen**, es liegt an uns, dass kein **schlechter** Code released wird.
 
-**Aber auch. Human Coding ist nicht tot.**
+Aber auch: **Human Coding bleibt relevant**
 
 <!--
 Punkt 4 ist die zentrale Botschaft des gesamten Workshops.

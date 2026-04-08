@@ -9,10 +9,21 @@
   font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
+/* -----------------------------------------------
+   Section base: content flows top-to-bottom,
+   heading sits at the top — not vertically centred
+   ----------------------------------------------- */
 section {
   background-color: var(--color-bg);
   color: var(--color-text);
-  padding: 40px 60px;
+  /* More top padding so h1 clears the absolute-positioned Marp header */
+  padding: 70px 60px 40px;
+  /* Override the default theme's vertical centring */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Do NOT use align-items: stretch — causes h1 to overflow padding in SVG/foreignObject */
+  align-items: flex-start;
 }
 
 section::after {
@@ -21,16 +32,30 @@ section::after {
   font-size: 0.7em;
 }
 
+/* -----------------------------------------------
+   Headings
+   ----------------------------------------------- */
 h1 {
   color: var(--color-primary);
   border-bottom: 3px solid var(--color-accent);
   padding-bottom: 0.3em;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+  flex-shrink: 0;
+  /* Explicit width so border-bottom spans the full content area
+     (align-items: flex-start would otherwise shrink h1 to content width) */
+  width: 100%;
 }
 
 h2 {
   color: var(--color-accent);
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
 }
 
+/* -----------------------------------------------
+   Code
+   ----------------------------------------------- */
 code {
   background: #edf2f7;
   padding: 2px 6px;
@@ -42,22 +67,78 @@ pre {
   color: #e2e8f0;
   border-radius: 8px;
   padding: 1em;
+  /* Keep code blocks from touching the side padding */
+  margin-left: 0;
+  margin-right: 0;
 }
 
+/* -----------------------------------------------
+   Blockquotes — more breathing room
+   ----------------------------------------------- */
 blockquote {
   border-left: 4px solid var(--color-accent);
   background: #ebf8ff;
-  padding: 0.5em 1em;
+  padding: 0.6em 1.2em;
+  margin: 0.8em 0;
   font-style: italic;
 }
 
+/* -----------------------------------------------
+   Tables — avoid clinging to the edges
+   ----------------------------------------------- */
 table {
   font-size: 0.85em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-/* Title slide */
+th, td {
+  padding: 0.35em 0.7em;
+}
+
+/* -----------------------------------------------
+   Inline images (![center …]) — centred with air
+   ----------------------------------------------- */
+img:not([data-marp-fitting]) {
+  display: block;
+  max-width: 90%;
+  margin: 0.6em auto;
+}
+
+/* -----------------------------------------------
+   Background-split images (![bg right/left …])
+   Marp renders these via data-marpit-advanced-background-container.
+   padding adds inset gap so images do not bleed to the edge.
+   ----------------------------------------------- */
+/* Marp resets figure with all:initial — !important is required to survive that reset */
+[data-marpit-advanced-background-container] figure {
+  padding: 20px !important;
+  box-sizing: border-box !important;
+  background-origin: content-box !important;
+  background-clip: content-box !important;
+}
+
+/* Content section in split layouts: heading must start at top,
+   not be vertically centred by the default theme. */
+section[data-marpit-advanced-background="content"] {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* -----------------------------------------------
+   Title slide
+   ----------------------------------------------- */
+section.lead {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 section.lead h1 {
   font-size: 2.2em;
   text-align: center;
   border: none;
+  margin-top: 0;
 }
