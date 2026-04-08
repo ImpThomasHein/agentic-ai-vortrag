@@ -23,8 +23,11 @@ Thomas Hein — Dataciders
 | **3a** | **Praxis I — Execution & Testing** | Agenten steuern, TDD, Frontend-Entwicklung |
 | **3b** | **Praxis II — Reviews & Abschluss** | Code Reviews, Bugfixing, Sandboxing, Werkzeugkasten |
 
+![center contain](./assets/block2/augmented-llm.png)
+
 <!--
 Orientierungsfolie fuer Teilnehmer — gibt den Rahmen des gesamten Workshops.
+Quelle: Anthropic "Building Effective Agents" — Augmented LLM (Tools, Memory, Retrieval)
 -->
 
 ---
