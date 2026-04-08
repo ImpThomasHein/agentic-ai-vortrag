@@ -60,19 +60,6 @@ Wird in Block 3 vertieft — hier nur Ueberblick.
 
 ---
 
-# Quellen & Weiterlesen — Funktionsweise Coding Agent
-
-- [DEV Community: "Forget the Hype: Agents are Loops"](https://dev.to/jakesweb/forget-the-hype-agents-are-loops-2fi5) — Praxis-Erklaerung des Agent-Loop-Konzepts
-- [Oracle: "What Is the AI Agent Loop?"](https://www.oracle.com/artificial-intelligence/what-is-ai-agent-loop/) — Perceive/Reason/Plan/Act/Observe Schleife
-- [Model Context Protocol — Architektur](https://modelcontextprotocol.io/docs/concepts/architecture) — MCP Host-Client-Server Konzept
-- [GitHub Blog: Copilot Ask, Edit, Agent modes](https://github.blog/ai-and-ml/github-copilot/github-copilot-agent-mode-is-now-generally-available/) — Drei Modi im Vergleich
-
-<!--
-Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
--->
-
----
-
 # Context Engineering — Was ist das?
 
 - "The discipline of intelligently selecting, organizing, and delivering exactly what the AI needs to make good decisions — without overwhelming it. — Elastic"
@@ -126,6 +113,8 @@ Praxisbeispiel: Contact Software — 20 Jahre alte Python-Plattform die LLMs nic
 | **Compression** | Token reduzieren           | `/compact`, Zusammenfassungen, Trimming  |
 | **Isolation**   | Aufgaben aufteilen         | Subagenten mit eigenem, sauberem Kontext |
 
+- Kurze Demo in Copilot CLI (/usage, /compact, /rewind)
+
 > Mehr Information ≠ bessere Entscheidungen — Relevanz schlägt Vollständigkeit
 
 <!--
@@ -160,23 +149,32 @@ Referenz: elastic.co + Claude Code Best Practices
 
 ---
 
-# Quellen & Weiterlesen — Kontextmanagement
+# Erklären der Codebasis - Agents.md
 
-- [Martin Fowler — Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) — Grundlagen und Patterns fuer kontextbewusstes Agenten-Design
-- [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Empfehlungen direkt vom Hersteller
-- [GitHub Blog — How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) — Lessons from over 2,500 repositories
-- [AGENTS.md Specification — ASDLC](https://asdlc.io/practices/agents-md-spec/) — Offizielle Spec und Best Practices
-- [JetBrains Research — Smarter Context Management for LLM-Powered Agents](https://blog.jetbrains.com/research/2025/12/efficient-context-management/) — Effizientes Kontext-Management in der Praxis
-
-<!--
-Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
--->
+Was ist Agents.md
+Wie schreibt man ein gutes Agent.md File
+Was gehört nicht rein
+Prinzip Progressive Disclouse
 
 ---
 
-# Erklären der Codebasis - Dokumentation
+# Vertiefung - Übergabe Konventionen
 
-## Welche Formate fuer Agenten?
+## Was gehört in den Konventionen
+
+---
+
+# Vertiefung - Übergabe Projektdokumentation
+
+wie können Projektdokumentationen übergeben werden
+
+---
+
+# Sind nocht weitere Vertiefungen relevant?
+
+---
+
+## Zusammenfassung - Welche Formate fuer Agenten?
 
 | Inhale                | Wofuer                | Agent-Verstaendnis |
 | --------------------- | --------------------- | ------------------ |
@@ -192,18 +190,6 @@ Praxistipp: Code-Beispiele sind das staerkste Format.
 -->
 
 ---
-
-# Quellen & Weiterlesen — Dokumentation als Steuerungsinstrument
-
-- [Mintlify — What to Include in AGENTS.md](https://www.mintlify.com/agentsmd/agents.md/guides/what-to-include) — Welche Doku-Inhalte Agenten wirklich brauchen
-- [AI Hero — A Complete Guide To AGENTS.md](https://www.aihero.dev/a-complete-guide-to-agents-md) — Praxisleitfaden fuer agentengerechte Dokumentation
-- [Harness — The Agent-Native Repo: Why AGENTS.MD is the New Standard](https://www.harness.io/blog/the-agent-native-repo-why-agents-md-is-the-new-standard) — ADRs, Guidelines und Doku-Schichten im Ueberblick
-- [GitHub Blog — How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) — Lessons from over 2,500 repositories
-- [Elastic — What is Context Engineering? Architecting Reliable AI](https://www.elastic.co/what-is/context-engineering) — Doku als Kontext-Fundament fuer zuverlaessige Agenten
-
-<!--
-Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
--->
 
 # Übergabe der Aufgabe
 
@@ -275,6 +261,47 @@ Faustregel: Wenn mehr als 2 Dateien betroffen → mindestens Plan.
 
 <!--
 Nicht Workshop-Fokus, aber wichtig zu erwaehnen.
+-->
+
+---
+
+# Quellen & Weiterlesen — Kontextmanagement
+
+- [Martin Fowler — Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html) — Grundlagen und Patterns fuer kontextbewusstes Agenten-Design
+- [Anthropic — Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Empfehlungen direkt vom Hersteller
+- [GitHub Blog — How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) — Lessons from over 2,500 repositories
+- [AGENTS.md Specification — ASDLC](https://asdlc.io/practices/agents-md-spec/) — Offizielle Spec und Best Practices
+- [JetBrains Research — Smarter Context Management for LLM-Powered Agents](https://blog.jetbrains.com/research/2025/12/efficient-context-management/) — Effizientes Kontext-Management in der Praxis
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
+
+---
+
+# Quellen & Weiterlesen — Funktionsweise Coding Agent
+
+- [DEV Community: "Forget the Hype: Agents are Loops"](https://dev.to/jakesweb/forget-the-hype-agents-are-loops-2fi5) — Praxis-Erklaerung des Agent-Loop-Konzepts
+- [Oracle: "What Is the AI Agent Loop?"](https://www.oracle.com/artificial-intelligence/what-is-ai-agent-loop/) — Perceive/Reason/Plan/Act/Observe Schleife
+- [Model Context Protocol — Architektur](https://modelcontextprotocol.io/docs/concepts/architecture) — MCP Host-Client-Server Konzept
+- [GitHub Blog: Copilot Ask, Edit, Agent modes](https://github.blog/ai-and-ml/github-copilot/github-copilot-agent-mode-is-now-generally-available/) — Drei Modi im Vergleich
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+-->
+
+---
+
+# Quellen & Weiterlesen — Dokumentation als Steuerungsinstrument
+
+- [Mintlify — What to Include in AGENTS.md](https://www.mintlify.com/agentsmd/agents.md/guides/what-to-include) — Welche Doku-Inhalte Agenten wirklich brauchen
+- [AI Hero — A Complete Guide To AGENTS.md](https://www.aihero.dev/a-complete-guide-to-agents-md) — Praxisleitfaden fuer agentengerechte Dokumentation
+- [Harness — The Agent-Native Repo: Why AGENTS.MD is the New Standard](https://www.harness.io/blog/the-agent-native-repo-why-agents-md-is-the-new-standard) — ADRs, Guidelines und Doku-Schichten im Ueberblick
+- [GitHub Blog — How to write a great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/) — Lessons from over 2,500 repositories
+- [Elastic — What is Context Engineering? Architecting Reliable AI](https://www.elastic.co/what-is/context-engineering) — Doku als Kontext-Fundament fuer zuverlaessige Agenten
+
+<!--
+Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 -->
 
 ---
