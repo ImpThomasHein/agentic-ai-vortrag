@@ -7,6 +7,7 @@ Enthält als Ergebnis ein Planung mit dem Muster
 Plan/YYYY-MM-DD<featurename>/Grobplang/<featurename>.md
 
 dann Feinplanunt mit Codestellen
+Die Ausführung wird in einem separaten git working tree realisiert
 geht TDD vor. Benutze TDD Skill
 jeder commit in der Feinplanung enhält den Feature namen
 Jede Entscheidungsoption soll den Anwender dargestellt werden
@@ -15,3 +16,4 @@ Plan/YYYY-MM-DD-<featurename>/Feinplanung/<featurename>.md
 Jeder Schritt enthält kurz die Zusammenfassung des Vorgehens
 
 Zum Schluss gibt es ein code Review
+Grafische Änderungn sollen nocheinmal per playwright abgetestet werden
