@@ -108,7 +108,7 @@ Business vs. Technical Spec ist unser eigener Beitrag.
 - Steve Wilson
 
 ![bg right:40% contain](./assets/block1/evulation-of-programmer.png)
-[Steve Yagee - Gas Town](https://x.com/acossta/status/2009011533171323238)
+[Steve Yegge - Good Agile, Bad Agile](https://steve-yegge.blogspot.com/2006/09/good-agile-bad-agile_27.html)
 
 ---
 
@@ -168,11 +168,11 @@ Ueberleitung: "Wie machen wir das konkret? Dafuer gibt es ein Modell."
 - Der Entwickler wird zum **Boss** des Agenten, nicht umgekehrt
 - Man ist **verantwortlich** für das was man commiten lässt
 - Verstärkung bestehender Fähigkeiten
-  -- Architektur
-  -- UX
-  -- Softwareentwicklungsprozessmethodik
-  -- Fullstackentwicklung
-  -- Betrieb von Software
+  - Architektur
+  - UX
+  - Softwareentwicklungsprozessmethodik
+  - Fullstackentwicklung
+  - Betrieb von Software
 
 ![bg right:40%](./assets/block1/human-in-the-loop-comic.png)
 
@@ -182,15 +182,15 @@ Ueberleitung: "Wie machen wir das konkret? Dafuer gibt es ein Modell."
 
 ## Chancen
 
-- Mehr Konsistent
+- Mehr Konsistenz
 - Mehr Qualität
-- Mehr Fokus Auf Werterzeugung
+- Mehr Fokus auf Werterzeugung
 - Mehr Fokus auf Qualitätssicherung
 
-## Neue zu erlendende Fähgikeiten
+## Neu zu erlernende Fähigkeiten
 
-- Agenten nach den benötigten Anforderungen nutzen können
-- 20% -> 100% Coding durch Agenten **(Ziel dieser Reihe)**
+- Agenten zielgerichtet einsetzen und steuern können
+- 20% → 100% Coding durch Agenten **(Ziel dieser Reihe)**
 - Agentenschwärme bauen und monitoren
 
 ---
