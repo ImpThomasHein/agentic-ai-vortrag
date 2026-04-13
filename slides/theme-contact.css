@@ -72,6 +72,17 @@ pre {
   margin-right: 0;
 }
 
+pre code {
+  background: transparent !important;
+  padding: 0;
+  color: #e2e8f0 !important;
+}
+
+/* Reset highlight.js token colors for dark code blocks */
+pre code span {
+  color: #e2e8f0 !important;
+}
+
 /* -----------------------------------------------
    Blockquotes — more breathing room
    ----------------------------------------------- */

@@ -18,12 +18,10 @@ Thomas Hein — Dataciders
 
 | Block  | Thema                               | Inhalt                                                     |
 | ------ | ----------------------------------- | ---------------------------------------------------------- |
-| **1**  | **Grundlagen & Orientierung**       | Vom LLM zum Agenten, Methodik, Rollen                      |
-| **2**  | **Von der Anforderung zum Plan**    | Kontextmanagement, Dokumentation, Brainstorming & Planning |
+| **1**  | **Grundlagen & Orientierung**       | Vom LLM zum Agenten, Methodik, Vibecoding ausprobiert                      |
+| **2**  | **Von der Anforderung zum Plan**    | Kontextmanagement, Agents.md, Skills, Brainstorming & Planning |
 | **3a** | **Praxis I — Execution & Testing**  | Agenten steuern, TDD, Frontend-Entwicklung                 |
 | **3b** | **Praxis II — Reviews & Abschluss** | Code Reviews, Bugfixing, Sandboxing, Werkzeugkasten        |
-
-![center contain](./assets/block2/augmented-llm.png)
 
 <!--
 Orientierungsfolie fuer Teilnehmer — gibt den Rahmen des gesamten Workshops.
@@ -110,7 +108,12 @@ Genau deshalb brauchen wir Methodik — das ist die Bruecke zum Rest des Worksho
 
 ---
 
-# Was ist eigentlich ein Agent? — Vom GPT zum Agenten
+#  Von LLMS zu Agenten
+
+
+---
+
+# Was ist eigentlich ein Agent? — Was macht GPT
 
 **Sprachmodelle sind Wahrscheinlichkeitsmaschinen**
 
@@ -198,6 +201,8 @@ Referenz: Anthropic "Building Effective Agents" (anthropic.com/engineering/build
 Der Loop ist das Kernmuster — alles andere (Subagenten, Schwaerme) baut darauf auf.
 Ueberleitung: "Und genau das ist der Unterschied zu Vibe Coding..."
 -->
+---
+# Agentic Engineering vs. Vibe Coding vs. Spec-Driven
 
 ---
 
@@ -261,12 +266,19 @@ Business vs. Technical Spec ist unser eigener Beitrag.
 - Agentenschwärme: Gastown,Get Shit Done (GSD), Claude Agents
 
 ---
+# Neuer Begriff
+
+## Agent in the Loop
+- Der Agent erstattet Bericht und Vorschläge, der Mensch trifft die endgültigen Entscheidungen
+
+---
 
 # Ziele der Firma (meiner Ansicht nach)
 
 **🏋️‍♂️ Commodity - Leistungsfähigkeit erreichen**
 
 - Effizienzgewinne der AI nutzen mit gleichbleibender Qualität
+- Gleicher Ressourcenaufwand mit verbesserter Qualität
 
 **🏆 Bedienen neuer Aufgaben und Rollen im Enterprise Context**
 
@@ -333,8 +345,7 @@ Ueberleitung: "Wie machen wir das konkret? Dafuer gibt es ein Modell."
 - Den eigenen Entwicklungsprozess verbessern
 
 ## Inhalte
-
-- Verständnis von LLMs zum Agenten
+- Copilot CLI und Skills (heute)
 - Veständnis über Kontextmanagement erlangen
 - Agents.md, (Sub)Agenten und Skills für die eigene Zielstellung nutzbar machen
 - Am Beispiel von Github Copilot CLI (IDE unabhängig)
@@ -343,7 +354,12 @@ Ueberleitung: "Wie machen wir das konkret? Dafuer gibt es ein Modell."
 
 # Was kann man schon heute tun
 
-- Ausprobieren von skills, am besten die von obra
+- Kurze Einführung Copilot CLI
+  - /usage
+  - /model
+  - /clear
+  - /skills
+- Installieren von relevanten Skills , am besten die von obra
 
 ```
 npx skills add https://github.com/obra/superpowers --skill using-superpowers
@@ -356,7 +372,35 @@ npx skills add https://github.com/obra/superpowers --skill using-superpowers
 
 ---
 
-# Brainstorming & Planning mit dem Agenten
+# Demo
+> Erweitere die Demoanwendung "TTF Companion" um eine Funktion, Vergangene Trainingseinheiten anzeigen.
+- Team 1 nutze Vibe Coding, 
+- Team 2 nutzt Agentic Engineering durch writing-plans und execution-plans mit copilot cli
+
+---
+
+# Demo: Vibecoding vs Plan, Execute - Gleiche Aufgabe, zwei Ansaetze
+
+**Aufgabe:** Zusammen mit der Gruppe bestimmmen
+
+|                          | Vibe Coding       | Agentic Engineering        |
+| ------------------------ | ----------------- | -------------------------- |
+| **Input**                | "Bau mir X"       | Spec → Plan → TDD          |
+| **Designentscheidungen** | Agent entscheidet | Entwickler entscheidet     |
+| **Tests**                | Vielleicht        | Erst Test, dann Code       |
+| **Nachvollziehbarkeit**  | Gering            | Hoch (Plan, Commits, Doku) |
+
+> **Diskussion**: Was kann man noch steuern?
+
+<!--
+Option A: Live-Demo (empfohlen, ~10min).
+Option B: Aufgezeichnetes Video oder Chat-Mitschnitt.
+Option C: Referenz-Video von GitHub Blog oder QCon.
+Entscheidung: [Thomas waehlt vor dem Workshop]
+-->
+---
+
+# Brainstorming & Planning - wann nutzt man Was
 
 ```
 Anforderung → Brainstorming → Spec → Plan → Execution
@@ -372,47 +416,20 @@ Das ist der Kern des Agentic Engineering Workflows.
 Demo: Eine Anforderung gemeinsam durchplanen.
 Referenz: Addy Osmani "My LLM Coding Workflow 2026" / Martin Fowler "Humans and Agents"
 -->
-
 ---
 
-# Demo: Vibecoding vs Plan, Execute - Gleiche Aufgabe, zwei Ansaetze
+# Inhalte für die nächste Woche
+- Copilot CLI und Skills (heute)
+- Veständnis über Kontextmanagement erlangen (nächste Woche)
+- Agents.md, (Sub)Agenten und Skills für die eigene Zielstellung nutzbar machen (nächste Woche)
 
-**Aufgabe:** Zusammen mit der Gruppe bestimmmen
-
-|                          | Vibe Coding       | Agentic Engineering        |
-| ------------------------ | ----------------- | -------------------------- |
-| **Input**                | "Bau mir X"       | Spec → Plan → TDD          |
-| **Designentscheidungen** | Agent entscheidet | Entwickler entscheidet     |
-| **Tests**                | Vielleicht        | Erst Test, dann Code       |
-| **Nachvollziehbarkeit**  | Gering            | Hoch (Plan, Commits, Doku) |
-
-<!--
-Option A: Live-Demo (empfohlen, ~10min).
-Option B: Aufgezeichnetes Video oder Chat-Mitschnitt.
-Option C: Referenz-Video von GitHub Blog oder QCon.
-Entscheidung: [Thomas waehlt vor dem Workshop]
--->
-
-# Modelle und ihre Staerken
-
-| Aufgabe       | Empfohlenes Modell           | Warum                         |
-| ------------- | ---------------------------- | ----------------------------- |
-| **Planning**  | Claude Opus/Sonnet 4.6       | Beste Instruktionsbefolgung   |
-| **Coding**    | Codex 5.3, Claude Sonnet 4.6 | Schnell + praezise            |
-| **Review**    | Claude 4.6, Gemini 3.1       | Regelanalyse, grosser Kontext |
-| **Recherche** | Gemini 3.1                   | Grosses Kontextfenster        |
-
-<!--
-Copilot erlaubt Modellwahl pro Aufgabe — das ist ein Vorteil.
-Open Source: Qwen 2.5 Coder fuer lokale/offline-Szenarien.
-Details: referenzen/modell-vergleich.md
--->
 
 ---
 
 # Kosten im Griff behalten
 
 - **Premium-Requests:** Entstehen bei Nutzung leistungsstaerkerer Modelle
+- https://github.blog/changelog/2025-07-10-github-copilot-coding-agent-now-uses-one-premium-request-per-session/
 - **Einsparen durch:**
   - Richtiges Modell fuer die richtige Aufgabe
   - Guten Kontext (weniger Iterationen = weniger Requests)
@@ -429,6 +446,25 @@ Auto-Modus gewaehrt zusaetzlich 10% Rabatt auf Premium-Request-Multiplier.
 -->
 
 ---
+
+# Modelle und ihre Stärken
+
+| Aufgabe       | Empfohlenes Modell           | Warum                         |
+| ------------- | ---------------------------- | ----------------------------- |
+| **Planning**  | Claude Opus/Sonnet 4.6       | Beste Instruktionsbefolgung   |
+| **Coding**    | Codex 5.3, Claude Sonnet 4.6 | Schnell + praezise            |
+| **Review**    | Claude Sonnet 4.6, Gemini 3.1       | Regelanalyse, grosser Kontext |
+| **Recherche** | Gemini 3.1                   | Grosses Kontextfenster        |
+
+<!--
+Copilot erlaubt Modellwahl pro Aufgabe — das ist ein Vorteil.
+Open Source: Qwen 2.5 Coder fuer lokale/offline-Szenarien.
+Details: referenzen/modell-vergleich.md
+-->
+
+---
+
+
 
 # Quellen & Weiterlesen — Modelle und Kosten
 
