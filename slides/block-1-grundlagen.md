@@ -24,7 +24,7 @@ Thomas Hein — Dataciders
 | **3b** | **Praxis II — Reviews & Abschluss** | Code Reviews, Bugfixing, Sandboxing, Werkzeugkasten        |
 
 <!--
-Orientierungsfolie fuer Teilnehmer — gibt den Rahmen des gesamten Workshops.
+Orientierungsfolie für Teilnehmer — gibt den Rahmen des gesamten Workshops.
 Quelle: Anthropic "Building Effective Agents" — Augmented LLM (Tools, Memory, Retrieval)
 -->
 
@@ -54,7 +54,7 @@ Ziel: Grundverstaendnis schaffen, Orientierung geben, Motivation aufbauen
 
 ---
 
-# Blick in die Zukunft — Was bleibt fuer uns übrig?
+# Blick in die Zukunft — Was bleibt für uns übrig?
 
 - Wer von euch findet gut, was gerade in der Softwareentwicklung passiert?
 - Was sind Chancen und Risiken
@@ -142,9 +142,9 @@ Das ist der Ausgangspunkt, um zu verstehen warum Prompt-Qualitaet so relevant is
 ```json
 [
   { "role": "system", "content": "Du bist ein hilfreicher Assistent..." },
-  { "role": "user", "content": "Schreibe einen Unittest fuer Funktion X" },
+  { "role": "user", "content": "Schreibe einen Unittest für Funktion X" },
   { "role": "assistant", "content": "def test_x(): ..." },
-  { "role": "user", "content": "Ergaenze den Test fuer den Fehlerfall" }
+  { "role": "user", "content": "Ergaenze den Test für den Fehlerfall" }
 ]
 ```
 
@@ -157,7 +157,7 @@ Das ist der Ausgangspunkt, um zu verstehen warum Prompt-Qualitaet so relevant is
 <!--
 Entwickler-Perspektive: API-Aufruf vs. Chat-UI.
 Der Kontext ist akkumuliert — jede Antwort wird Teil der naechsten Anfrage.
-Schluessel fuer spaetere Einheiten: AGENTS.md, Systemprompt-Design.
+Schluessel für spaetere Einheiten: AGENTS.md, Systemprompt-Design.
 -->
 
 ---
@@ -180,6 +180,14 @@ Das LLM ist der "Brain" in der Mitte — alles andere ist Infrastruktur drum her
 **Ein AI Agent = LLM + Werkzeuge + Schleife**
 
 ```python
+
+messages = [
+  { "role": "system", "content": "Du bist ein hilfreicher Assistent..." },
+  { "role": "user", "content": "Schreibe einen Unittest für Funktion X" },
+  { "role": "assistant", "content": "def test_x(): ..." },
+  { "role": "user", "content": "Ergaenze den Test für den Fehlerfall" }
+]
+
 tools = [search_web, read_file, run_tests, write_code]
 
 while not task_done:
@@ -216,7 +224,7 @@ Ueberleitung: "Und genau das ist der Unterschied zu Vibe Coding..."
 
 <!--
 Besonderheit: Die meisten Frameworks kategorisieren nach AI-Autonomie.
-Unser Modell kategorisiert nach MENSCHLICHER ROLLE — greifbarer fuer Entwickler.
+Unser Modell kategorisiert nach MENSCHLICHER ROLLE — greifbarer für Entwickler.
 Begriffe: Vibe Coding (Karpathy 2025), Spec-Driven (Thoughtworks), Agentic Engineering (Karpathy 2026).
 Business vs. Technical Spec ist unser eigener Beitrag.
 -->
@@ -299,7 +307,7 @@ Aber auch: **Human Coding bleibt relevant**
 
 <!--
 Punkt 4 ist die zentrale Botschaft des gesamten Workshops.
-Ueberleitung: "Wie machen wir das konkret? Dafuer gibt es ein Modell."
+Ueberleitung: "Wie machen wir das konkret? Dafür gibt es ein Modell."
 -->
 
 ---
@@ -314,6 +322,7 @@ Ueberleitung: "Wie machen wir das konkret? Dafuer gibt es ein Modell."
   - Softwareentwicklungsprozessmethodik
   - Fullstackentwicklung
   - Betrieb von Software
+  - Prompt Engineering  
 
 ![bg right:40%](./assets/block1/human-in-the-loop-comic.png)
 
@@ -409,7 +418,7 @@ Anforderung → Brainstorming → Spec → Plan → Execution
 1. **Brainstorming:** Anforderung verstehen, Optionen erkunden
 2. **Spec:** Technische Spezifikation schreiben
 3. **Plan:** Aufgaben in 5-20min Tasks zerlegen (TDD)
-4. **Execution:** Task fuer Task umsetzen mit Entwickler-Checkpoints
+4. **Execution:** Task für Task umsetzen mit Entwickler-Checkpoints
 
 <!--
 Das ist der Kern des Agentic Engineering Workflows.
@@ -431,9 +440,9 @@ Referenz: Addy Osmani "My LLM Coding Workflow 2026" / Martin Fowler "Humans and 
 - **Premium-Requests:** Entstehen bei Nutzung leistungsstaerkerer Modelle
 - https://github.blog/changelog/2025-07-10-github-copilot-coding-agent-now-uses-one-premium-request-per-session/
 - **Einsparen durch:**
-  - Richtiges Modell fuer die richtige Aufgabe
+  - Richtiges Modell für die richtige Aufgabe
   - Guten Kontext (weniger Iterationen = weniger Requests)
-  - Standard-Modelle fuer einfache Aufgaben
+  - Standard-Modelle für einfache Aufgaben
 - **Investition:** Bessere Methodik → weniger Nacharbeit → weniger Kosten
 
 <!--
@@ -458,7 +467,7 @@ Auto-Modus gewaehrt zusaetzlich 10% Rabatt auf Premium-Request-Multiplier.
 
 <!--
 Copilot erlaubt Modellwahl pro Aufgabe — das ist ein Vorteil.
-Open Source: Qwen 2.5 Coder fuer lokale/offline-Szenarien.
+Open Source: Qwen 2.5 Coder für lokale/offline-Szenarien.
 Details: referenzen/modell-vergleich.md
 -->
 
@@ -471,11 +480,11 @@ Details: referenzen/modell-vergleich.md
 - [GitHub Copilot Plans & Pricing](https://github.com/features/copilot/plans) — Offizielle Uebersicht aller Plaene mit Premium-Request-Kontingenten und Preisen
 - [GitHub Docs: Supported AI Models](https://docs.github.com/en/copilot/reference/ai-models/supported-models) — Welche Modelle in Copilot verfuegbar sind und ihre Premium-Request-Multiplier
 - [GitHub Docs: Model Comparison](https://docs.github.com/en/copilot/reference/ai-models/model-comparison) — Detaillierter Vergleich der Copilot-Modelle nach Staerken und Anwendungsfall
-- [Microsoft Tech Community: Choosing the Right Model in GitHub Copilot](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/choosing-the-right-model-in-github-copilot-a-practical-guide-for-developers/4491623) — Praxisleitfaden zur Modellwahl fuer Entwickler
-- [NxCode: Claude Sonnet 4.6 vs Opus 4.6](https://www.nxcode.io/resources/news/claude-sonnet-4-6-vs-opus-4-6-complete-comparison-2026) — Detailvergleich: Benchmarks, Kosten, Empfehlung fuer welche Aufgaben
+- [Microsoft Tech Community: Choosing the Right Model in GitHub Copilot](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/choosing-the-right-model-in-github-copilot-a-practical-guide-for-developers/4491623) — Praxisleitfaden zur Modellwahl für Entwickler
+- [NxCode: Claude Sonnet 4.6 vs Opus 4.6](https://www.nxcode.io/resources/news/claude-sonnet-4-6-vs-opus-4-6-complete-comparison-2026) — Detailvergleich: Benchmarks, Kosten, Empfehlung für welche Aufgaben
 
 <!--
-Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+Link-Folie für Teilnehmer, die sich vertiefen wollen.
 -->
 
 ---
@@ -489,7 +498,7 @@ Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 - [Gartner: 90% of enterprise developers will use AI by 2028 (April 2024)](https://www.gartner.com/en/newsroom/press-releases/2024-04-11-gartner-says-75-percent-of-enterprise-software-engineers-will-use-ai-code-assistants-by-2028) — Marktprognose mit Warnung vor unkontrollierter Nutzung
 
 <!--
-Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+Link-Folie für Teilnehmer, die sich vertiefen wollen.
 -->
 
 ---
@@ -503,7 +512,7 @@ Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 - [DEV Community: "The AI Coding Workflow That Actually Works: Separate Planning from Execution"](https://dev.to/matthewhou/separate-planning-from-execution-the-ai-coding-workflow-that-actually-works-1n00) — Praxis-Perspektive auf Agenten-Ansaetze
 
 <!--
-Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+Link-Folie für Teilnehmer, die sich vertiefen wollen.
 -->
 
 ---
@@ -513,10 +522,10 @@ Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 - [Andrej Karpathy: "You are orchestrating agents" (X/Twitter, 2026)](https://x.com/karpathy/status/2019137879310836075) — Die neue Rolle: Steuermann statt Tipper
 - [Thoughtworks: Preparing your team for the agentic SDLC](https://www.thoughtworks.com/en-us/insights/articles/preparing-your-team-for-agentic-software-development-life-cycle) — Teamstruktur und Rollen im agentic Umfeld
 - [GitHub Blog: Quantifying GitHub Copilot's impact on developer productivity](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/) — Entwickler 55,8% schneller mit AI-Unterstuetzung
-- [InfoQ: From Prompts to Production — a Playbook for Agentic Development](https://www.infoq.com/articles/prompts-to-production-playbook-for-agentic-development/) — Praxis-Playbook fuer Teams
+- [InfoQ: From Prompts to Production — a Playbook for Agentic Development](https://www.infoq.com/articles/prompts-to-production-playbook-for-agentic-development/) — Praxis-Playbook für Teams
 
 <!--
-Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+Link-Folie für Teilnehmer, die sich vertiefen wollen.
 -->
 
 ---
@@ -526,9 +535,9 @@ Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
 - [Andrej Karpathy: Vibe Coding (X/Twitter, Feb 2025)](https://x.com/karpathy/status/1886192184808149383) — Ursprung des Begriffs: Coding im Flow ohne Code-Verstaendnis
 - [The New Stack: Vibe Coding is Passé](https://thenewstack.io/vibe-coding-is-passe/) — Warum Vibe Coding an Grenzen stoesst und Agentic Engineering folgt
 - [Dev.to: Separate Planning from Execution — The AI Coding Workflow That Actually Works](https://dev.to/matthewhou/separate-planning-from-execution-the-ai-coding-workflow-that-actually-works-1n00) — Praxis-Vergleich beider Ansaetze mit konkretem Workflow
-- [GitHub Blog: Test-Driven Development with GitHub Copilot](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-test-driven-development-tdd-with-github-copilot/) — TDD als Grundlage fuer nachvollziehbares Agentic Engineering
+- [GitHub Blog: Test-Driven Development with GitHub Copilot](https://github.blog/ai-and-ml/github-copilot/github-for-beginners-test-driven-development-tdd-with-github-copilot/) — TDD als Grundlage für nachvollziehbares Agentic Engineering
 - [Glide Blog: What is Agentic Engineering](https://www.glideapps.com/blog/what-is-agentic-engineering) — Karpathys Definition und Abgrenzung zu Vibe Coding
 
 <!--
-Link-Folie fuer Teilnehmer, die sich vertiefen wollen.
+Link-Folie für Teilnehmer, die sich vertiefen wollen.
 -->
