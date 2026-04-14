@@ -1,19 +1,30 @@
-erst Grobplanung mit übersicht
-tabelarsiche Darstellung. Zielstellung, Grober Änderungsvorschlag, Aktzeptanzkritieren
-enthält Akzeptanzkritieren in jedem Schritt
-enthält Zielstellung und Akzeptanzkritierumg
+Der Plan enhält als Überschrift
 
-Enthält als Ergebnis ein Planung mit dem Muster
-Plan/YYYY-MM-DD<featurename>/Grobplang/<featurename>.md
+Featurename 
 
-dann Feinplanunt mit Codestellen
-Die Ausführung wird in einem separaten git working tree realisiert
-geht TDD vor. Benutze TDD Skill
-jeder commit in der Feinplanung enhält den Feature namen
-Jede Entscheidungsoption soll den Anwender dargestellt werden
-Enthält als Ergebnis ein Dokumment
-Plan/YYYY-MM-DD-<featurename>/Feinplanung/<featurename>.md
-Jeder Schritt enthält kurz die Zusammenfassung des Vorgehens
+Zielstellung,
 
-Zum Schluss gibt es ein code Review
-Grafische Änderungn sollen nocheinmal per playwright abgetestet werden
+Aufgabenkontext
+
+Akzeptanzkritieren
+
+Bei der Planung gibt es zuerst ein Grobplanung mit einer übersichtlichen Agenda der zu absolvierenden Schritte. Jeder Schritt enthält Zielstellung, Grobe Highlevel Änderung, Aktzeptanzkritieren, Verfikationsschritte, diese können automatisiert und manuell durch den Benutzer sein.
+Jeder Schirtt ist als Checkliste markiert, damit der nächste Verarbeitungsschritt
+
+Gehe mit dem Entwickler bei der Erstellung des Grobplans Schrittweise durch die Punkte und Frage ihn bei Designentscheidungen nach den möglichen Vorgehen. Gehe erst zum nächsten Punkt wenn der Entwickler es bestätigt
+
+Der Entwickler hat die Möglichkeit die Reihenfolge, Schritte und Akzeptanzkritierein zu ändern
+
+bitte Frage nach ob es zum Schluss auch Anpassung in der Dokumentation geben soll
+bitte Frage nach ob es zum Schluss auch Anpassung in der Agents.md geben soll
+
+Bei Standard soll immmer sein das
+
+Zum Schluss gibt es immer die Aufgaben
+- Code Review 
+- Grafische Änderungn sollen nocheinmal per playwright abgetestet werden
+
+
+Als Ergebnis der Planung entsteht  eine Datei im Ordner Plan/YYYY-MM-DD-<featname>/Grobplanug.md
+
+Diese kann dann vom Skill dc-writing-detailed-plan weiterverarbeitet werden
