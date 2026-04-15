@@ -55,3 +55,5 @@ Am ende des Plans soll auch die Hinweise zur Dokumentation genannt werden. Zudem
 
  Stelle sicher in der Feinplanung, dass jeder abgestimmte Schritte bereits in der Datei abgelegt wird. Alles soll Schrittweise abgelegt wird, nicht als ein Block zum Schluss
 
+ In den git commit Anweisungen der Feinplanung füge bitte immer die Ticketnummer ein. Frage ggfs. bei der Erstellung der Feinplanung nach der Ticketnummer wenn unbekannt
+
