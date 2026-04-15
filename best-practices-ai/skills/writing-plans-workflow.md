@@ -59,3 +59,5 @@ Am ende des Plans soll auch die Hinweise zur Dokumentation genannt werden. Zudem
 
  Bevor du startest mit der Feinplanung lese sämtliche Entwickler Konventionen im Projekt
 
+ Zum Schluss soll ein Review durchgeführt werden. Ist die Planung Konsistent zu den Konventions. Wird auf Clean Code geachtet, Kann man ggf. noch andere codestellen wieder verwenden, damit der Agent sich daran erinnert, kann das gerne ans Ende der Grobplanung gepackt werden
+
