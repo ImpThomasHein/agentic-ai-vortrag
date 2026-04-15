@@ -1,3 +1,5 @@
+# Grobplanung
+
 Der Plan enhält als Überschrift
 
 Featurename 
@@ -28,3 +30,19 @@ Zum Schluss gibt es immer die Aufgaben
 Als Ergebnis der Planung entsteht  eine Datei im Ordner Plan/YYYY-MM-DD-<featname>/Grobplanug.md
 
 Diese kann dann vom Skill dc-writing-detailed-plan weiterverarbeitet werden
+
+
+# Feinplnaung
+
+jetzt brauche ich ein skill cdb-writing-detailed-plan dieser soll prinzipiell auch nach writing-plans und tdd vorgehen. Als Grundlage dient der Plan aus der Grobplanung.
+
+Hier gilt es aber einen sehr genauen Handlungsplan auf Codeebene aufzubauen, der die einzelnen Schritte und Codeänderungen ganz genau beschreibt. Am Ende jeden Schrittest stehen die zu testenden Akzeptanzkritieren. Diese können können sowohl vom Agenten als auch vom Nutzer überprüft werden
+
+Die Erstellung des Plans erfolgt ebenfalls Schrittweise. Der Entwickler ist so in der Lage, Schritt für Schritt der Implementierung gleich ein Review zu geben bspw. über Namen von Variablen und konkreten Implementierungen. Die zu entstehenden Schritte sollen von einem Menschen in 10-15 min erledigt werden könenn.
+
+Es ist wichtig, dass sich an den Entwickler Konventiionen aus dem Wiki wie der Benahmung gehalten wird 
+
+Wenn ein Schritt aus der Grobplanung überführt worden ist, ist dieser Schritt in der Grobplanung abzuhaken.
+
+Die zu erstellende Datei soll unter docs/plans/YYYY-MM-DD-<featname>/Feinplanung.md abgelegt werden
+
