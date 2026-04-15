@@ -19,3 +19,8 @@ Jeder abgeschlossene Schritte muss die Akzeptanzkritieren erfüllt haben bevor e
 Der Entwickler kann die Akzeptanzkritieren auch selbst überprüfen
 
 Am Ende der Erfüllung muss es ein Code Review geben. Nutze hierfür die Konvetionen die sich im Wiki befinden
+
+
+bitte zum Schluss auch ggf. an Anpassungen der Dokumentation hinweisen.
+
+Wenn der Benutzer ggf. auch Aufgaben übernehmen will, passe das in der Feinplanung an
