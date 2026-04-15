@@ -46,3 +46,7 @@ Wenn ein Schritt aus der Grobplanung überführt worden ist, ist dieser Schritt 
 
 Die zu erstellende Datei soll unter docs/plans/YYYY-MM-DD-<featname>/Feinplanung.md abgelegt werden
 
+Betone werden, dass in der Feinplanung der Code jedes Implementierungsschritt schon  im wesentlich aufgeführt ist.
+
+Am ende des Plans soll auch die Hinweise zur Dokumentation genannt werden. Zudem ist es wichtig die allgemeinen Akzeptanzkriterien der Grobplanung am Ende der Feinplanung zu überprüfen
+
