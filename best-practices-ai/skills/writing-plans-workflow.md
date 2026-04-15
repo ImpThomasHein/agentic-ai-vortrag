@@ -57,3 +57,5 @@ Am ende des Plans soll auch die Hinweise zur Dokumentation genannt werden. Zudem
 
  In den git commit Anweisungen der Feinplanung füge bitte immer die Ticketnummer ein. Frage ggfs. bei der Erstellung der Feinplanung nach der Ticketnummer wenn unbekannt
 
+ Bevor du startest mit der Feinplanung lese sämtliche Entwickler Konventionen im Projekt
+
