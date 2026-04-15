@@ -32,6 +32,9 @@ Als Ergebnis der Planung entsteht  eine Datei im Ordner Plan/YYYY-MM-DD-<featnam
 Diese kann dann vom Skill dc-writing-detailed-plan weiterverarbeitet werden
 
 
+ Stelle sicher in der Grobplanung, dass jeder abgestimmte Schritte bereits in der Datei abgelegt wird. Alles soll Schrittweise abgelegt wird, nicht als ein Block zum Schluss
+
+
 # Feinplnaung
 
 jetzt brauche ich ein skill cdb-writing-detailed-plan dieser soll prinzipiell auch nach writing-plans und tdd vorgehen. Als Grundlage dient der Plan aus der Grobplanung.
@@ -49,4 +52,6 @@ Die zu erstellende Datei soll unter docs/plans/YYYY-MM-DD-<featname>/Feinplanung
 Betone werden, dass in der Feinplanung der Code jedes Implementierungsschritt schon  im wesentlich aufgeführt ist.
 
 Am ende des Plans soll auch die Hinweise zur Dokumentation genannt werden. Zudem ist es wichtig die allgemeinen Akzeptanzkriterien der Grobplanung am Ende der Feinplanung zu überprüfen
+
+ Stelle sicher in der Feinplanung, dass jeder abgestimmte Schritte bereits in der Datei abgelegt wird. Alles soll Schrittweise abgelegt wird, nicht als ein Block zum Schluss
 
