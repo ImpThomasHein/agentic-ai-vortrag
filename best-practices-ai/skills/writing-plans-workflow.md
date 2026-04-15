@@ -35,7 +35,7 @@ Diese kann dann vom Skill dc-writing-detailed-plan weiterverarbeitet werden
  Stelle sicher in der Grobplanung, dass jeder abgestimmte Schritte bereits in der Datei abgelegt wird. Alles soll Schrittweise abgelegt wird, nicht als ein Block zum Schluss
 
 
-# Feinplnaung
+# Feinplanung
 
 jetzt brauche ich ein skill cdb-writing-detailed-plan dieser soll prinzipiell auch nach writing-plans und tdd vorgehen. Als Grundlage dient der Plan aus der Grobplanung.
 
@@ -44,6 +44,8 @@ Hier gilt es aber einen sehr genauen Handlungsplan auf Codeebene aufzubauen, der
 Die Erstellung des Plans erfolgt ebenfalls Schrittweise. Der Entwickler ist so in der Lage, Schritt für Schritt der Implementierung gleich ein Review zu geben bspw. über Namen von Variablen und konkreten Implementierungen. Die zu entstehenden Schritte sollen von einem Menschen in 10-15 min erledigt werden könenn.
 
 Es ist wichtig, dass sich an den Entwickler Konventiionen aus dem Wiki wie der Benahmung gehalten wird 
+
+Nutze die Grobplanung als Checklist. Wenn eine Feinplanung erfolgte, hake die erledigte Themen ab
 
 Wenn ein Schritt aus der Grobplanung überführt worden ist, ist dieser Schritt in der Grobplanung abzuhaken.
 
