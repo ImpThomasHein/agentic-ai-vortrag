@@ -1,3 +1,5 @@
+# Grobplanung
+
 Der Plan enhält als Überschrift
 
 Featurename 
@@ -28,3 +30,36 @@ Zum Schluss gibt es immer die Aufgaben
 Als Ergebnis der Planung entsteht  eine Datei im Ordner Plan/YYYY-MM-DD-<featname>/Grobplanug.md
 
 Diese kann dann vom Skill dc-writing-detailed-plan weiterverarbeitet werden
+
+
+ Stelle sicher in der Grobplanung, dass jeder abgestimmte Schritte bereits in der Datei abgelegt wird. Alles soll Schrittweise abgelegt wird, nicht als ein Block zum Schluss
+
+
+# Feinplanung
+
+jetzt brauche ich ein skill cdb-writing-detailed-plan dieser soll prinzipiell auch nach writing-plans und tdd vorgehen. Als Grundlage dient der Plan aus der Grobplanung.
+
+Hier gilt es aber einen sehr genauen Handlungsplan auf Codeebene aufzubauen, der die einzelnen Schritte und Codeänderungen ganz genau beschreibt. Am Ende jeden Schrittest stehen die zu testenden Akzeptanzkritieren. Diese können können sowohl vom Agenten als auch vom Nutzer überprüft werden
+
+Die Erstellung des Plans erfolgt ebenfalls Schrittweise. Der Entwickler ist so in der Lage, Schritt für Schritt der Implementierung gleich ein Review zu geben bspw. über Namen von Variablen und konkreten Implementierungen. Die zu entstehenden Schritte sollen von einem Menschen in 10-15 min erledigt werden könenn.
+
+Es ist wichtig, dass sich an den Entwickler Konventiionen aus dem Wiki wie der Benahmung gehalten wird 
+
+Nutze die Grobplanung als Checklist. Wenn eine Feinplanung erfolgte, hake die erledigte Themen ab
+
+Wenn ein Schritt aus der Grobplanung überführt worden ist, ist dieser Schritt in der Grobplanung abzuhaken.
+
+Die zu erstellende Datei soll unter docs/plans/YYYY-MM-DD-<featname>/Feinplanung.md abgelegt werden
+
+Betone werden, dass in der Feinplanung der Code jedes Implementierungsschritt schon  im wesentlich aufgeführt ist.
+
+Am ende des Plans soll auch die Hinweise zur Dokumentation genannt werden. Zudem ist es wichtig die allgemeinen Akzeptanzkriterien der Grobplanung am Ende der Feinplanung zu überprüfen
+
+ Stelle sicher in der Feinplanung, dass jeder abgestimmte Schritte bereits in der Datei abgelegt wird. Alles soll Schrittweise abgelegt wird, nicht als ein Block zum Schluss
+
+ In den git commit Anweisungen der Feinplanung füge bitte immer die Ticketnummer ein. Frage ggfs. bei der Erstellung der Feinplanung nach der Ticketnummer wenn unbekannt
+
+ Bevor du startest mit der Feinplanung lese sämtliche Entwickler Konventionen im Projekt
+
+ Zum Schluss soll ein Review durchgeführt werden. Ist die Planung Konsistent zu den Konventions. Wird auf Clean Code geachtet, Kann man ggf. noch andere codestellen wieder verwenden, damit der Agent sich daran erinnert, kann das gerne ans Ende der Grobplanung gepackt werden
+
