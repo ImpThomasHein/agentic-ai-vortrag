@@ -8,6 +8,39 @@ footer: "Thomas Hein | Dataciders | 2026"
 
 <!-- _class: lead -->
 
+
+# Workshop: Agentic Engineering
+
+**Workshop: Agentic Engineering**
+
+**Methodische Anwendung von Agentic Engineering in der Praxis**
+
+
+Thomas Hein — Dataciders
+
+<!--
+Dauer: ~50 Minuten
+Ziel: Strukturierte Anforderungsanalyse und Planung mit dem Agenten
+-->
+
+---
+
+# Zusammenfassung Block 1
+
+- **Agentic Engineering** = Zielgenaue Entwicklung mit KI-Agente
+- **Entwickler** -> trägt die volle Verantwortung der Lösung
+- **Entwickler** -> ist der Boss des Agenten
+  
+
+- **Themen:** Umsetzen komplexer Anforderungen in maßgeschneiderte Lösung, Architektur, Einfluss auf agilen Prozess, Dokumentation, Frontend, Reviews, DevOps,
+
+![middle height:175px](./assets/block2/architecture-to-code.png)
+
+
+---
+
+<!-- _class: lead -->
+
 # Block 2: Von der Anforderung zum Plan
 
 **Workshop: Agentic Engineering**
@@ -149,32 +182,7 @@ Referenz: elastic.co + Claude Code Best Practices
 
 ---
 
-# Erklären der Codebasis - Agents.md
-
-Was ist Agents.md
-Wie schreibt man ein gutes Agent.md File
-Was gehört nicht rein
-Prinzip Progressive Disclouse
-
----
-
-# Vertiefung - Übergabe Konventionen
-
-## Was gehört in den Konventionen
-
----
-
-# Vertiefung - Übergabe Projektdokumentation
-
-wie können Projektdokumentationen übergeben werden
-
----
-
-# Sind nocht weitere Vertiefungen relevant?
-
----
-
-## Zusammenfassung - Welche Formate fuer Agenten?
+## Relevante Formate für Agenten
 
 | Inhale                | Wofuer                | Agent-Verstaendnis |
 | --------------------- | --------------------- | ------------------ |
@@ -184,33 +192,216 @@ wie können Projektdokumentationen übergeben werden
 | **Code-Beispiele**    | Konventionen zeigen   | ★★★ Exzellent      |
 | **Coding Guidelines** | Standards durchsetzen | ★★★ Exzellent      |
 
+---
+
+# Agents.md — Die wichtigste Datei fuer den Kontext
+
 <!--
-Praxistipp: Code-Beispiele sind das staerkste Format.
-"Zeig dem Agenten wie es aussehen soll" > "Beschreib dem Agenten wie es aussehen soll"
+Uebergangsfolie — kurze Pause, dann in die Tiefe gehen.
+-->
+
+
+---
+
+# Was ist Agents.md?
+
+**Das "Betriebshandbuch" fuer deinen Coding-Agenten**
+
+- **Zweck:** Regeln, Kontext und Grenzen fuer den Agenten
+- **Wo:** Repo-Root — wird automatisch geladen
+- **Varianten:** `AGENTS.md` · `CLAUDE.md` · `GEMINI.md` · `copilot-instructions.md`
+- **Analogie:** README fuer Menschen — AGENTS.md fuer Agenten
+
+**Ohne Agents.md:** Der Agent rät — mit Agents.md: Der Agent weiß.
+
+> "Most agent files fail because they're too vague." — Matt Nigh, GitHub (2500+ Repos Studie)
+
+<!--
+Quelle: GitHub Blog — "How to write a great agents.md" (Matt Nigh, Nov 2025)
+Analyse von 2500+ öffentlichen Repos.
+Key Insight: "You are a helpful coding assistant" funktioniert nicht.
+"You are a test engineer who writes tests for React components" schon.
 -->
 
 ---
 
-# Übergabe der Aufgabe
+# Die 6 Kernbereiche eines guten Agents.md
 
-## TBD was ist das ideale Aufgabenformat
+Aus der Analyse von **2.500+ Repositories** (GitHub Blog, Matt Nigh):
 
-## NFRs festhalten — auch fuer den Agenten
+1. **Commands** — Exakte Build-, Test-, Lint-Kommandos mit Flags
+2. **Testing** — Framework, Strategie, was getestet wird
+3. **Projektstruktur** — Verzeichnisse, Tech-Stack mit Versionen
+4. **Code Style** — Echte Code-Beispiele statt Prosa
+5. **Git Workflow** — Branch-Strategie, Commit-Format, PR-Regeln
+6. **Grenzen** — Always  | Ask first  | Never 
 
-- **Performance:** Latenz-Budgets, SLAs, Skalierung
-- **Security:** OWASP-Anforderungen, Compliance-Regeln
-- **Verfuegbarkeit:** SLAs, Fallback-Strategien
-- **Format:** ADRs oder NFR-Sektion in Architektur-Doku
-- **Wo:** Schicht 1 (immer aktiv) — Agent muss NFRs bei jeder Aenderung kennen
+> Wer diese 6 Bereiche abdeckt, ist in den **Top-Repos** laut der Studie.
 
 <!--
-NFRs werden oft vergessen — aber der Agent braucht sie,
-um keine Performance-Killer oder Security-Luecken einzubauen.
-Beispiel: "Max 200ms Response Time" verhindert, dass der Agent
-eine N+1-Query einbaut.
+Quelle: GitHub Blog — "How to write a great agents.md" (Matt Nigh, Nov 2025)
+"Hitting these areas puts you in the top tier."
+Wichtig: Code-Beispiele > Erklaerungen. Ein Snippet zeigt dem Agenten mehr als drei Absaetze.
 -->
 
 ---
+
+# Best Practices & Anti-Patterns
+
+<div class="columns">
+<div>
+
+## ✅ Das funktioniert
+
+- **Kommandos frueh:** `npm test`, `pytest -v` mit Flags
+- **Code-Beispiele:** Ein Snippet > drei Absaetze
+- **Stack spezifisch:** "React 18 + TypeScript + Vite"
+- **Klare Grenzen:** Always / Ask first / Never
+- **Iterativ wachsen:** Klein starten, bei Fehlern ergaenzen
+
+</div>
+<div>
+
+## ❌ Das funktioniert nicht
+
+- **Vage Persona:** "Du bist ein hilfreicher Assistent"
+- **Nur Prosa:** Keine ausfuehrbaren Kommandos
+- **Alles auf einmal:** Gesamte Doku in eine Datei
+- **Keine Beispiele:** Regeln ohne Code-Demos
+- **Keine Grenzen:** Agent darf "alles" → macht Fehler
+
+</div>
+</div>
+
+<!--
+Quelle: GitHub Blog — "How to write a great agents.md" (Matt Nigh, Nov 2025)
+Anti-Pattern "helpful assistant" war der haeufigste Fehler in der Studie.
+Best Practice "Never commit secrets" war die haeufigste hilfreiche Constraint.
+-->
+
+---
+
+# Progressive Disclosure — Nur laden was noetig ist
+
+**Prinzip:** Nicht alles in die Agents.md — sondern verlinken und bei Bedarf laden.
+
+```
+AGENTS.md (immer geladen — kompakt halten!)
+  ├── docs/commands.md        → "Lies wenn du Tests ausfuehrst"
+  ├── docs/conventions.md     → "Lies wenn du Code schreibst"
+  ├── docs/api-endpoints.md   → "Lies wenn du an der API arbeitest"
+  └── data-model.mmd          → "Lies VOR jeder DB-Aenderung"
+```
+
+**Beispiel aus dem Demo-Projekt (CLAUDE.md):**
+
+- Features → `docs/claude/features.md` — bei Funktionalitaets-Fragen
+- Tech Stack → `docs/claude/tech-stack.md` — bei Framework-Fragen
+- Datenmodell → `data-model.mmd` — **immer** vor DB-Aenderungen
+
+> **Warum?** Weniger Tokens = bessere Entscheidungen (Context Rot vermeiden!)
+
+<!--
+Progressive Disclosure ist ein UX-Prinzip: Zeige nur was gerade relevant ist.
+Das Demo-Projekt (table-tennis-planner) nutzt genau dieses Muster.
+Verbindung zu Context Engineering: Selection-Strategie in der Praxis.
+-->
+
+---
+
+# Uebung: Agents.md gemeinsam mit dem Agenten erstellen
+
+**Ziel:** AGENTS.md fuer `src/demo-project/table-tennis-planner/` erstellen
+
+1. **Systemprompt** aktivieren (z.B. `using-superpowers` Skill)
+2. **Vorlage** oeffnen: `best-practices-ai/agents-md/vorlage-agents-md.md`
+3. **Agent fuehrt:** Projekt erkunden lassen, Fragen beantworten
+4. **Gemeinsam** die 6 Kernbereiche ausfuellen
+5. **Review:** Ergebnis kritisch pruefen
+
+<!--
+Dauer: ~15 Minuten
+Workflow: Systemprompt (using-superpowers o.ae.) → Vorlage als Kontext geben → Agent exploriert Projekt → Gemeinsam ausfuellen.
+-->
+
+---
+
+# Uebung: Materialien & Tipps
+
+**Beispiel-Prompt:**
+
+```
+Ich moechte ein AGENTS.md fuer dieses Projekt erstellen.
+Nutze die Vorlage in best-practices-ai/agents-md/vorlage-agents-md.md
+als Basis. Erkunde das Projekt, stelle mir Fragen
+und fuelle die 6 Kernbereiche gemeinsam mit mir aus.
+```
+
+- **Vorlage:** `best-practices-ai/agents-md/vorlage-agents-md.md`
+- **Referenz:** [AGENTS.md aus Praxis-Projekt](https://dataciders.ghe.com/Thomas-Hein/contact-ai-best-practices/blob/main/AGENTS.md)
+- **Tech-Stack:** Next.js, Prisma, Tailwind, Vitest, Playwright
+- **Kernfrage:** Was soll der Agent **nie** tun?
+
+> Der Agent kennt euer Projekt nicht — fuettert ihn mit der Vorlage und lasst ihn Fragen stellen!
+
+<!--
+Referenz-AGENTS.md aus dem contact-ai-best-practices Repo zeigt ein reales Beispiel mit Progressive Disclosure, Workflows pro Task-Typ, und Build-Kommandos.
+-->
+
+---
+
+# Skills: Die Methodik ins Projekt bringen
+
+<!--
+Uebergangsfolie — von Agents.md (statischer Kontext) zu Skills (dynamische Workflows).
+-->
+
+---
+
+# Was sind Skills?
+
+**Skills = wiederverwendbare Workflow-Anleitungen fuer Agenten**
+
+- **Prompt:** Einmalige Anweisung ("Schreib einen Test")
+- **Rule:** Immer aktive Regel ("Nutze TypeScript strict mode")
+- **Skill:** Kompletter Workflow mit Schritten, Checklisten, Entscheidungsbaum
+
+```markdown
+# TDD-Skill (Auszug)
+1. Test schreiben → ROT sehen
+2. Minimalen Code schreiben → GRUEN sehen
+3. Refactoring → Tests erneut GRUEN
+4. Commit
+```
+
+> Skills sind **Prozess-Wissen** — sie sagen dem Agenten nicht WAS, sondern WIE.
+
+<!--
+Skills sind das fehlende Stueck zwischen Agents.md (Kontext) und dem Agent-Loop (Execution).
+Agents.md sagt "Wir nutzen TDD" — der Skill sagt "So geht TDD Schritt fuer Schritt".
+-->
+
+---
+
+# Welche Methodik will man im Projekt haben?
+
+- **TDD** — Red-Green-Refactor Zyklus erzwingen
+- **Code Reviews** — Automatisches Pre-Review vor jedem Merge
+- **Planung** — Specs und Plans vor Code schreiben
+- **Debugging** — Systematisch statt Raten (4-Phasen-Prozess)
+- **Execution** — Task-fuer-Task mit Entwickler-Checkpoints
+- **Git Workflow** — Worktrees, Branches, Commits
+- **Verifikation** — Beweise vor Behauptungen ("Es funktioniert" → zeig mir)
+
+> Ohne Skills raet der Agent bei der Methodik — mit Skills haelt er sich daran.
+
+<!--
+Das sind die typischen Bereiche, die man als Skills abbilden kann.
+Nicht alle braucht man sofort — iterativ aufbauen, wie bei Agents.md.
+-->
+
+---
+
 
 # Brainstorming & Planning mit dem Agenten
 
@@ -222,6 +413,17 @@ Anforderung → Brainstorming → Spec → Plan → Execution
 2. **Spec:** Technische Spezifikation schreiben
 3. **Plan:** Aufgaben in 5-20min Tasks zerlegen (TDD)
 4. **Execution:** Task fuer Task umsetzen mit Entwickler-Checkpoints
+> Das ist trotzdem nicht 100% optimal - lass uns herausfinden warum
+---
+
+# Übung
+**Ziel:** Anforderung gemeinsam mit dem Agenten durchplanen
+3 Arten der Planung
+- Superpowers "writing-plans" Skill
+- Freestyle Prompting
+- writing-plan von Microsof
+  
+**Anforderung:** "Füge einen Vereinsplan hinzu, damit man sämtliche Spiele aller Manschaften sehen kann."
 
 <!--
 Das ist der Kern des Agentic Engineering Workflows.
@@ -246,6 +448,30 @@ Referenz: Addy Osmani "My LLM Coding Workflow 2026" / Martin Fowler "Humans and 
 Nicht jede Aufgabe braucht den vollen Workflow.
 Die Kunst ist, die richtige Stufe zu waehlen.
 Faustregel: Wenn mehr als 2 Dateien betroffen → mindestens Plan.
+-->
+
+---
+
+# Community-Skills: Superpowers (170k+ Stars)
+
+**superpowers** — komplette Entwicklungsmethodik als Skill-Sammlung
+
+- **Brainstorming** — Ideen durch Fragen verfeinern, Design validieren
+- **Writing Plans** — Aufgaben in 2-5 Min Tasks zerlegen (TDD, YAGNI, DRY)
+- **TDD** — Red-Green-Refactor erzwingen, Tests nie anpassen
+- **Systematic Debugging** — 4-Phasen Root-Cause-Analyse
+- **Code Review** — Pre-Review Checkliste, Severity-basiert
+- **Verification** — Beweise vor Erfolgs-Behauptungen
+- **Subagent Development** — Parallele Ausfuehrung mit Review
+- **Git Worktrees** — Isolierte Branches fuer Features
+
+Installation: `/plugin install superpowers` (Claude Code)
+
+<!--
+Superpowers von Jesse Vincent (obra) — 170k+ Stars auf GitHub.
+Funktioniert mit Claude Code, Copilot CLI, Cursor, Codex, Gemini CLI, OpenCode.
+Philosophie: Test-Driven, Systematic over ad-hoc, Evidence over claims.
+Quelle: https://github.com/obra/superpowers
 -->
 
 ---

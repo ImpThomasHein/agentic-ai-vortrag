@@ -3,101 +3,156 @@
 <!--
 Dieses Template dient als Startpunkt fuer ein eigenes AGENTS.md.
 Kopieren, anpassen, ins Repo-Root legen (oder nach .github/copilot-instructions.md).
+
+Basiert auf der Analyse von 2.500+ Repositories (GitHub Blog, Matt Nigh, Nov 2025):
+https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/
+
+Die 6 Kernbereiche guter Agent-Dateien:
+1. Commands — Exakte Build-, Test-, Lint-Kommandos mit Flags
+2. Testing — Test-Framework, Strategie, was getestet wird
+3. Projektstruktur — Verzeichnisse mit Erklaerung, Tech-Stack mit Versionen
+4. Code Style — Echte Code-Beispiele statt Prosa-Beschreibungen
+5. Git Workflow — Branch-Strategie, Commit-Format, PR-Regeln
+6. Grenzen — Always ✅ / Ask first ⚠️ / Never 🚫
+
+Best Practices:
+- Kommandos frueh im Dokument platzieren (Agent referenziert sie oft)
+- Code-Beispiele > Prosa-Erklaerungen (ein Snippet > drei Absaetze)
+- Stack mit Versionen angeben ("React 18 + TypeScript 5" statt "React-Projekt")
+- Klare Grenzen setzen ("Never commit secrets" war die haeufigste hilfreiche Constraint)
+- Iterativ wachsen: Klein starten, bei Agenten-Fehlern ergaenzen
+- Progressive Disclosure nutzen: Nur Basis-Infos in AGENTS.md, Details verlinken
+
+Anti-Patterns (NICHT tun):
+- "Du bist ein hilfreicher Assistent" — zu vage, funktioniert nicht
+- Nur Prosa ohne ausfuehrbare Kommandos
+- Gesamte Dokumentation in eine einzige Datei packen
+- Regeln ohne Code-Beispiele
+- Keine Grenzen definieren (Agent darf "alles" → macht Fehler)
 -->
 
 ## 1. Mission & Besonderheiten
 
 <!--
 Was ist das Projekt? Welche Besonderheiten gibt es? Plattform-Eigenheiten?
-Kurzbeschreibung (2–4 Sätze), wichtigste fachliche Ziele, spezielle Constraints (Performance, Sicherheit, Legacy).
+Kurzbeschreibung (2–4 Saetze), wichtigste fachliche Ziele, spezielle Constraints.
+BEST PRACTICE: Spezifische Persona statt vage Beschreibung.
+  ✅ "Du bist ein Test-Engineer der React-Komponenten testet"
+  ❌ "Du bist ein hilfreicher Coding-Assistent"
 -->
 
 [Kurze Projektbeschreibung fuer den Agenten]
 
-## 2. Tech-Stack & Projektstruktur
+## 2. Commands (frueh im Dokument!)
 
 <!--
-Welche Sprachen, Frameworks, Tools? Wo liegen die wichtigsten Verzeichnisse?
-Hilft dem Agenten, die richtige Umgebung zu verstehen und zu navigieren.
+BEST PRACTICE: Kommandos kommen frueh — der Agent referenziert sie oft.
+Exakte Kommandos mit Flags, nicht nur Tool-Namen.
+  ✅ `npm test -- --coverage --watchAll=false`
+  ❌ "Nutze npm zum Testen"
 -->
 
-- Language: [z.B. Python 3.11]
-- Framework: [z.B. Django 4.2]
-- Struktur: [Kurze Erklaerung]
+- Build: `[z.B. npm run build]`
+- Tests: `[z.B. npm test -- --coverage]`
+- Lint: `[z.B. npm run lint --fix]`
+- Run: `[z.B. npm run dev]`
 
-## 3. Build-, Run- und Test-Kommandos
+## 3. Tech-Stack & Projektstruktur
 
 <!--
-Welche Befehle braucht der Agent um zu testen, bauen, starten?
-Exakte Kommandos, die tatsaechlich im Projekt funktionieren.
+BEST PRACTICE: Stack mit Versionen und Key-Dependencies.
+  ✅ "React 18, TypeScript 5.3, Vite 5, Tailwind CSS 3.4"
+  ❌ "React-Projekt"
 -->
 
-- Tests: `[z.B. pytest]`
-- Lint: `[z.B. ruff check .]`
-- Run: `[z.B. python manage.py runserver]`
+- Language: [z.B. TypeScript 5.3]
+- Framework: [z.B. Next.js 14]
+- Datenbank: [z.B. PostgreSQL + Prisma 5]
+- Struktur:
+  - `src/` — Quellcode
+  - `tests/` — Test-Dateien
+  - `docs/` — Dokumentation
 
-## 4. Arbeitsweise / Agentic Workflow
+## 4. Code Style (mit Beispielen!)
 
 <!--
-Wie soll der Agent vorgehen? Welche Schritte sind Pflicht?
-Definiert die Prozesse: Brainstorming, Planung, TDD, Clean Code, PR.
+BEST PRACTICE: Ein echtes Code-Snippet zeigt dem Agenten mehr als drei Absaetze Prosa.
+Zeige was guter Output aussieht — nicht nur beschreiben.
 -->
 
-- Immer erst Tests schreiben, dann Code
-- Immer Planung vor Implementierung
-- Vor grossen Aenderungen: Fragen stellen
+```typescript
+// ✅ Gut — beschreibende Namen, Error Handling
+async function fetchUserById(id: string): Promise<User> {
+  if (!id) throw new Error('User ID required');
+  const response = await api.get(`/users/${id}`);
+  return response.data;
+}
 
-## 5. Personas (Registry)
+// ❌ Schlecht — vage Namen, kein Error Handling
+async function get(x) {
+  return await api.get('/users/' + x).data;
+}
+```
 
-<!--
-Welche spezialisierte Agenten-Personas gibt es im Projekt?
-Link zu separaten .md-Dateien, die spezifische Rollen definieren.
--->
-
-- Feature-Dev: [Beschreibung oder Pfad zur Persona-Datei]
-- Bugfixer: [Beschreibung oder Pfad zur Persona-Datei]
-
-## 6. Tests & Qualitaet
+## 5. Tests & Qualitaet
 
 <!--
 Was sind die Test-Anforderungen? Mindest-Coverage? CI-Checks?
-Klaert ab, wann Tests gelten, und was der Agent mit Tests tun/nicht tun darf.
+Was darf der Agent mit Tests tun/nicht tun?
 -->
 
 - Coverage: [z.B. minimum 80%]
 - Kein Merge ohne gruene Tests
 - Tests duerfen nicht angepasst werden, um gruen zu werden
+- Jeder Bugfix: erst FAILING Test, dann Fix
 
-## 7. Git-Workflow
+## 6. Git-Workflow
 
 <!--
 Branch-Strategie, Commit-Messages, PR-Regeln.
-Klaert ab, welche Git-Operationen der Agent selbst machen darf und welche nicht.
+Welche Git-Operationen darf der Agent selbst machen?
 -->
 
 - Branch: feature/, bugfix/, hotfix/
 - Commits: conventional commits (feat:, fix:, chore:)
 - PR: mindestens ein Reviewer + gruene Tests
 
-## 8. Grenzen & No-Gos
+## 7. Grenzen & No-Gos (Three-Tier Boundaries)
 
 <!--
-Was darf der Agent NICHT ohne Rueckfrage?
-Definiert Kategorien: Always (kann der Agent immer), Ask first (muss fragen), Never (absolutes Verbot).
+BEST PRACTICE: Drei Stufen definieren — die haeufigste hilfreiche Constraint war "Never commit secrets".
 -->
 
-Always:
+✅ **Always:**
 - Dateien lesen und editieren
 - Lokale Tests ausfuehren
+- Code-Style-Regeln befolgen
 
-Ask first:
+⚠️ **Ask first:**
 - Neue Abhaengigkeiten installieren
 - DB-Schema aendern
 - Architekturentscheidungen
+- CI/CD-Konfiguration aendern
 
-Never:
+🚫 **Never:**
+- Secrets oder API-Keys committen
+- `node_modules/` oder `vendor/` editieren
+- Produktions-Konfigurationen aendern
 - Netzwerk-Requests an externe Dienste
-- Secrets oder Credentials manipulieren
+
+## 8. Progressive Disclosure (verlinkte Detail-Dokumente)
+
+<!--
+BEST PRACTICE: Nicht alles in AGENTS.md packen — Details verlinken.
+Weniger Tokens = bessere Entscheidungen (Context Rot vermeiden!)
+-->
+
+| Thema | Datei | Wann lesen |
+|-------|-------|------------|
+| Features | `docs/features.md` | Bestehende Funktionalitaet pruefen |
+| API | `docs/api-endpoints.md` | Bei API-Aenderungen |
+| Konventionen | `docs/conventions.md` | Bei Code-Aenderungen |
+| Datenmodell | `data-model.mmd` | **Immer** vor DB-Aenderungen |
 - Git push (remote) ohne explizite Anweisung
 
 ## 9. Architektur-Notizen & Stolpersteine
