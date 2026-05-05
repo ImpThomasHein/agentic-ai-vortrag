@@ -31,3 +31,17 @@ Dabei geht es auch darum, verschiedene Reifegrade zu verstehen:
 
 - Hinweise, Verbesserungen und Fragen bitte als **Issue** anlegen.
 - Ziel ist eine praxisnahe, nachvollziehbare und kontinuierlich erweiterbare Lernumgebung.
+
+
+# Schulung Agents.md und Planning
+* cd src/demo-project/table-tennis-planner
+* npm install
+* npm run dev
+* User: trainer , password: trainer123
+* Neues Terminal
+**  cd src/demo-project/table-tennis-planner
+**  npm install -g @github/copilot 
+**  copilot - /login -> /model - Haiku 4.5 einstellen -> Ziel 1 erreicht
+
+
+## Agents.md

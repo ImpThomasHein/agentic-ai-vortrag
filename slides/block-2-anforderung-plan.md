@@ -39,6 +39,18 @@ Ziel: Strukturierte Anforderungsanalyse und Planung mit dem Agenten
 
 ---
 
+# Ganz Wichtig
+
+**Der Entwickler muss immer eine Hand am Code haben.**
+[] - Task 1 -> Agent
+[] - Task 2 -> Agent
+[] - Task 3 -> **Entwickler**
+[] - Task 4 -> Agent
+[] - Task 5 -> Entwickler 
+[] - QS, Reviews, Manuelle Tests... -> Entwickler gerne mit Unterstützung
+
+---
+
 <!-- _class: lead -->
 
 # Block 2: Von der Anforderung zum Plan
@@ -380,6 +392,12 @@ Uebergangsfolie — von Agents.md (statischer Kontext) zu Skills (dynamische Wor
 Skills sind das fehlende Stueck zwischen Agents.md (Kontext) und dem Agent-Loop (Execution).
 Agents.md sagt "Wir nutzen TDD" — der Skill sagt "So geht TDD Schritt fuer Schritt".
 -->
+
+---
+
+# Welche Methodik will man im Projekt haben?
+
+Was wünscht ihr euch?
 
 ---
 
